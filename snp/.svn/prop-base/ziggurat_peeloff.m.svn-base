@@ -1,0 +1,18 @@
+K 13
+svn:eol-style
+V 6
+native
+K 14
+svn:executable
+V 1
+*
+K 12
+svn:keywords
+V 20
+"Id Date Author Rev"
+K 13
+svn:mergeinfo
+V 130
+/sandbox/schum/gistic_nymorph/matlab/snp/ziggurat_peeloff.m:22952-24877
+/sandbox/schum/matlab/arm_peeloff/ziggurat_peeloff.m:19964
+END

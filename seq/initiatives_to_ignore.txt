@@ -1,0 +1,34 @@
+initiative	comment
+Cancer_2000gene - Hybrid Selection	replaced by project C239
+Solexa Process Development	not ours
+E.coli Jumping Lib Development - Solexa	not ours
+Unknown - sample 19431.12	not ours
+Bush Baby Genome	not ours
+Autism WGS	not ours
+Autism Hybrid Selection	not ours
+Ciliopathies Whole Exome Hybrid Selection	not ours
+EOMI whole exome hybrid selection	not ours
+FHBL Whole Exome Hybrid Selection	not ours
+Finnish BMI and Height Extremes Whole Exome HybSel	not ours
+Framingham Heart Study Hybrid Selection	not ours
+Collaboration Project Development	not ours
+NA12878 Updated "Gold Standard" Sequencing	not ours
+HDL Extremes Whole Exome Hybrid Selection	not ours
+LDL Extremes Whole Exome Hybrid Selection	not ours
+Solexa Process Development	not ours
+Mutant Mouse Hybrid Selection	not ours
+MitoMillion Hybrid Selection	not ours
+Ober Whole Exome Hybrid Selection	not ours
+Puffenberger Whole Exome Hybrid Selection	not ours
+Pfizer T2D Hybrid Selection	not ours
+Pfizer T2D MI Portion - (NIH)MGH funded	not ours
+Pfizer T2D Pooled PCR	not ours
+Solexa Process Development (NHGRI funded)	not ours
+1000 Genomes Low Coverage - African-Am Population	 not ours
+1000 Genomes Low Coverage - CEPH Population	not ours
+1000 Genomes Low Coverage - Luhya Population	not ours
+1000 Genomes Low Coverage - Mexican-Am Population	not ours
+1000 Genomes Low Coverage-British GBR Population	not ours
+Sklar Pilot - BP-SCZ Trios Whole Exome	not ours
+Sklar Whole Exome GO	not ours
+Illumina Collaboration Project Development	not ours

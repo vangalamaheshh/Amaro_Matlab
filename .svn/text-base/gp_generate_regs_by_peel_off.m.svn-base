@@ -1,0 +1,190 @@
+% ---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$ 
+
+function [regs,C2]=generate_regs_by_peel_off(C,d,q,score_type,score_thresh,smooth_window_size,wide_type)
+
+if ~exist('wide_type','var')
+  wide_type=struct('method','origloo');
+elseif ischar(wide_type)
+  tmp.method=wide_type;
+  wide_type=tmp;
+end
+
+          
+verbose('Using Peel Off',10);
+
+show_plots=0;
+
+[ads{1},ads{2}]=snp_score(C,score_type);
+
+regs=cell(1,2);
+if ischar(C.sdesc)
+  C.sdesc=cellstr(C.sdesc);
+end
+
+C2=C;
+
+for k=1:2
+  if k==1
+    verbose('Amp',1);
+  else
+    verbose('Del',1);
+  end
+  for ch=1:max(C.chrn)
+    verbose(['Chr ' num2chromosome(ch)],1);
+    
+    in_chr=find(C.chrn==ch);
+    chr_zero=min(in_chr)-1;
+
+    switch score_type.method
+     case 'nxa'
+      x=C.dat(in_chr,:);
+      if k==1 % amp
+        th=score_type.amp_thresh;
+      else % del
+        x=-x;
+        th=-score_type.del_thresh;
+      end
+      x(x<th)=0;
+     otherwise
+      error('No such score method');
+    end
+    
+    y=(x>th);
+    sc=nanmean(x,2);
+    orig_sc=sc;
+    rl=runlength(y);
+    ns=size(y,2);
+    
+    [mx,mi]=max(sc);
+    verbose(['max(score)=' num2str(mx) '(?> ' num2str(score_thresh(k)) ')' ],1);
+    if (show_plots==1)
+      figure(1); clf;
+      subplot(2,1,1);
+      plot(sc); hold on;
+      ax=axis;
+    end
+    
+    [sads,sadsi]=sort(ads{k});
+    sq=log(q{k}(sadsi));
+    
+    if show_plots==2
+      X=reorder_D_rows(C2,in_chr);
+      X.dat=x*[1-2*(k==2)];
+      X.fxa{1}=sc;
+      X.fxa{2}=sc;
+      display_D(X,[],[],{'snp_fxa',struct('items',{{{2,5,'fxascore',1,[0 max(orig_sc)],score_thresh(k)}}})});
+    end
+    
+    while mx>=score_thresh(k)
+      n=length(regs{k})+1;
+
+      % find samples 
+      % HANDLE PEAKS WITH MORE THAN ONE SEGMENT!!!
+      rg=find(sc==mx);
+      if any(diff(rg)>1)
+        warning('the peak has more than one segment. should fix enlarged peak');
+      end
+      samples=find(y(mi,:));
+      
+%      CC.sdesc=C.sdesc; CC.dat=C2.dat;
+%      save CC.x.mat CC
+      
+      % find segments in samples
+      rli=find_rl(rl(samples),mi);
+      
+      regs{k}(n).chrn=ch;
+      v=zeros(1,ns);
+      v(samples)=1;
+      regs{k}(n).samples=v;
+      regs{k}(n).peak_st=min(rg)+chr_zero;
+      regs{k}(n).peak_en=max(rg)+chr_zero;
+      regs{k}(n).peak=round(0.5*(regs{k}(n).peak_st+regs{k}(n).peak_en));
+      regs{k}(n).qv=q{k}(in_chr(mi));
+      regs{k}(n).resid_qv=exp(interp_pwl(sads,sq,mx));
+      regs{k}(n).st=max([0; find(orig_sc(1:mi)<score_thresh(k)) ])+1+chr_zero;
+      regs{k}(n).en=min([ find(orig_sc(mi:end)<score_thresh(k)); length(sc)-mi+1 ])-1+mi+chr_zero-1; 
+      %% added -1 at end of prev. line since we want the last one that is still above score
+      regs{k}(n).score=mx;
+      verbose(['peak at ' genomic_location(C,{regs{k}(n).peak_st:regs{k}(n).peak_en})],1);
+
+      z=zeros(size(x));
+      for i=1:length(samples)
+        for j=1:length(rli{i})
+          rng=rl{samples(i)}(rli{i},1):rl{samples(i)}(rli{i},2);
+          z(rng,samples(i))=x(rng,samples(i));
+        end
+      end
+%      if (k==2) && (ch==14)
+%        keyboard
+%      end
+ 
+       % commented since we want to use the original wide region
+       % use next line if you want to use all the data to look for the next boundary
+       switch wide_type.method
+        case 'origloo'
+         [regs{k}(n).peak_wide_st,regs{k}(n).peak_wide_en]=add_wide_peak(z,chr_zero);
+%         [regs{k}(n).peak_wide_st,regs{k}(n).peak_wide_en]=add_wide_peak(regs{k}(n),x,chr_zero);
+        case 'leave-k-out'
+         [regs{k}(n).peak_wide_st,regs{k}(n).peak_wide_en]=add_wide_peak_k(z,chr_zero,wide_type.k);
+        otherwise 
+         error('no such method');
+       end
+       [regs{k}(n).peak_wide_st regs{k}(n).peak_st regs{k}(n).peak_en regs{k}(n).peak_wide_en]
+       regs{k}(n).segments=cell(1,ns);
+       for i=1:length(samples)
+         regs{k}(n).segments{samples(i)}.rli=rli{i};
+         regs{k}(n).segments{samples(i)}.st=rl{samples(i)}(rli{i},1)+chr_zero;
+         regs{k}(n).segments{samples(i)}.en=rl{samples(i)}(rli{i},2)+chr_zero;
+         pos=rl{samples(i)}(rli{i},1):rl{samples(i)}(rli{i},2);
+         regs{k}(n).segments{samples(i)}.vec=x(pos,samples(i));
+
+         verbose(['removing segment from ' C.sdesc{samples(i)} ' at ' ...
+                  genomic_location(C,{regs{k}(n).segments{samples(i)}.st:regs{k}(n).segments{samples(i)}.en})],1);
+         
+         % replace with normal
+         rl{samples(i)}=replace_rl(rl{samples(i)},rli{i},0); 
+         x(pos,samples(i))=0;        
+         y(pos,samples(i))=0;
+         C2.dat(in_chr(pos),samples(i))=0;
+         
+         sc(pos)=sc(pos)-regs{k}(n).segments{samples(i)}.vec./ns;
+         
+         if show_plots>0
+           subplot(2,1,1);
+           plot(sc); hold on;
+           subplot(2,1,2);
+           tmp=zeros(length(sc),1);
+           tmp(pos)=regs{k}(n).segments{samples(i)}.vec./ns;
+           if show_plots==1
+             plot(tmp,'r-');
+             axis(ax);
+             disp([ 'min=' num2str(min(sc)) '; mean=' num2str(mean(regs{k}(n).segments{samples(i)}.vec./ns))]);
+             pause;
+           end
+         end
+         if show_plots==2
+           X=reorder_D_rows(C2,in_chr);
+           X.dat=x*[1-2*(k==2)];
+           X.fxa{1}=sc;
+           X.fxa{2}=sc;
+           display_D(X,[],[],{'snp_fxa',struct('items',{{{2,5,'fxascore',1,[0 max(orig_sc)],score_thresh(k)}}})});
+         end
+       end
+       
+       [mx,mi]=max(sc);
+       verbose(['max(score)=' num2str(mx) '(?> ' num2str(score_thresh(k)) ')' ],1);
+       if show_plots==1
+         figure(1); clf;
+         subplot(2,1,1);
+         plot(sc); hold on;
+         ax=axis;
+         pause
+       end
+    end
+    
+  end
+end

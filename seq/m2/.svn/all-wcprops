@@ -1,0 +1,401 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/60845/trunk/matlab/seq/MutSig_2_dev
+END
+annotate_with_conservartion
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/annotate_with_conservartion
+END
+run_script.m~
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_script.m~
+END
+run_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_script.m
+END
+out.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/out.txt
+END
+generate.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/60845/trunk/matlab/seq/MutSig_2_dev/generate.m
+END
+run_annotate_with_conservartion.sh_bak
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_annotate_with_conservartion.sh_bak
+END
+scratch_hg18.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/scratch_hg18.txt
+END
+calculate_curve.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/48489/trunk/matlab/seq/MutSig_2_dev/calculate_curve.m
+END
+populate_polyphen.m~
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/populate_polyphen.m~
+END
+final_melanoma_results.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/final_melanoma_results.txt
+END
+load_lung_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/load_lung_struct.m
+END
+scratch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/scratch.txt
+END
+calculate_curve_C.mexa64
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/calculate_curve_C.mexa64
+END
+prepare_for_liftover.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/prepare_for_liftover.m
+END
+get_GenomicArray.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/get_GenomicArray.m
+END
+annotate_with_conservartion.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/annotate_with_conservartion.m
+END
+load_M_structs.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/load_M_structs.m
+END
+#calculate_curve_fast.m#
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/%23calculate_curve_fast.m%23
+END
+landfill.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/48482/trunk/matlab/seq/MutSig_2_dev/landfill.m
+END
+match_average.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/match_average.m
+END
+mutation_converter.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/48601/trunk/matlab/seq/MutSig_2_dev/mutation_converter.m
+END
+p_value.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/48482/trunk/matlab/seq/MutSig_2_dev/p_value.m
+END
+report.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/report.txt
+END
+populate_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/populate_categories.m
+END
+trial_report_all
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/trial_report_all
+END
+populate_polyphen.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/populate_polyphen.m
+END
+power_calculation.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/51435/trunk/matlab/seq/MutSig_2_dev/power_calculation.m
+END
+HISTC.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/HISTC.m
+END
+temp_results.mat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/temp_results.mat
+END
+trial_report
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/trial_report
+END
+test.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/test.m
+END
+populate_conservation.m~
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/49742/trunk/matlab/seq/MutSig_2_dev/populate_conservation.m~
+END
+run_annotate_with_conservartion.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_annotate_with_conservartion.sh
+END
+junk_out.mat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/junk_out.mat
+END
+curve_mean.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/48487/trunk/matlab/seq/MutSig_2_dev/curve_mean.m
+END
+fast_calculate_curve.mexa64
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/50760/trunk/matlab/seq/MutSig_2_dev/fast_calculate_curve.mexa64
+END
+mm_run.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/mm_run.m
+END
+cons_annotation_run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/cons_annotation_run.sh
+END
+startup.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/startup.m
+END
+fast_calculate_curve.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/48487/trunk/matlab/seq/MutSig_2_dev/fast_calculate_curve.c
+END
+call_mutsig_cluster.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/52957/trunk/matlab/seq/MutSig_2_dev/call_mutsig_cluster.m
+END
+scratch_hg18_compile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/scratch_hg18_compile.txt
+END
+load_MM_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/load_MM_struct.m
+END
+#populate_polyphen.m#
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/%23populate_polyphen.m%23
+END
+maxdiff.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/maxdiff.m
+END
+insertrows.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/insertrows.m
+END
+scratch_compile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/scratch_compile.txt
+END
+populate_conservation.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/47424/trunk/matlab/seq/MutSig_2_dev/populate_conservation.m
+END
+mccExcludedFiles.log
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/mccExcludedFiles.log
+END
+hist2.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/hist2.m
+END
+match.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/match.m
+END
+run_annotate_with_conservartion.sh_bak~
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_annotate_with_conservartion.sh_bak~
+END
+final_results.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/final_results.txt
+END
+load_all_mutation_data3.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/load_all_mutation_data3.m
+END
+populate_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/populate_coverage.m
+END
+fail_matrix_assessment.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/fail_matrix_assessment.m
+END
+temp_results_melanoma_2.mat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/temp_results_melanoma_2.mat
+END
+mini_driver_old.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/27287/trunk/matlab/seq/MutSig_2_dev/mini_driver_old.m
+END
+junk_report
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/junk_report
+END
+mini_driver.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/60694/trunk/matlab/seq/MutSig_2_dev/mini_driver.m
+END
+populate_cont_pairs.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/48611/trunk/matlab/seq/MutSig_2_dev/populate_cont_pairs.m
+END
+polyphen_inventory.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/27287/trunk/matlab/seq/MutSig_2_dev/polyphen_inventory.m
+END
+calculate_curve_fast.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/calculate_curve_fast.m
+END
+new_clustering_statistic.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/56326/trunk/matlab/seq/MutSig_2_dev/new_clustering_statistic.m
+END
+run_annotate_with_conservartion.sh~
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/run_annotate_with_conservartion.sh~
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/27227/trunk/matlab/seq/MutSig_2_dev/readme.txt
+END

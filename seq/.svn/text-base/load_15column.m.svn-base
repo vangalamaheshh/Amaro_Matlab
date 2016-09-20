@@ -1,0 +1,6 @@
+function X = load_15column(filename)
+f1 = {'col1','col2','col3','col4','col5','col6','col7',...
+     'col8','col9','col10','col11','col12','col13','col14','col15'};
+f2 =  {'rgrp','namenumber','chr1','start1','end1','str1','qual1',...
+    'chr2','start2','end2','str2','qual2','flip','seq1','seq2'};
+X = rename_field(load_struct(filename,'%f%f%f%f%f%f%f%f%f%f%f%f%f%s%s',0),f1,f2);

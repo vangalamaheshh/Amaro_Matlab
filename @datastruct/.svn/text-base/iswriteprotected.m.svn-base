@@ -1,0 +1,17 @@
+function state = iswriteprotected(D)
+% ISWRITEPROTECTED return STATE = 1 if D is write protected; return STATE -
+% 0 if D is not write protected.
+%
+%       STATE = ISWRITEPROTECTED(D);
+
+%           14 Jan 07  -- jdobson@broad.mit.edu
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+state = getmetadata(D,'WriteProtect');
+if isempty(state)
+    state = 0;
+end

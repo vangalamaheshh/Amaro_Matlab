@@ -1,0 +1,21 @@
+k=1:  1 possible category set
+Best:
+  ACGT[AC->tfs]ACGT   n  5058 N 7807483620  rate 6.48e-07 (1.00x)  ci 6.30e-07 to 6.66e-07
+
+    H_final = 1.425284e-05  std_tot = 9.143684e-09
+
+k=2:  18 possible category sets
+Best:
+  ACGT[AC->t]ACGT     n  3283 N 2602494540  rate 1.26e-06 (1.95x)  ci 1.22e-06 to 1.31e-06
+  ACGT[AC->fs]ACGT    n  1775 N 5204989080  rate 3.41e-07 (0.53x)  ci 3.25e-07 to 3.57e-07
+
+    H_final = 1.405904e-05  std_tot = 3.037743e-08
+
+k=3:  445 possible category sets
+Best:
+  ACGT[C->tfs]G       n  1431 N  138321030  rate 1.03e-05 (16.0x)  ci 9.82e-06 to 1.09e-05
+  ACGT[C->tfs]ACT     n  1886 N 3027249168  rate 6.23e-07 (0.96x)  ci 5.95e-07 to 6.52e-07
+  ACGT[A->tfs]ACGT    n  1741 N 4641913422  rate 3.75e-07 (0.58x)  ci 3.58e-07 to 3.93e-07
+
+    H_final = 1.370966e-05  std_tot = 3.015441e-07
+

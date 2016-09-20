@@ -1,0 +1,6 @@
+left	from	change	right	autoname	name	type
+ACGT	C	t	G	ACGT[C->t]G	CpG_transition	point
+ACGT	C	t	ACT	ACGT[C->t]ACT	other_C:G_transition	point
+ACGT	C	fs	ACGT	ACGT[C->fs]ACGT	C:G_transversion	point
+ACGT	A	tfs	ACGT	ACGT[A->tfs]ACGT	A:T_mutation	point
+ACGT	AC	n	ACGT	null	null	non-point

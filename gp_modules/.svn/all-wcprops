@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/28930/trunk/matlab/gp_modules
+END
+gp_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_stats.m
+END
+query_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/381/trunk/matlab/gp_modules/query_genes.m
+END
+gp_batch_correct.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_batch_correct.m
+END
+gp_scatter_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_scatter_plot.m
+END
+gp_dim_red.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_dim_red.m
+END
+gp_test_vis_cb.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_test_vis_cb.m
+END
+test_gp_scatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_gp_scatter.m
+END
+gp_snp_to_D.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/74/trunk/matlab/gp_modules/gp_snp_to_D.m
+END
+gp_3dheatmap.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_3dheatmap.m
+END
+gp_GISTIC_armfigures.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/118/trunk/matlab/gp_modules/gp_GISTIC_armfigures.m
+END
+test_pnn_xvalidation.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_pnn_xvalidation.m
+END
+gp_snp_subselect.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/84/trunk/matlab/gp_modules/gp_snp_subselect.m
+END
+gp_DtoSNP.zip
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/153/trunk/matlab/gp_modules/gp_DtoSNP.zip
+END
+test_hcl.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_hcl.m
+END
+display_figure.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/display_figure.m
+END
+gp_nc_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_nc_1.m
+END
+test_gp_cluster.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_gp_cluster.m
+END
+gp_clustering_figure.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_clustering_figure.m
+END
+gp_cluster.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_cluster.m
+END
+handle_args.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/28930/trunk/matlab/gp_modules/handle_args.m
+END
+test_gp_gistic.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/264/trunk/matlab/gp_modules/test_gp_gistic.m
+END
+test_gp_snp_batch_correct.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_gp_snp_batch_correct.m
+END
+gp_snp_batch_correct.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_snp_batch_correct.m
+END
+gp_gistic_preprocessing.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/1164/trunk/matlab/gp_modules/gp_gistic_preprocessing.m
+END
+test_gp_pnn.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_gp_pnn.m
+END
+gp_pnn.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_pnn.m
+END
+gp_pnn_xvalidation.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_pnn_xvalidation.m
+END
+gp_write_params.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/83/trunk/matlab/gp_modules/gp_write_params.m
+END
+enum_param.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/enum_param.m
+END
+gp_test_vis.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/76/trunk/matlab/gp_modules/gp_test_vis.m
+END
+gp_gistic_plots.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/211/trunk/matlab/gp_modules/gp_gistic_plots.m
+END
+gp_gistic_from_seg.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1130/trunk/matlab/gp_modules/gp_gistic_from_seg.m
+END
+gp_D_to_snp.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/151/trunk/matlab/gp_modules/gp_D_to_snp.m
+END
+gp_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_plot.m
+END
+test_gp_cluster.1.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/test_gp_cluster.1.m
+END
+gp_gistic.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/809/trunk/matlab/gp_modules/gp_gistic.m
+END
+gp_gistic_preprocessing.070702.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_gistic_preprocessing.070702.m
+END
+gp_no_compile.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_no_compile.m
+END
+test_gp_gistic_preprocessing.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/330/trunk/matlab/gp_modules/test_gp_gistic_preprocessing.m
+END
+gp_gistic2_from_seg.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/28930/trunk/matlab/gp_modules/gp_gistic2_from_seg.m
+END
+gp_query_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/160/trunk/matlab/gp_modules/gp_query_genes.m
+END
+gp_classifier_xvalidation.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gp_classifier_xvalidation.m
+END
+read_params_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/109/trunk/matlab/gp_modules/read_params_file.m
+END
+gp_gistic_core.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/100/trunk/matlab/gp_modules/gp_gistic_core.m
+END
+gistic.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/72/trunk/matlab/gp_modules/gistic.m
+END
+gp_GISTIC_outfiles.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/87/trunk/matlab/gp_modules/gp_GISTIC_outfiles.m
+END

@@ -1,0 +1,15 @@
+function attr = get_attributes(D,field)
+%GET_ATTRIBUTES get the attributes associated with FIELD in datastruct D.
+%
+%
+
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+idx = strmatch(field,D.fieldnames,'exact');
+
+attr = D.fielddata{idx}.Attributes;

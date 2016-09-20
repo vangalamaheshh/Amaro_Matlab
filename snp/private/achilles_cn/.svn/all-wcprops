@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/39914/trunk/matlab/snp/private/achilles_cn
+END
+perform_permutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/perform_permutations.m
+END
+achillesCN_Aviad_101028.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_Aviad_101028.m
+END
+snpD_to_minmax_geneG.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/24852/trunk/matlab/snp/private/achilles_cn/snpD_to_minmax_geneG.m
+END
+match_cell_lines.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/match_cell_lines.m
+END
+countclassperms.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/39914/trunk/matlab/snp/private/achilles_cn/countclassperms.m
+END
+process_cle_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/process_cle_data.m
+END
+achillesCN_AviadX5_101031.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_AviadX5_101031.m
+END
+perform_perms_parallel.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/perform_perms_parallel.m
+END
+achillesCN_true100623_101029.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_true100623_101029.m
+END
+achillesCN_scramblesamps_101019.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_scramblesamps_101019.m
+END
+read_ataris_scores.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/read_ataris_scores.m
+END
+read_genexpr_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/read_genexpr_data.m
+END
+stat_S2N.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/17289/trunk/matlab/snp/private/achilles_cn/stat_S2N.m
+END
+achillesCN_S2N_101015.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_S2N_101015.m
+END
+get_ziggurat_segments.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/get_ziggurat_segments.m
+END
+exactclassperms.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/exactclassperms.m
+END
+permtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/17290/trunk/matlab/snp/private/achilles_cn/permtest.m
+END
+write_multihp_permstats_101031.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/write_multihp_permstats_101031.m
+END
+stat_diffmean.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/17289/trunk/matlab/snp/private/achilles_cn/stat_diffmean.m
+END
+get_clean_D_from_seg.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/get_clean_D_from_seg.m
+END
+checkload_datasets.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/checkload_datasets.m
+END
+snpD_to_geneG.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/39913/trunk/matlab/snp/private/achilles_cn/snpD_to_geneG.m
+END
+hairpin_permtest.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/17290/trunk/matlab/snp/private/achilles_cn/hairpin_permtest.m
+END
+read_hairpin_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/read_hairpin_data.m
+END
+scrambleAchillesGenes.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/24852/trunk/matlab/snp/private/achilles_cn/scrambleAchillesGenes.m
+END
+write_filtered_tabcols.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/write_filtered_tabcols.m
+END
+achillesCN_mingroup7_101012.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/achillesCN_mingroup7_101012.m
+END
+randclassperms.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/39914/trunk/matlab/snp/private/achilles_cn/randclassperms.m
+END
+write_hp_permstats.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/16316/trunk/matlab/snp/private/achilles_cn/write_hp_permstats.m
+END

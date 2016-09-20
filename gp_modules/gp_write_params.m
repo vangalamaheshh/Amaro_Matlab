@@ -1,0 +1,43 @@
+function gp_write_params(method_st,param_struct,prev_params,output_loc,local_copy)
+% ---
+% $Id$
+% $Date: 2007-09-17 15:18:13 -0400 (Mon, 17 Sep 2007) $
+% $LastChangedBy: rameen $
+% $Rev$
+  
+if ~exist('local_copy','var') || isempty(local_copy)
+  local_copy=0;
+end
+
+fid1 = fopen(output_loc,'w');
+if local_copy
+  fid2 = fopen('./parameters.txt','w');
+end
+
+fields = fieldnames(param_struct);
+
+for i = 1:length(fields)
+  cur_ans = getfield(param_struct,fields{i});
+  if ~isempty(cur_ans)
+    fprintf(fid1,'%s\t%s\t%s\n',method_st,fields{i},cur_ans);
+    if local_copy
+      fprintf(fid2,'%s\t%s\t%s\n',method_st,fields{i},cur_ans);
+    end
+  end
+end
+
+if ~isempty(prev_params)
+  for i=1:length(prev_params)
+    fprintf(fid1,'%s\t%s\t%s\n',prev_params(i).module,prev_params(i).param,prev_params(i).value);
+    if local_copy
+      fprintf(fid2,'%s\t%s\t%s\n',prev_params(i).module,prev_params(i).param,prev_params(i).value);
+    end
+  end
+end
+
+
+fclose(fid1);
+if local_copy
+  fclose(fid2);
+end
+

@@ -1,0 +1,4 @@
+# Need to add Nozzle path to both of these commands (-L<nozzle.path>)
+Rscript createReport.R -C"C:/Lee/work/oxoGv3Results/PR_TCGA_HNSC_Capture_trim/allCases.txt" -F"C:/Lee/work/oxoGv3Results/PR_TCGA_HNSC_Capture_trim/figures" -T"C:/Lee/work/oxoGv3Results/PR_TCGA_HNSC_Capture_trim/tables/caseTableData.tsv" -M"C:/Lee/work/oxoGv3Results/PR_TCGA_HNSC_Capture_trim/PR_TCGA_HNSC_Capture_trim.pass.maf.annotated"  -R"C:/Lee/work/oxoGv3Results/PR_TCGA_HNSC_Capture_trim/PR_TCGA_HNSC_Capture_trim.pass.maf.annotated.all.maf.annotated"
+
+Rscript createReport.R -C"C:/Lee/work/oxoGv3Results/HNSC-D6-6517/allCases.txt" -F"C:/Lee/work/oxoGv3Results/HNSC-D6-6517/figures" -T"C:/Lee/work/oxoGv3Results/HNSC-D6-6517/tables/caseTableData.tsv" -M"C:/Lee/work/oxoGv3Results/HNSC-D6-6517/HNSC-D6-6517.pass.maf.annotated"  -R"C:/Lee/work/oxoGv3Results/HNSC-D6-6517/HNSC-D6-6517.pass.maf.annotated.all.maf.annotated"

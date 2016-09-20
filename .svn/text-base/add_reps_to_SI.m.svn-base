@@ -1,0 +1,54 @@
+function SI = add_reps_to_SI(SI,repnames,sifilename)
+%SI = ADD_REPS_TO_SI(SI,REPNAMES,SIFILENAME)
+%
+%   Use REPNAMES returned from FIND_DUPLICATE_SAMPLES to annotate SI struct
+%   with uniqids of other samples that are genomically close.  If
+%   SIFILENAME is given as input, write the annotations to a new sampleinfo file.
+%
+%       Revisions:
+%           6 May 08: Function added  (jdobson@broad.mit.edu)
+%
+%---
+%$ID$
+%$Date$
+%$LastChangedBy$
+%$Rev$
+
+siarrays = arrayfun(@(s) s.array,SI,'UniformOutput',0);
+siuniqueids = arrayfun(@(s) s.uniqid,SI,'UniformOutput',0);
+[SI.duplicates_uniqids] = deal('');
+fldnms = fieldnames(SI);
+SIcell = struct2cell(SI);
+for k = 1:length(repnames)
+    [m,i] = intersect(siarrays,repnames{k});
+    alluniqids = unique(siuniqueids(i))';
+    other_uniqids = cellfun(@(x,y) setdiff(x,y),repmat({alluniqids},length(i),1),siuniqueids(i),...
+        'UniformOutput',0);
+    
+    semi = repmat({' ; '},1,length(alluniqids)-1);
+    texttoadd = cellfun(@(x) reshape([x;semi],1,2*length(x)),other_uniqids,'UniformOutput',0);
+    SIcell(strmatch('duplicates_uniqids',fldnms),i) = ...
+        cellfun(@(x,y) cat(2,x,y),SIcell(strmatch('duplicates_uniqids',fldnms),i)',...
+        cellfun(@(x) [x{:}],texttoadd,'UniformOutput',0),'UniformOutput',0);
+end
+
+SI = cell2struct(SIcell,fldnms,1);
+
+if exist('sifilename','var')
+    
+    if exist(sifilename,'file')
+        input('Filename already exists.  Overwrite file?')
+        
+        if 1==regexp(r,'^[yY]')
+            infofilewrite(sifilename,SI);
+        else
+            warning('Not writing output.  Use ''infofilewrite'' to write SI'); %#ok
+        end
+        
+    else
+        infofilewrite(sifilename,SI);
+    end
+    
+end
+
+    

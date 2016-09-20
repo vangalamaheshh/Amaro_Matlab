@@ -1,0 +1,6 @@
+left	from	change	right	autoname	name	type
+ACGT	C	tfs	G	ACGT[C->tfs]G	CpG	point
+ACGT	C	tfs	ACT	ACGT[C->tfs]ACT	other CG	point
+ACGT	A	tfs	ACGT	ACGT[A->tfs]ACGT	AT	point
+ACGT	AC	i	ACGT	indel	indel	non-point
+ACGT	AC	i	ACGT	null	null	non-point

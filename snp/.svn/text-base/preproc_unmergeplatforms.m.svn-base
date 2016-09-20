@@ -1,0 +1,119 @@
+function Cout = preproc_unmergeplatforms(Cin)
+%
+%
+%       Revisions:
+%           - 2 Nov 07: updated to get platform information from gsupdat;
+%           updated to map mergsupat (rather than supdat) onto unmerged D
+%           structs. histqc field of supdat is formed by adding histqc
+%           fields of supdat and mergsupdat. -- Jen Dobson
+%           (jdobson@broad.mit.edu).
+%
+%           - 5 Nov 07: updated to remove plat info from gsupdat.  (Since
+%           plat info is only a number, don't want to keep it there, since
+%           it depends on the order in which the platforms were merged.)
+%
+%           - 3 Dec 07:  Added datastruct check on Cin.  Jen Dobson
+%           jdobson@broad.mit.edu
+%
+% ---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+%% Get indices and initialize Cout cell of structures
+
+if iscell(Cin)
+    Ctemp = Cin{1};
+    Cin = Ctemp;
+    warning('Cin is a cell array of structures.  Only unmerging first cell')
+end
+
+
+arrayspecific = {'batch','force','core','histqc'};
+
+
+platforms = Cin.gsupdat(find(strcmp(Cin.gsupacc,'PLAT')),:);
+
+
+uplatforms = unique(platforms);
+
+
+fields = fieldnames(Cin);
+
+
+
+for k = 1:length(uplatforms)
+
+    
+    for fld = fields'
+        Cout{k}.(char(fld)) = [];
+    end
+
+    if strmatch(class(Cin),'datastruct')
+        Cout{k} = datastruct(Cout{k});
+    end
+
+end
+
+
+
+
+%% Unmerge
+tok = '///';
+sisarray = {Cin.sis.array};
+
+for k = 1: length(uplatforms)
+
+Cout{k} = reorder_D_rows(Cin,'PLAT',k);
+   
+% 
+%     for fld = intersect(fields',{'dat','affy_calls'})
+%         Cout{k}.(char(fld)) = Cin.(char(fld))(find(platforms==k),:)
+%     end
+% 
+%     for fld = intersect(fields',{'marker','pos','chrn','chr'})
+%         Cout{k}.(char(fld)) = Cin.(char(fld))(find(platforms==k));
+%     end
+%     
+% 
+
+
+
+    if isfield(Cout{k},'gsupacc')  %remove platform info since depends on merge order
+        platrow = strmatch('PLAT',Cout{k}.gsupacc);
+        Cout{k} = reorder_D_sup(Cout{k},'row',setdiff([1:size(Cout{k}.gsupacc,1)],platrow));
+    end
+    
+
+end
+
+
+if isfield(Cin,'sis')
+    umsis = preproc_unmergesis(Cin);
+    for k = 1:length(Cout)
+        Cout{k}.sis = umsis{k};
+    end
+end
+
+if isfield(Cin,'mergsupdat')
+    for k = 1:length(Cout)
+        Cout{k}.supacc = Cin.supacc;
+        Cout{k}.supdesc = Cin.supdesc;
+        Cout{k}.supdat = Cin.mergsupdat(:,:,k);
+        histqcrow = strmatch('histqc',lower(Cin.supacc));
+        if ~isempty(histqcrow)
+            Cout{k}.supdat(histqcrow,:) = Cin.mergsupdat(histqcrow,:) + Cin.supdat(histqcrow,:);
+        end
+        Cout{k} = rmfield(Cout{k},'mergsupdat');
+    end
+end
+
+%Give back original names
+for k = 1:length(uplatforms)
+    Cout{k}.sdesc = {Cout{k}.sis.array};
+end
+
+
+

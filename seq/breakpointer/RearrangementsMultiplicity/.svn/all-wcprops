@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/43907/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity
+END
+joindump.pl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/CancerGenomeAnalysis/!svn/ver/26225/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/joindump.pl
+END
+RearrangementsMultiplicity.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/CancerGenomeAnalysis/!svn/ver/43845/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/RearrangementsMultiplicity.m
+END
+countreads.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/43906/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/countreads.m
+END
+extract_pairs.pl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/CancerGenomeAnalysis/!svn/ver/26225/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/extract_pairs.pl
+END
+fh_CountReadsScatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/CancerGenomeAnalysis/!svn/ver/43906/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/fh_CountReadsScatter.m
+END
+CountReads_gather.pl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/CancerGenomeAnalysis/!svn/ver/30022/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/CountReads_gather.pl
+END
+best_swalign.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CancerGenomeAnalysis/!svn/ver/43831/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/best_swalign.m
+END
+classpair.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/CancerGenomeAnalysis/!svn/ver/43907/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/classpair.m
+END
+fh_RearrangementsMultiplicity.m
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/CancerGenomeAnalysis/!svn/ver/43845/trunk/matlab/seq/breakpointer/RearrangementsMultiplicity/fh_RearrangementsMultiplicity.m
+END

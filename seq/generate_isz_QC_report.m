@@ -1,0 +1,29 @@
+function R = generate_isz_QC_report(T,N,individual_name)
+% Mike Lawrence 2009-10-15
+
+R = [];
+R.individual = repmat({individual_name},T.nlanes+N.nlanes,1);
+R.tn = [repmat({'tumor'},T.nlanes,1);repmat({'normal'},N.nlanes,1)];
+tmp = concat_structs({T.lanes,N.lanes});
+flds1 = {'SM','ID','PU','CN','PL','DT','LB','is_blacklisted'};
+flds2 = {'sample','readgroup','flowcell_lane','center','platform','date','library','is_blacklisted'};
+tmp = keep_fields(tmp,flds1);
+tmp = rename_fields(tmp,flds1,flds2);
+R = merge_structs({R,tmp});
+R.nreads = [T.cov;N.cov];
+R.adjmean = [T.adjmean;N.adjmean];
+R.width = [T.width;N.width];
+R.adjmean_pctdev = [T.adjmean_pctdev;N.adjmean_pctdev];
+R.width_pctdev = [T.width_pctdev;N.width_pctdev];
+good = [T.good;T.nlanes+N.good];
+fewlanes = [T.fewlanes;T.nlanes+N.fewlanes];
+outliers = [T.outliers;T.nlanes+N.outliers];
+blacklisted_outliers = [T.blacklisted_outliers;T.nlanes+N.blacklisted_outliers];
+pardoned = [T.pardoned;T.nlanes+N.pardoned];
+R.judgement = repmat({'LOW_COUNTS'},slength(R),1);
+R.judgement(good) = repmat({'OK'},length(good),1);
+R.judgement(fewlanes) = repmat({'FEW_LANES'},length(fewlanes),1);
+R.judgement(outliers) = repmat({'POSSIBLE_MIXUP'},length(outliers),1);
+R.judgement(blacklisted_outliers) = repmat({'POSSIBLE_MIXUP'},length(blacklisted_outliers),1);
+R.judgement(pardoned) = repmat({'PARDONED_EARLY_LIBRARY'},length(pardoned),1);
+R.is_mixup = strcmp('POSSIBLE_MIXUP',R.judgement);

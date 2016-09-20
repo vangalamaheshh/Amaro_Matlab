@@ -1,0 +1,37 @@
+function d = convert_to_memfield(d,field)
+% CONVERT_TO_MEMFIELD converts disk-stored field of datastruct object D
+% to mem-stored field.
+%
+%       D = CONVERT_TO_MEMFIELD(D,FIELDNAME)
+%
+
+%       Revisions:
+%               22 Jan 08:  Function created by Jen Dobson.
+%               (jdobson@broad.mit.edu)
+%
+%---
+% $Id$
+% $Date: 2011-06-07 18:43:05 -0400 (Tue, 07 Jun 2011) $
+% $LastChangedBy: schum $
+% $Rev$
+
+
+if ~iscell(field)
+    field = {field};
+end
+
+
+for k = 1:length(field)
+    
+    idx = strmatch(field{k},d.fieldnames,'exact');
+
+
+    fielddata = subsref(d,struct('type','.','subs',d.fieldnames{idx}));
+
+    if ~iswriteprotected(d)
+        deleteDfiles(d,field{k});
+    end
+    
+    d.fielddata{idx} = fielddata;
+    d.storagetype{idx} = 'memory';
+end

@@ -1,0 +1,104 @@
+function Dout = check_array_includes(Din,procname)
+%CHECK_ARRAY_INCLUDES find and incorporate array list include information
+%for gistic process.
+%
+%   DOUT = CHECK_ARRAY_INCLUDES(DIN,PROCNAME) finds include data in DIN
+%   relevant to PROCNAME.  The returned data structure DOUT has "-1"
+%   samples removed and current process added to D.procsteps.  An error is
+%   thrown if there is an increase of include number from procstep-1 to
+%   this procstep.  Include values are:
+%
+%               -1 -- sample removed from data structure
+%
+%                0 -- sample "ghosted" -- not included in sample
+%                interdependent analyses (such as calculating batch
+%                correction or using as a normal), but still processed;
+%
+%                1 -- sample included as required by analysis, unless a
+%                flag dictates otherwise, in which case 
+%
+%                2 -- sample forced through analysis 
+
+%      History:
+%
+%           7 Nov 07: Created by Jen Dobson.  (jdobson@broad.mit.edu)
+%
+%---
+% $Id$
+% $Rev$
+% $LastUpdatedBy$
+% $Date$
+
+
+if iscell(Din)
+
+    for k = 1:length(Din)
+
+        thisprocessidx = strmatch(['inc_' procname],Din{k}.supacc);
+        if isempty(thisprocessidx)
+            continue
+        end
+        
+        
+        
+
+        if isfield(Din{k},'procsteps') && ~isempty(Din{k}.procsteps)
+            Din{k}.procsteps = [Din{k}.procsteps procname];
+
+            lastprocessidx = strmatch(['inc_' Din{k}.procsteps{end-1}],Din{k}.supacc);
+        else
+            Din{k}.procsteps = {procname};
+        end
+
+
+
+        Din{k} = reorder_D_cols(Din{k},find(Din{k}.supdat(strmatch(['inc_' procname],Din{k}.supacc),:)>=0));
+
+        if exist('lastprocessidx','var')
+            incldiff = Din{k}.supdat(lastprocessidx,:) - Din{k}.supdat(thisprocessidx,:);
+            illegalincludes = find(incldiff<0);
+            if ~isempty(illegalincludes)
+                Din{k}.supdat(thisprocessidx,illegalincludes) = Din{k}.supdat(lastprocessidx,illegalincludes);
+                warning(['Illegal increment in include data for process: ***  %s  ***  on samples: ' ...
+                    repmat('%s  ',1,length(illegalincludes))],procname,strvcat(Din{k}.sdesc(illegalincludes))')
+            end
+        end
+        
+
+
+
+    end
+
+else
+
+    thisprocessidx = strmatch(['inc_' procname],Din.supacc);
+    if isempty(thisprocessidx)
+        Dout = Din;
+        return
+    end
+
+    if isfield(Din,'procsteps') && ~isempty(Din.procsteps)
+        Din.procsteps = [Din.procsteps procname];
+
+        lastprocessidx = strmatch(['inc_' Din.procsteps{end-1}],Din.supacc);
+    else
+        Din.procsteps = {procname};
+    end
+
+
+
+    Din = reorder_D_cols(Din,find(Din.supdat(strmatch(['inc_' procname],Din.supacc),:)>=0));
+
+    if exist('lastprocessidx','var')
+        incldiff = Din.supdat(lastprocessidx,:) - Din.supdat(thisprocessidx,:);
+        illegalincludes = find(incldiff<0);
+        if ~isempty(illegalincludes)
+            Din.supdat(thisprocessidx,illegalincludes) = Din.supdat(lastprocessidx,illegalincludes);
+            warning(['Illegal increment in include data for process: ***  %s  ***  on samples: ' ...
+                repmat('%s  ',1,length(illegalincludes))],procname,strvcat(Din.sdesc(illegalincludes))')
+        end
+    end
+
+end
+
+Dout = Din;

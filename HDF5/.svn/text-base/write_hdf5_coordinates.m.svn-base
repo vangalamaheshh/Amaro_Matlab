@@ -1,0 +1,114 @@
+function stat = write_hdf5_coordinates(filename,datasetname,dat,colcoord,rowcoord)
+% WRITE_HDF5_CONT_COLS writes columns of contiguous data over a specified range.
+%
+%       STAT = GET_HDF5_CONT_COLS(FILENAME,DATASETNAME,DAT,COLRANGE,COLLENGTH)
+%
+%       Note: When referencing data using the hdf5 C library, use the C convention of
+%       specifying row dimension first, then column dimension.  
+%
+%       
+
+%       Revisions:
+%           20 Nov 07: Function created by Jen Dobson
+%           (jdobson@broad.mit.edu).
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+%% Set the data type to write to file
+
+dtype = class(dat);
+
+switch dtype
+    case 'single'
+        htype = 'H5T_NATIVE_FLOAT';
+    case 'double'
+        htype = 'H5T_NATIVE_DOUBLE';
+    case 'char'
+        htype = 'H5T_NATIVE_CHAR';
+    case 'logical'
+        htype = 'H5T_NATIVE_HBOOL';
+    case 'int16'
+        htype = 'H5T_NATIVE_SHORT';
+    case 'uint16'
+        htype = 'H5T_NATIVE_USHORT';
+    case 'int32'
+        htype = 'H5T_NATIVE_INT';
+    case 'uint32'
+        htype = 'H5T_NATIVE_UINT';
+    case 'int64'
+        htype = 'H5T_NATIVE_LONG';
+    case 'uint64'
+        htype = 'H5T_NATIVE_ULONG';
+    otherwise
+        error('Input variable DAT: Unrecognized class.')
+end
+
+
+%% Open file and create data spaces
+
+file = H5F.open(filename,'H5F_ACC_RDWR','H5P_DEFAULT'); %open with read/write
+dataset = H5D.open(file,datasetname);
+dataspace = H5D.get_space(dataset);
+
+%%%%%% Check coordinate vectors %%%%%%
+if size(colcoord,1) > size(colcoord,2)
+    colcoord = colcoord';
+end
+if size(rowcoord,1) > size(rowcoord,2)
+    rowcoord = rowcoord';
+end
+
+if isempty(colcoord) || isempty(rowcoord)
+    stat = 1;
+    return
+end
+
+
+if size(rowcoord,1) ~= 1
+    error('ROWCOORD must be a vector');
+end
+if size(colcoord,1) ~= 1
+    error('COLCOORD must be a vector');
+end
+
+if ~isequal(size(colcoord),size(rowcoord))
+    error('COLCOORD and ROWCOORD must be same size')
+end
+
+%%%%%%%%make the coord array for data hyperslab%%%%%%%%%%%%%%%%%%%%%%%
+
+coord = [ colcoord-1; rowcoord-1];  %make it into a 2XN array
+%Reminder:  hdf5 libs count down then over, but data is stored transposed
+count = size(dat); 
+
+
+%% write the indexed values
+% (the HDF5 write-by-elements algorithm used in Matlab R2010b is O(N^2),
+% so we break it up into chunks so it runs more like O(N))
+
+% create the memory dataspace
+memspace = H5S.create_simple(2,count,[]);
+
+CHUNKSIZE = 1000; % tuned on R2010B
+for b = 1:CHUNKSIZE:size(dat,2)
+    % calculate end of chunk 
+    e = min(b+CHUNKSIZE-1,size(dat,2));
+    % select the dataset elements (in file) to write
+    H5S.select_elements(dataspace,'H5S_SELECT_SET',coord(:,b:e));
+    % select (contiguous) hyperslab of values in memory
+    H5S.select_hyperslab(memspace,'H5S_SELECT_SET',[0 b-1],[],[1 e-b+1],[]);
+    % write selected values to file
+    H5D.write(dataset,htype,memspace,dataspace,'H5P_DEFAULT',dat);
+end
+
+%% Close resources
+
+H5S.close(dataspace);
+H5S.close(memspace);
+H5D.close(dataset);
+H5F.close(file)
+
+stat = 1;

@@ -1,0 +1,154 @@
+function param_struct = run_gistic_from_seg(base_dir,segfile,markersfile,refgenefile,array_list_file,...
+                                            cnv_file,t_amp,t_del,join_segment_size,ext,qv_thresh,save_seg_data,...
+                                            res,remove_X,focal_analysis,cap_vals,gen_regs_params,...
+                                            genepattern,doubleprec)
+
+%run_gistic_from_seg(base_dir,segfile,markersfile,refgenefile,...
+%   array_list_file,cnv_file,t_amp,t_del,join_segment_size,ext,qv_thresh,...
+%   save_seg_data,res,remove_X,focal_analysis,cap_vals,gen_regs_params,genepattern)
+% RUN_GISTIC -- Perform gistic CORE, gistic OUTFILES, and gistic PLOTS;
+% (gp_gistic without the snp file conversion)
+%
+%[param_struct] = gistic(base_dir,C,segfile,refgenefile,...
+%    cnv_file,array_list_file,t_amp,t_del,jss,ext,segheaderlines)
+%
+%
+%base_dir: required
+%segfile (required; catted segmentation file)
+%refgenefile (required; see: '~gadgetz/projects/snp/data/Refgene/hg16/ucsc_20070112/hg16_20070112.mat')
+%cnv_file  (default: empty)  see:'/xchip/data01/gadgetz/CNV/Xba_Hind_CNV.txt'
+%array_list_file (default: empty, use all)
+%t_amp (default: .1)
+%t_del (default: .1)
+%join_seg_size (join_segment_size; default =5)
+%ext (file extension; default = '')
+%segheaderlines (default = 0);
+%qv_thesh (default = 0.25);
+%res (default = 0.001);
+%remove_X (default = 0)
+%focal_analysis
+%genepattern (default 0): write outputs for genepattern module?
+%
+% ---
+% $Id$
+% $Date: 2010-01-27 17:00:20 -0500 (Wed, 27 Jan 2010) $
+% $LastChangedBy: schum $
+% $Rev$
+
+%% Check inputs
+
+varlist1 = {'base_dir','segfile','markersfile','refgenefile','array_list_file','cnv_file','t_amp','t_del','join_segment_size','ext','qv_thresh','save_seg_data','res','remove_X','focal_analysis','cap_vals','gen_regs_params','genepattern','doubleprec'};
+
+defaults = {'ERR','ERR','ERR','''''','''''','''''','0.1','0.1','5','''''','.25','1','0.001','0','0','[Inf Inf]','[]','0','0'};
+
+required = [1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+for idx = 1:length(varlist1)
+    if required(idx) && (~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')']))
+        error('Required input %s undefined.',varlist1{idx})
+    elseif ~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')'])
+        eval([varlist1{idx} '=' defaults{idx} ';'])
+    end
+end
+
+base_dir = add_slash_if_needed(base_dir);
+
+%% Generate CL
+use_segarray = 0;
+CL=make_D_from_seg(segfile,markersfile,0,use_segarray);
+verbosedisp(CL,30)
+
+%% Remove CNV
+
+verbose('Removing CNVs',10)
+if exist('cnv_file','var') && ~isempty(cnv_file)
+    [CL,nremoved] =remove_cnv(CL,cnv_file);
+    fprintf(1,'Removed %d CNVs from raw data\r\n',nremoved);
+end
+ 
+verbosedisp(CL,30)
+
+% match to array list file befor removing NaNs 
+if exist('array_list_file','var') && ~isempty(array_list_file)
+  AL = read_array_list_file(array_list_file);
+  use_arrays = {AL.array};
+  [Mt,m1,m2]=intersect(use_arrays,CL.sdesc);
+  if ~isunique(m1) || ~isunique(m2)
+    error('either array list or samples are not unique');
+  end
+  if length(m1)==length(use_arrays)
+    verbose(['Matched all ' num2str(length(m1)) ' samples in array list file'],10);
+  else
+    verbose(['Matched ' num2str(length(m1)) ' arrays out of ' num2str(length(use_arrays)) ' in array list file'], ...
+            10);
+  end
+  CL=reorder_D_cols(CL,m2);
+  CL=rmfield_if_exists(CL,'orig');
+end
+verbosedisp(CL,30)
+
+%% Remove NaNs
+% FIX ME : Do not remove NaNs, fix smooth_cbs to handle NaNs
+nan_idx=find(any(isnan(CL.dat),2));
+if ~isempty(nan_idx)
+  verbose(['Removing ' num2str(length(nan_idx)) ' markers with NaNs'],10); 
+  CL=reorder_D_rows(CL,setdiff(1:size(CL.dat,1),nan_idx));
+else
+  verbose('No markers with NaNs... ',10);
+end  
+verbose(['Matrix size ' num2str(size(CL.dat)) ],10);
+
+%% Check if data is log, if not, take log
+
+verbose('Checking if data is log2',10);
+s = nanmean(CL.dat,1);
+s = mean(s);
+if abs(s) >= .5
+    verbose('Computing Log2 of Data',10);
+    CL.dat = log2(CL.dat)-1;
+end
+
+
+%% remove X,Y chromosomes
+if remove_X
+  CL=reorder_D_rows(CL,find(CL.chrn<=22));
+end
+CL=rmfield_if_exists(CL,{'cbs','cbs_rl'});
+
+%% Cap values
+
+CL.dat(CL.dat<-abs(cap_vals(1)))=-(abs(cap_vals(1)));
+CL.dat(CL.dat>cap_vals(2))=cap_vals(2);
+
+%% Join small segments
+
+CL.cbs=CL.dat;
+% error here
+CL=smooth_cbs(CL,join_segment_size);
+CL.dat=CL.cbs;
+CL=rmfield_if_exists(CL,{'cbs','cbs_rl'});
+verbosedisp(CL,30)
+if ~doubleprec
+    CL.dat = single(CL.dat);
+end
+
+
+%% subtract median
+CL.medians=median(CL.dat((CL.chrn<=22),:),1);
+CL.dat=CL.dat-repmat(CL.medians,size(CL.dat,1),1);
+
+%% save segmented data
+if save_seg_data && ~genepattern
+  seg_data_file = [base_dir 'segmented_data' ext '.mat'];
+  save_D(seg_data_file,CL,'-v7.3');  %%% Removed due to problem with Broad and Stanford .chr field
+end
+%%
+
+if isempty(res)
+    res = .01./length(CL.sdesc);
+end
+
+%% Run GISTIC
+%param_struct = run_gistic_lite(base_dir,CL,t_amp,t_del,ext,qv_thresh,res);
+param_struct = run_gistic(base_dir,CL,refgenefile,array_list_file,t_amp,t_del,ext,qv_thresh,res,focal_analysis,gen_regs_params,genepattern);
+

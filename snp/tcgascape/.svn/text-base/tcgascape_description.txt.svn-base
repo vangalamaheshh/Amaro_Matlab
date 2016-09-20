@@ -1,0 +1,33 @@
+<p>
+This portal is designed to facilitate the use and understanding of high resolution copy number data amassed from cancer samples in the <a href='http://cancergenome.nih.gov/'>TCGA</a>. All data in this portal were generated at the <a href='http://www.broadinstitute.org/collaboration/gcc/'>Broad Institute TCGA Genome Characterization Center</a>. This portal is modeled after <a href='http://www.broadinstitute.org/tumorscape/'>Tumorscape</a> which contains copy number data from non-TCGA projects (<a href='http://www.nature.com/nature/journal/v463/n7283/full/nature08822.html'>Beroukhim et al., 2010</a>).
+</p>
+<p>
+To identify copy number alterations tumors were profiled on <a href='http://www.affymetrix.com/browse/products.jsp?productId=131533&navMode=34000&navAction=jump&aId=productsNav#1_1'>SNP 6.0 arrays</a>. Segmented copy number data were generated using the method described in Tabak et al (in preparation) GISTIC 2.0 analyses is used to identify all significant reoccurring copy number alterations (<a href='http://genomebiology.com/content/12/4/R41'>Mermel et al., 2011</a>).
+</p>
+<p>
+The following functionalities are supported:
+</p>
+<ul>
+<li>
+Gene-level Analysis: One can query the level and significance of copy number alterations affecting any gene listed in Refseq (or miRNAs). Click "Analyses", then "by Gene".
+</li>
+<li>
+Analysis by cancer type: One can query the most significant regions of amplification and deletion in individual cancer types. Click "Analyses", then "by Cancer Type".
+</li>
+<li>
+Download/Browse data: Data and a user guide to this portal are available for download by clicking "Browse data" and then "Download". In addition you can currently browse the full segmented copy-number data using the <a href='http://www.broadinstitute.org/igv'>Integrative Genomics Viewer</a> (IGV) by clicking "Analyses", "by Cancer Type", choosing the data set you are interested in viewing, and then clicking the "Peak Region" links under the "Amplifications" or "Deletions" tabs. The IGV data have been capped to match the limits used in the GISTIC analysis of the data.
+</li>
+<li>
+Analysis on snapshots of TCGA data: Users can search the most current data available, previous versions of the data set, or data sets in publications of TCGA data.
+</li>
+</ul>
+<p>
+The copy number data on this portal are constantly being refined to remove artifacts and noise. Should you find an unusual feature in the data, please check later data sets to confirm its veracity before reaching any conclusions.
+<p>
+<b>Note:</b> This site does not currently support Google Chrome web browsers. It is best viewed with <a href='http://www.mozilla.org/en-US/firefox/new/'>Firefox</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> browsers. 
+</p>
+<p>
+For a more detailed description of the methods used to analyze these data, please see (<a href='http://genomebiology.com/content/12/4/R41'>Mermel et al., 2011</a>).
+</p>
+<p>
+TCGA Copy Number Portal was created by <a href='http://www.broad.mit.edu/'>The Broad Institute of MIT and Harvard</a>. Development of the portal and data curation was performed by the portal team of The Broad Institute and Dana-Farber Cancer Institute.

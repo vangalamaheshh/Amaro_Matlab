@@ -1,0 +1,25 @@
+GISTIC 2.xx release history (trunk)
+
+2.00.18546 (2011-03-24)  - initial source code release to genome biology
+2.01.19298 (2011-04-20)  - removed dependencies on external files on the Broad filesystem
+2.02.20156 (2011-05-03)  - added arm level peeloff option for peak resolution
+2.029.20718 (2011-05-18) - fixed data-dependent gene gistic bug
+2.03.21133 (2011-05-23)  - modified SegArray so that large "across the grain" operations do not take as much memory
+2.0.4 (2011-06-08)       - fixed a SegArray issue with logical indexing, SegArray version 1.02, new <maj>.<min>.<bugfix> version numbering
+2.0.5 (2011-07-01)       - fixed remove_cnv function so that Mac-formatted CNV files work properly
+2.0.6 (2011-07-05)       - additional patch to remove_cnv to work with the mixed line delimiter conventions used in the "combined verified" CNV lists
+2.0.7 (2011-07-19)       - output changes: added prefixed "base name"; shortened and unified some output names; gene gistic deletion plot is gene gistic q-value; fully compressed gene tables (one row per gene); amp/del gene lists are sorted by residual q-values  
+2.0.8 (2011-08-03)	     - smoothing (interpolation) of gene gistic deletion q-plot; fixes to scales on q-plots; some factoring of code in gistic_plots
+2.0.9 (2011-08-04)       - fixed issues with plots introduced with version 2.0.8
+2.0.10 (2011-09-01)      - misc. bug fixes: (1) broad length command line argument now works in gp_gistic2_from_seg; (2) remove_cnv now works with pathological mixed-platform input files; (3) run_gistic2_from_seg throws exception when all the data is eliminated; (4) gen_gistic2_depend_links updated to include interpolate_gene_scores.m
+2.0.12 (2011-10-18)	     - GenePattern branch created. Bug fix for detecting by-marker CNV lists in remove_cnv. Copyright notices in all source code. The scores.gistic output reflects interpolated gene gistic deletion plot. bug fixed in write_gene_table where it randomly removed genes from the output that it (mistakenly) thought were on the X chromosome.
+2.0.12.1 (2011-11-23)	 - minor SegArray memory optimization; fix "bad chromosome" error message in make_D_from_seg
+2.0.13 (2011-11-30)	     - (1) fixed dependency on alphabetized-by-symb refgene; (2) consistent q-values in all_lesions output; (3) fix intermittent 'no mtimes for SegArray' bug in plot_snp_score; (4) write out gistic_inputs.mat for reproducibility
+2.0.14 (2011-12-12)      - (1) fixed issues where all q-values are zero for either amps or dels; (2) fix issues where some samples have no events; (3) fix smooth_gene_scores for capseg case (no intergenic markers); (4) messages less cbs chatter and gistic completion messages; (5) optimize gene_score_permutations for large number of samples; (6) fix two SegArray fencepost issues
+2.0.15 (2012-01-09)      - (1) fixed fencepost bug in gene score interpolation; (2) minor tweaks to gistic_plots
+2.0.16 (2012-05-07)	 - Can read Macintosh generated seg file, broad analysis safe for data sets with few broad events, many miscellaneous bug fixes. 
+2.0.16a (2012-08-17)	 - minor fixes: make_D_from_seg invalid chromosome message error; identify_peaks_by_arbitration issue with peak at end of chromosome
+2.0.17 (2012-09-11)	 - memory and performance optimization of peak identification code. SegArray version 1.06 with some Mex files added to improve performance. Fix gistic_plots chromosome shading for q-value 0. 
+2.0.17a (2012-10-15)	 - fix bug in 2.0.17 where output file "raw_copy_number.pdf" was being named "[pathname '.pdf']"
+2.0.18 (2013-07-26)	 - Add gene_collapse_method parameter to allow control of marker-to-gene compression method. Eliminate dependence on ps2pdf function which has hardwired server paths. Allow asymmetric cap.
+2.0.19 (2013-09-18)	 - Minor bug fixes: (1) limit absurdly high CN values to +/- 1e6 in smooth_cbs(); (2) fix line numbers reported by make_D_from_seg() when segment shortened to 0 markers; (3) allow single- and zero-marker arms in find_med_chrarm() for broad analysis.

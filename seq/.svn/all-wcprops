@@ -1,0 +1,5633 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CancerGenomeAnalysis/!svn/ver/61034/trunk/matlab/seq
+END
+get_chrcount.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/46109/trunk/matlab/seq/get_chrcount.m
+END
+MakeLanetable.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1653/trunk/matlab/seq/MakeLanetable.m
+END
+dRanger_write_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/30161/trunk/matlab/seq/dRanger_write_report.m
+END
+dRanger_find_densities.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dRanger_find_densities.m
+END
+mutsig_S2N.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/33552/trunk/matlab/seq/mutsig_S2N.m
+END
+surveyfh.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/26736/trunk/matlab/seq/surveyfh.pl
+END
+transcript_length.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/transcript_length.m
+END
+categ2wig.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/categ2wig.pl
+END
+mutation_spectrum_3d_barplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/36163/trunk/matlab/seq/mutation_spectrum_3d_barplot.m
+END
+report_NMF_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/29211/trunk/matlab/seq/report_NMF_results.m
+END
+convert_varmus_mutlist.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/40618/trunk/matlab/seq/convert_varmus_mutlist.m
+END
+calculate_significance.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/52181/trunk/matlab/seq/calculate_significance.m
+END
+dRanger_load_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/dRanger_load_results.m
+END
+ReferenceInfoObj.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/42581/trunk/matlab/seq/ReferenceInfoObj.m
+END
+get_nsil_nnon_from_mafstruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/10277/trunk/matlab/seq/get_nsil_nnon_from_mafstruct.m
+END
+report_insert_size_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/report_insert_size_stats.m
+END
+temp_stick_script_3.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/temp_stick_script_3.m
+END
+collapse_context_and_effect_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/60692/trunk/matlab/seq/collapse_context_and_effect_categories.m
+END
+match_genelists.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/14234/trunk/matlab/seq/match_genelists.m
+END
+mutsig_analysis.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/32490/trunk/matlab/seq/mutsig_analysis.m
+END
+calcsig_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/calcsig_v2.m
+END
+load_tabulated_TN_cov.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/6786/trunk/matlab/seq/load_tabulated_TN_cov.m
+END
+genome_region.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/60950/trunk/matlab/seq/genome_region.m
+END
+load_and_trim_454_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/18407/trunk/matlab/seq/load_and_trim_454_data.m
+END
+load_mutation_spectrum_raw_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/17545/trunk/matlab/seq/load_mutation_spectrum_raw_data.m
+END
+dRangerPR.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/dRangerPR.m
+END
+convert_indel_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/convert_indel_data.m
+END
+classify_muts.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/34953/trunk/matlab/seq/classify_muts.m
+END
+qscatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/56396/trunk/matlab/seq/qscatter.m
+END
+NT3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/NT3.txt
+END
+plot_segfile_horiz.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/plot_segfile_horiz.m
+END
+extract_from_fwb.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/18833/trunk/matlab/seq/extract_from_fwb.m
+END
+dRanger_extract_somatic.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/dRanger_extract_somatic.m
+END
+dRanger_bridgepairs_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/dRanger_bridgepairs_OLD.m
+END
+analyze_silent_nonsilent_ratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/34715/trunk/matlab/seq/analyze_silent_nonsilent_ratios.m
+END
+targcovpct.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/targcovpct.pl
+END
+map_categories_to_65.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/33075/trunk/matlab/seq/map_categories_to_65.m
+END
+bam.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CancerGenomeAnalysis/!svn/ver/8001/trunk/matlab/seq/bam.m
+END
+load_coverage1040.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/load_coverage1040.m
+END
+process_bkpt_TN.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1375/trunk/matlab/seq/process_bkpt_TN.m
+END
+collapse_coverage_to_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/collapse_coverage_to_genes.m
+END
+load_gene_lengths.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/load_gene_lengths.m
+END
+projection_convolutions_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/projection_convolutions_fast.c
+END
+dRanger_intersect.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/16214/trunk/matlab/seq/dRanger_intersect.m
+END
+MEL-0074.dRanger_results.detail.all.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/7895/trunk/matlab/seq/MEL-0074.dRanger_results.detail.all.txt
+END
+check_for_absolute_segs.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/31144/trunk/matlab/seq/check_for_absolute_segs.m
+END
+check_isz.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/check_isz.m
+END
+load_gistic_horiz_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/56396/trunk/matlab/seq/load_gistic_horiz_table.m
+END
+load_cen.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/11929/trunk/matlab/seq/load_cen.m
+END
+mergeStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/56915/trunk/matlab/seq/mergeStruct.m
+END
+draw_nmf_radial_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/draw_nmf_radial_plot.m
+END
+load_segfile_as_segseq_mat.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/28440/trunk/matlab/seq/load_segfile_as_segseq_mat.m
+END
+dRanger_draw_circosXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/41322/trunk/matlab/seq/dRanger_draw_circosXXX.m
+END
+draw_primerplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/8298/trunk/matlab/seq/draw_primerplot.m
+END
+categ2wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/categ2wig.m
+END
+identify_DNPs_in_maf_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/14952/trunk/matlab/seq/identify_DNPs_in_maf_struct.m
+END
+load_tr_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/load_tr_data.m
+END
+dRanger_design_primers_for_rearrangements.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/15764/trunk/matlab/seq/dRanger_design_primers_for_rearrangements.m
+END
+analyze_CpG_island_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/10277/trunk/matlab/seq/analyze_CpG_island_data.m
+END
+categs_CpG_CG_AT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/6897/trunk/matlab/seq/categs_CpG_CG_AT.txt
+END
+indel_to_tcgamaf.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/9471/trunk/matlab/seq/indel_to_tcgamaf.m
+END
+load_bygene_total_and_maf.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/load_bygene_total_and_maf.m
+END
+mutrate.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/17250/trunk/matlab/seq/mutrate.m
+END
+dRanger.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger.m
+END
+analyze_gene_gene_correlations.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/32491/trunk/matlab/seq/analyze_gene_gene_correlations.m
+END
+collapse_genes_to_coding_strand.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/29174/trunk/matlab/seq/collapse_genes_to_coding_strand.m
+END
+categs_CpGtransit_otherCGtransit_CGtransver_ATmut_Indel_Null.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/CancerGenomeAnalysis/!svn/ver/12840/trunk/matlab/seq/categs_CpGtransit_otherCGtransit_CGtransver_ATmut_Indel_Null.txt
+END
+strfindk.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/35489/trunk/matlab/seq/strfindk.m
+END
+load_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/61034/trunk/matlab/seq/load_table.m
+END
+collapse_mutation_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/collapse_mutation_categories.m
+END
+get_calls_at_positions.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/60406/trunk/matlab/seq/get_calls_at_positions.m
+END
+align_reads2.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/7723/trunk/matlab/seq/align_reads2.m
+END
+permute_sample_subsets.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/permute_sample_subsets.m
+END
+dRanger_blast_filter_process_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/dRanger_blast_filter_process_results.m
+END
+align_each_bkpt3.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/6571/trunk/matlab/seq/align_each_bkpt3.pl
+END
+SegSeqRun.csh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/10658/trunk/matlab/seq/SegSeqRun.csh
+END
+load_fasta.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_fasta.m
+END
+mutx.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/mutx.m
+END
+get_library_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1454/trunk/matlab/seq/get_library_list.m
+END
+annotate_M_calls.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3096/trunk/matlab/seq/annotate_M_calls.m
+END
+convert_chr_backXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/convert_chr_backXXX.m
+END
+MutSigCV_v1_0_0.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/56910/trunk/matlab/seq/MutSigCV_v1_0_0.m
+END
+mutsig_simulator.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/30396/trunk/matlab/seq/mutsig_simulator.m
+END
+plot_seg.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/57981/trunk/matlab/seq/plot_seg.m
+END
+process_capture_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/process_capture_coverage.m
+END
+segseq_run_sample.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/28128/trunk/matlab/seq/segseq_run_sample.m
+END
+load_fastq.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/load_fastq.m
+END
+generate_fastb_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/generate_fastb_fname.m
+END
+buildbam3.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6507/trunk/matlab/seq/buildbam3.pl
+END
+capture_prepare.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/capture_prepare.m
+END
+output_gene_sample_coverage_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/28334/trunk/matlab/seq/output_gene_sample_coverage_table.m
+END
+projection_1d_convolutions.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/projection_1d_convolutions.m
+END
+dRanger_calculate_weirdpair_cutoff_from_isz.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/CancerGenomeAnalysis/!svn/ver/17070/trunk/matlab/seq/dRanger_calculate_weirdpair_cutoff_from_isz.m
+END
+lego.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/53831/trunk/matlab/seq/lego.m
+END
+load_gsea_collection.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/35260/trunk/matlab/seq/load_gsea_collection.m
+END
+load_miRNA_database.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_miRNA_database.m
+END
+test_index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/13056/trunk/matlab/seq/test_index.txt
+END
+load_TN_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/load_TN_coverage.m
+END
+preprocess_indel.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/9668/trunk/matlab/seq/preprocess_indel.m
+END
+discordup_filter.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/36996/trunk/matlab/seq/discordup_filter.m
+END
+get_TN_coverage_from_cbb.pl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1612/trunk/matlab/seq/get_TN_coverage_from_cbb.pl
+END
+generate_categ_mmexpr_prepare.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_mmexpr_prepare.m
+END
+get_mutrates.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/get_mutrates.m
+END
+preprocess_expression.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/preprocess_expression.m
+END
+find_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/find_regions.m
+END
+nuc1.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CancerGenomeAnalysis/!svn/ver/4229/trunk/matlab/seq/nuc1.m
+END
+num.mixups.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/10277/trunk/matlab/seq/num.mixups.txt
+END
+mutsig_load.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/38585/trunk/matlab/seq/mutsig_load.m
+END
+output_sample_sig_gene_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/48360/trunk/matlab/seq/output_sample_sig_gene_table.m
+END
+accumcols.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/9908/trunk/matlab/seq/accumcols.m
+END
+dRanger_blast_filter.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/dRanger_blast_filter.m
+END
+calculate_power_per_gene.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/28429/trunk/matlab/seq/calculate_power_per_gene.m
+END
+use_extrap_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/use_extrap_rates.m
+END
+create_gbrowse_qqplots.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/56507/trunk/matlab/seq/create_gbrowse_qqplots.m
+END
+scatter_somcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/scatter_somcall.m
+END
+fh_dRanger2VCF.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/21750/trunk/matlab/seq/fh_dRanger2VCF.m
+END
+dRanger_check_primers.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/8559/trunk/matlab/seq/dRanger_check_primers.m
+END
+ideogram.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/ideogram.conf
+END
+convert_target_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/convert_target_list.m
+END
+maf_to_M.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/maf_to_M.m
+END
+generate_categ_effect29.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/60950/trunk/matlab/seq/generate_categ_effect29.m
+END
+calculate_x_and_X_tables.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/calculate_x_and_X_tables.m
+END
+categs_CpG_CG_AT_Indel.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/12840/trunk/matlab/seq/categs_CpG_CG_AT_Indel.txt
+END
+categs_CpG_CG_AT.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/6897/trunk/matlab/seq/categs_CpG_CG_AT.m
+END
+SegSeqPreprocess.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/28786/trunk/matlab/seq/SegSeqPreprocess.m
+END
+load_fastb.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_fastb.m
+END
+sumchunks.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1851/trunk/matlab/seq/sumchunks.pl
+END
+analyze_mutation_vicinity.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/10134/trunk/matlab/seq/analyze_mutation_vicinity.m
+END
+load_track.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/21177/trunk/matlab/seq/load_track.m
+END
+generate_categ_zonestrand.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/9680/trunk/matlab/seq/generate_categ_zonestrand.m
+END
+dRangerRun_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/2717/trunk/matlab/seq/dRangerRun_OLD.m
+END
+load_dbSNP.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/28933/trunk/matlab/seq/load_dbSNP.m
+END
+draw_context_plot_per_sample.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/13655/trunk/matlab/seq/draw_context_plot_per_sample.m
+END
+MutSigCV_v1_0_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/56910/trunk/matlab/seq/MutSigCV_v1_0_1.m
+END
+find_connected_components.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/9069/trunk/matlab/seq/find_connected_components.m
+END
+dRanger_add_filtering_from_bam_part2.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/4931/trunk/matlab/seq/dRanger_add_filtering_from_bam_part2.m
+END
+load_mutsig.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/load_mutsig.m
+END
+add_helper_is_fields.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/50477/trunk/matlab/seq/add_helper_is_fields.m
+END
+load_lanelist_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/load_lanelist_OLD.m
+END
+generate_categ_effect.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/19242/trunk/matlab/seq/generate_categ_effect.m
+END
+calculate_TCC_matrix.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/calculate_TCC_matrix.m
+END
+legomaf.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/53774/trunk/matlab/seq/legomaf.m
+END
+get_cons46.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/get_cons46.m
+END
+scatter_width_vs_mean.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/scatter_width_vs_mean.m
+END
+loadCoverageFromWiggle.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/loadCoverageFromWiggle.m
+END
+extract_region_coverage_from_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/extract_region_coverage_from_wig.m
+END
+conv_s_ns.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/20445/trunk/matlab/seq/conv_s_ns.m
+END
+get_chromosome_length_from_genome_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/18559/trunk/matlab/seq/get_chromosome_length_from_genome_file.m
+END
+evaluate_cons.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/evaluate_cons.m
+END
+crawl_picard.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/27204/trunk/matlab/seq/crawl_picard.m
+END
+fh_MutSigPreprocess.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/52957/trunk/matlab/seq/fh_MutSigPreprocess.m
+END
+mutfig.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/55327/trunk/matlab/seq/mutfig.m
+END
+align_each_bkpt4.pl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/10866/trunk/matlab/seq/align_each_bkpt4.pl
+END
+load_isz_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2654/trunk/matlab/seq/load_isz_data.m
+END
+make_barebones.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/make_barebones.m
+END
+simple_calc_rates.v1.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/simple_calc_rates.v1.m
+END
+generate_ambig_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/generate_ambig_fname.m
+END
+neighborhood_mutsig.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/47377/trunk/matlab/seq/neighborhood_mutsig.m
+END
+fh_dRangerPreprocessGather.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/40845/trunk/matlab/seq/fh_dRangerPreprocessGather.m
+END
+collapse_1885_to_192x5.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/collapse_1885_to_192x5.m
+END
+sum_tabulated_TN_cov.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/6507/trunk/matlab/seq/sum_tabulated_TN_cov.m
+END
+generate_illogicals_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/generate_illogicals_fname.m
+END
+load_all_mutation_data2.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/load_all_mutation_data2.m
+END
+extract_from_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/41642/trunk/matlab/seq/extract_from_wig.m
+END
+nuc2.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CancerGenomeAnalysis/!svn/ver/8905/trunk/matlab/seq/nuc2.m
+END
+gather_indels.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/3497/trunk/matlab/seq/gather_indels.m
+END
+draw_shape.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/draw_shape.m
+END
+display_mutation_bargraph2.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/34946/trunk/matlab/seq/display_mutation_bargraph2.m
+END
+crawl_firehose_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/26736/trunk/matlab/seq/crawl_firehose_2.m
+END
+CoverageByBaseAndStrand.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/CoverageByBaseAndStrand.m
+END
+make_covh5.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/make_covh5.m
+END
+getdict.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/3640/trunk/matlab/seq/getdict.m
+END
+aggregate_chunks_to_arms.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1454/trunk/matlab/seq/aggregate_chunks_to_arms.m
+END
+coverage_gather.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/59215/trunk/matlab/seq/coverage_gather.m
+END
+CoverageByLane.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/CoverageByLane.m
+END
+annotate_maflite_GAF.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/17185/trunk/matlab/seq/annotate_maflite_GAF.m
+END
+getcoloredtips.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/6427/trunk/matlab/seq/getcoloredtips.m
+END
+process_seekseq_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/15612/trunk/matlab/seq/process_seekseq_data.m
+END
+dRangerFilter.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/dRangerFilter.m
+END
+get_context1040.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/get_context1040.m
+END
+mutsig_analysis_and_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/mutsig_analysis_and_report.m
+END
+create_MutSig_reference_files.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/41614/trunk/matlab/seq/create_MutSig_reference_files.m
+END
+multifind.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/multifind.m
+END
+crawl_firehose.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/26736/trunk/matlab/seq/crawl_firehose.m
+END
+segseq_preprocess.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/28018/trunk/matlab/seq/segseq_preprocess.m
+END
+dRanger_find_complex_events.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/8559/trunk/matlab/seq/dRanger_find_complex_events.m
+END
+annotate_site.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/9134/trunk/matlab/seq/annotate_site.m
+END
+matrix2lego.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/53776/trunk/matlab/seq/matrix2lego.m
+END
+find_references_that_overlap_target.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/find_references_that_overlap_target.m
+END
+draw_context_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/13613/trunk/matlab/seq/draw_context_plot.m
+END
+draw_multichr_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/33564/trunk/matlab/seq/draw_multichr_plot.m
+END
+bsub_mutsig_scatter_gather.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/60658/trunk/matlab/seq/bsub_mutsig_scatter_gather.m
+END
+dRangerPPR.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1851/trunk/matlab/seq/dRangerPPR.m
+END
+cr.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CancerGenomeAnalysis/!svn/ver/8213/trunk/matlab/seq/cr.m
+END
+find_good_names_for_mutation_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/17013/trunk/matlab/seq/find_good_names_for_mutation_categories.m
+END
+Convert_dbSNP.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2885/trunk/matlab/seq/Convert_dbSNP.m
+END
+neighborhood_mutsig_fromM_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/47855/trunk/matlab/seq/neighborhood_mutsig_fromM_v2.m
+END
+new_test_somatic.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3096/trunk/matlab/seq/new_test_somatic.m
+END
+make_lanelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/make_lanelist.m
+END
+riker_make_freeze.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/8559/trunk/matlab/seq/riker_make_freeze.m
+END
+tabulate_TN_cov.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6460/trunk/matlab/seq/tabulate_TN_cov.m
+END
+ibp.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CancerGenomeAnalysis/!svn/ver/7357/trunk/matlab/seq/ibp.m
+END
+my_nt2aa.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/my_nt2aa.m
+END
+dumpscript.csh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dumpscript.csh
+END
+map_mutations_to_targets.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/map_mutations_to_targets.m
+END
+radial_spectrum_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/radial_spectrum_plot.m
+END
+plot_insert_size_by_flowcell.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/plot_insert_size_by_flowcell.m
+END
+open_BAM_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/46219/trunk/matlab/seq/open_BAM_file.m
+END
+load_capture_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/4229/trunk/matlab/seq/load_capture_stats.m
+END
+load_region_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/load_region_file.m
+END
+extract_split_reads.pl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/7034/trunk/matlab/seq/extract_split_reads.pl
+END
+parse_qltout.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/parse_qltout.m
+END
+create_summed_FWB_coverage_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/49225/trunk/matlab/seq/create_summed_FWB_coverage_file.m
+END
+run_MutSigCV.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/60671/trunk/matlab/seq/run_MutSigCV.m
+END
+draw_CpG_island_rate_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/draw_CpG_island_rate_plot.m
+END
+sam-1.49.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/43740/trunk/matlab/seq/sam-1.49.jar
+END
+fh_CreateCircosPlotXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/41322/trunk/matlab/seq/fh_CreateCircosPlotXXX.m
+END
+analyze_intron_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/analyze_intron_rates.m
+END
+interpret_build.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/25270/trunk/matlab/seq/interpret_build.m
+END
+update_bamlist.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/48551/trunk/matlab/seq/update_bamlist.m
+END
+generate_alignment_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/generate_alignment_fname.m
+END
+find_duplicate_samples.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/52561/trunk/matlab/seq/find_duplicate_samples.m
+END
+extract_from_fwb_and_collapse.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/extract_from_fwb_and_collapse.m
+END
+capture_covdump.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/4931/trunk/matlab/seq/capture_covdump.m
+END
+load_S_perlane_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1653/trunk/matlab/seq/load_S_perlane_data.m
+END
+draw_gene_bargraph.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_gene_bargraph.m
+END
+load_chrcen.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/load_chrcen.m
+END
+simple_preprocess_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/32208/trunk/matlab/seq/simple_preprocess_mutations.m
+END
+pipeline.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/pipeline.m
+END
+get_coverage_stats_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/get_coverage_stats_OLD.m
+END
+map_to_intervals.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/2288/trunk/matlab/seq/map_to_intervals.m
+END
+categs_CpGtransit_otherCGtransit_CGtransver_ATmut_IndelAndNull.txt
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/CancerGenomeAnalysis/!svn/ver/12840/trunk/matlab/seq/categs_CpGtransit_otherCGtransit_CGtransver_ATmut_IndelAndNull.txt
+END
+chrom2num.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/21522/trunk/matlab/seq/chrom2num.m
+END
+num2chrom.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/21684/trunk/matlab/seq/num2chrom.m
+END
+find_DNP_in_refseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/find_DNP_in_refseq.m
+END
+filter_out_CpCA_artifact.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/filter_out_CpCA_artifact.m
+END
+get_longnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/60657/trunk/matlab/seq/get_longnames.m
+END
+compact_load_mutdata_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/compact_load_mutdata_2.m
+END
+prepare_for_silent_analysis.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/23138/trunk/matlab/seq/prepare_for_silent_analysis.m
+END
+load_GC_perlane_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1484/trunk/matlab/seq/load_GC_perlane_data.m
+END
+survey_all_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/survey_all_mutations.m
+END
+somcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/2887/trunk/matlab/seq/somcall.m
+END
+estimate_OV_mutation_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/3611/trunk/matlab/seq/estimate_OV_mutation_rates.m
+END
+draw_Ffit_Fobs_volcano_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/30148/trunk/matlab/seq/draw_Ffit_Fobs_volcano_plot.m
+END
+sum_wigs.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/5664/trunk/matlab/seq/sum_wigs.m
+END
+dRanger_guess_junction_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/dRanger_guess_junction_OLD.m
+END
+load_dRanger_input.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/7896/trunk/matlab/seq/load_dRanger_input.m
+END
+load_cons.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_cons.m
+END
+fh_InsertSizeByLaneGather.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/3135/trunk/matlab/seq/fh_InsertSizeByLaneGather.m
+END
+analyze_gene_gene_correlations_OLD_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/26654/trunk/matlab/seq/analyze_gene_gene_correlations_OLD_2.m
+END
+classify_muts_GAF.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/17240/trunk/matlab/seq/classify_muts_GAF.m
+END
+mutation_spectra_pca_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/mutation_spectra_pca_plot.m
+END
+dRanger_20090326.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_20090326.m
+END
+fishreads.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/fishreads.m
+END
+dist2annot3.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/22718/trunk/matlab/seq/dist2annot3.m
+END
+categs_CpGtransit_otherCGtransit_CGtransver_ATmut_Null.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/CancerGenomeAnalysis/!svn/ver/14794/trunk/matlab/seq/categs_CpGtransit_otherCGtransit_CGtransver_ATmut_Null.txt
+END
+estimate_breakpoint2.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/6588/trunk/matlab/seq/estimate_breakpoint2.m
+END
+gaussian_BMR_sig.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/gaussian_BMR_sig.m
+END
+save_fasta.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/save_fasta.m
+END
+reshape_TCC_to_3N_breakdown.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/reshape_TCC_to_3N_breakdown.m
+END
+find_significant_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/50173/trunk/matlab/seq/find_significant_genes.m
+END
+ExtractUnalignedReads.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/ExtractUnalignedReads.m
+END
+dRanger_examine_twinned_breakpoints.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/18397/trunk/matlab/seq/dRanger_examine_twinned_breakpoints.m
+END
+closepair.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/closepair.m
+END
+get_gc_content.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/41596/trunk/matlab/seq/get_gc_content.m
+END
+segseq_run_each_flowcell.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/10801/trunk/matlab/seq/segseq_run_each_flowcell.m
+END
+process_all_OV_mutation_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/process_all_OV_mutation_data.m
+END
+load_refseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/load_refseq.m
+END
+load_target_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/43993/trunk/matlab/seq/load_target_file.m
+END
+count_mf_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/count_mf_coverage.m
+END
+ctreads.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/4252/trunk/matlab/seq/ctreads.m
+END
+apply_aliases.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/apply_aliases.m
+END
+my_dendrogram.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/7357/trunk/matlab/seq/my_dendrogram.m
+END
+collapse_categories_to_65_tr.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/29057/trunk/matlab/seq/collapse_categories_to_65_tr.m
+END
+process_3N_breakdown_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/process_3N_breakdown_stats.m
+END
+colors.conf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/colors.conf
+END
+find_significant_genesets.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/27274/trunk/matlab/seq/find_significant_genesets.m
+END
+find_insertions.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/8031/trunk/matlab/seq/find_insertions.m
+END
+legomafs.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/53775/trunk/matlab/seq/legomafs.m
+END
+plot_rate_stdev.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/plot_rate_stdev.m
+END
+projection_convolutions.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/52574/trunk/matlab/seq/projection_convolutions.m
+END
+get_covered_territory_tally_from_FWB.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/59215/trunk/matlab/seq/get_covered_territory_tally_from_FWB.m
+END
+generate_categ_context.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_context.m
+END
+dRangerSave.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/dRangerSave.m
+END
+identify_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/identify_regions.m
+END
+binomial_comp2peaks_control_coverage_distance.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/27638/trunk/matlab/seq/binomial_comp2peaks_control_coverage_distance.m
+END
+joindump.pl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/4039/trunk/matlab/seq/joindump.pl
+END
+survey_panel_of_normals_for_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/59484/trunk/matlab/seq/survey_panel_of_normals_for_mutations.m
+END
+build_n_and_N_tables.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/52126/trunk/matlab/seq/build_n_and_N_tables.m
+END
+ov_mixups_20091002.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/2874/trunk/matlab/seq/ov_mixups_20091002.m
+END
+choose_best_reference.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/choose_best_reference.m
+END
+compute_fraction_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/7113/trunk/matlab/seq/compute_fraction_coverage.m
+END
+load_sequenom_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/18688/trunk/matlab/seq/load_sequenom_results.m
+END
+empty2nan.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/22718/trunk/matlab/seq/empty2nan.m
+END
+run_MutSig_S2N.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/47377/trunk/matlab/seq/run_MutSig_S2N.m
+END
+combine_classic_and_ns_s_p_values.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/19355/trunk/matlab/seq/combine_classic_and_ns_s_p_values.m
+END
+sum_binary_coverage_and_collapse_by_gene.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/14366/trunk/matlab/seq/sum_binary_coverage_and_collapse_by_gene.m
+END
+process_gc_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1484/trunk/matlab/seq/process_gc_data.m
+END
+align_split_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/align_split_reads.m
+END
+load_genedb.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/3351/trunk/matlab/seq/load_genedb.m
+END
+calc_Ntot_from_wig_and_categ.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/calc_Ntot_from_wig_and_categ.m
+END
+vcf2wig.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/4050/trunk/matlab/seq/vcf2wig.pl
+END
+preprocess_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/59215/trunk/matlab/seq/preprocess_mutations.m
+END
+makeM.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/makeM.m
+END
+parse_blast_result.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/parse_blast_result.m
+END
+extract_tumortype_from_M.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/extract_tumortype_from_M.m
+END
+agglomerate_blast_hits.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/agglomerate_blast_hits.m
+END
+MutSigCV_standalone_code_5_1D.20130401.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/MutSigCV_standalone_code_5_1D.20130401.m
+END
+output_n_and_N_tables.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/output_n_and_N_tables.m
+END
+annotate_maflite.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/17240/trunk/matlab/seq/annotate_maflite.m
+END
+get_mutsig_pvals.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/get_mutsig_pvals.m
+END
+find_frequently_mutated_genesets.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/find_frequently_mutated_genesets.m
+END
+load_RCL_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/load_RCL_file.m
+END
+extract_from_cbb.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1612/trunk/matlab/seq/extract_from_cbb.pl
+END
+fh_dRangerRunTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/fh_dRangerRunTest.m
+END
+convert_chrXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/convert_chrXXX.m
+END
+extract_split_reads2.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/6866/trunk/matlab/seq/extract_split_reads2.m
+END
+temp_stick_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/temp_stick_script.m
+END
+allow_strings.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/allow_strings.m
+END
+MutSigCV_v1_3_01.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/59769/trunk/matlab/seq/MutSigCV_v1_3_01.m
+END
+get_wgs_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/get_wgs_list.m
+END
+dRanger_connect.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dRanger_connect.m
+END
+annotate_regions_that_are_Ig_loci.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/9069/trunk/matlab/seq/annotate_regions_that_are_Ig_loci.m
+END
+load_and_sum_cbb.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/load_and_sum_cbb.m
+END
+fh_MutSigS2NRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/fh_MutSigS2NRun.m
+END
+plot_perlane_chunk_correlations.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/plot_perlane_chunk_correlations.m
+END
+dRanger_draw_circos.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/30372/trunk/matlab/seq/dRanger_draw_circos.m
+END
+get_firehose_dir.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/7614/trunk/matlab/seq/get_firehose_dir.m
+END
+temp_mutsig2_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/temp_mutsig2_script.m
+END
+plot_perlane_chunk_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/plot_perlane_chunk_data.m
+END
+load_perlane_chunk_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/load_perlane_chunk_data.m
+END
+neighborhood_mutsig_20111130.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/neighborhood_mutsig_20111130.m
+END
+move_to_simple_fieldnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/move_to_simple_fieldnames.m
+END
+find_split_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/find_split_reads.m
+END
+temp_mutsig2_gather.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/56386/trunk/matlab/seq/temp_mutsig2_gather.m
+END
+load_chrlen.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/load_chrlen.m
+END
+load_lanelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/load_lanelist.m
+END
+fh_dRangerFinalize.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/30161/trunk/matlab/seq/fh_dRangerFinalize.m
+END
+average_exome_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/41596/trunk/matlab/seq/average_exome_coverage.m
+END
+update_bams.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/46219/trunk/matlab/seq/update_bams.m
+END
+batch_blast.csh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/batch_blast.csh
+END
+dRangerPreprocess.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/dRangerPreprocess.m
+END
+preprocess_nonSNP_call_GAF.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/14952/trunk/matlab/seq/preprocess_nonSNP_call_GAF.m
+END
+single_screen_power.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/11909/trunk/matlab/seq/single_screen_power.m
+END
+apply_mutation_blacklist.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/apply_mutation_blacklist.m
+END
+MQZByBase.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/MQZByBase.m
+END
+create_blast_db.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/create_blast_db.m
+END
+tree_to_genesets_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/7614/trunk/matlab/seq/tree_to_genesets_file.m
+END
+survey_refseq_transcripts.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/14376/trunk/matlab/seq/survey_refseq_transcripts.m
+END
+neighborhood_mutsig_fromM.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/43739/trunk/matlab/seq/neighborhood_mutsig_fromM.m
+END
+dRanger_design_primers_from_validation_targets.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/8330/trunk/matlab/seq/dRanger_design_primers_from_validation_targets.m
+END
+analyze_gcszp_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/10277/trunk/matlab/seq/analyze_gcszp_data.m
+END
+fh_MutSigCVRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/60693/trunk/matlab/seq/fh_MutSigCVRun.m
+END
+env_ml.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/2524/trunk/matlab/seq/env_ml.txt
+END
+my_seqrcomplement.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/5664/trunk/matlab/seq/my_seqrcomplement.m
+END
+get_categs.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/get_categs.m
+END
+plot_TN_isz_distribs.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/plot_TN_isz_distribs.m
+END
+output_sig_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/55327/trunk/matlab/seq/output_sig_table.m
+END
+standardize_type.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/7113/trunk/matlab/seq/standardize_type.m
+END
+load_capture_muts.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/load_capture_muts.m
+END
+preprocess_nonSNP_call.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/9838/trunk/matlab/seq/preprocess_nonSNP_call.m
+END
+trimatch.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/22718/trunk/matlab/seq/trimatch.m
+END
+analyze_gene_gene_correlations_for_sig_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/CancerGenomeAnalysis/!svn/ver/28423/trunk/matlab/seq/analyze_gene_gene_correlations_for_sig_genes.m
+END
+SegSeqRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/4039/trunk/matlab/seq/SegSeqRun.m
+END
+average_genome_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/41596/trunk/matlab/seq/average_genome_coverage.m
+END
+projection_convolutions_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/projection_convolutions_2.m
+END
+plotMutationSpectrumCategLegos.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/60640/trunk/matlab/seq/plotMutationSpectrumCategLegos.m
+END
+simple_calc_rates_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/47909/trunk/matlab/seq/simple_calc_rates_v2.m
+END
+strip_extensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/strip_extensions.m
+END
+build_OV_capture_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1454/trunk/matlab/seq/build_OV_capture_list.m
+END
+SegSeq_link_best.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3351/trunk/matlab/seq/SegSeq_link_best.m
+END
+dRanger_annotate_sites.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/41596/trunk/matlab/seq/dRanger_annotate_sites.m
+END
+count_uwp.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/2306/trunk/matlab/seq/count_uwp.m
+END
+load_cnqc.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/3611/trunk/matlab/seq/load_cnqc.m
+END
+extract_tumortype_from_fullM.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/extract_tumortype_from_fullM.m
+END
+convert_gatk_indels.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/25963/trunk/matlab/seq/convert_gatk_indels.m
+END
+postprocess_all_mutsig_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/postprocess_all_mutsig_results.m
+END
+read_bai.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/read_bai.m
+END
+analyze_KaKs_data2.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/15764/trunk/matlab/seq/analyze_KaKs_data2.m
+END
+list_all_samples.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/list_all_samples.m
+END
+generate_categ_zone.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/9680/trunk/matlab/seq/generate_categ_zone.m
+END
+MutSigCV_v1_3_02.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/59214/trunk/matlab/seq/MutSigCV_v1_3_02.m
+END
+collapse_context_and_sense_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/33075/trunk/matlab/seq/collapse_context_and_sense_categories.m
+END
+fh_FilterMafliteByPanelOfNormalsGather.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/28577/trunk/matlab/seq/fh_FilterMafliteByPanelOfNormalsGather.m
+END
+getbamlist.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/getbamlist.m
+END
+do_cov2a.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/do_cov2a.m
+END
+calculate_significance_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/25889/trunk/matlab/seq/calculate_significance_OLD.m
+END
+take_patient_subset.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/take_patient_subset.m
+END
+remove_bad_GC_lanes.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1484/trunk/matlab/seq/remove_bad_GC_lanes.m
+END
+collapse_strands.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/collapse_strands.m
+END
+collapse_1040_to_128.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/collapse_1040_to_128.m
+END
+audit_getInferredInsertSize.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1375/trunk/matlab/seq/audit_getInferredInsertSize.m
+END
+preprocess_BMR_covariates.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/preprocess_BMR_covariates.m
+END
+genelist_survey_FDgrid.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/genelist_survey_FDgrid.m
+END
+MutSigCV_standalone_code_3_1D.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/MutSigCV_standalone_code_3_1D.m
+END
+MakeLanelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1653/trunk/matlab/seq/MakeLanelist.m
+END
+capture_covplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/35782/trunk/matlab/seq/capture_covplot.m
+END
+try_all_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/try_all_mutations.m
+END
+MutationSpectrumCategs.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/60640/trunk/matlab/seq/MutationSpectrumCategs.m
+END
+SegSeqRun_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/10661/trunk/matlab/seq/SegSeqRun_OLD.m
+END
+make_genesets.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/26209/trunk/matlab/seq/make_genesets.m
+END
+draw_cov_and_mut_figure.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_cov_and_mut_figure.m
+END
+is_blacklisted.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/56628/trunk/matlab/seq/is_blacklisted.m
+END
+analyze_gcsz29p_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/9936/trunk/matlab/seq/analyze_gcsz29p_data.m
+END
+cross_categs.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/cross_categs.m
+END
+replace_missing_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/replace_missing_coverage.m
+END
+create_seg_file_from_CNQC_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/26858/trunk/matlab/seq/create_seg_file_from_CNQC_data.m
+END
+load_kin.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/56396/trunk/matlab/seq/load_kin.m
+END
+expand_slashes_in_genelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/14234/trunk/matlab/seq/expand_slashes_in_genelist.m
+END
+choose_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/choose_mutations.m
+END
+condense_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/44333/trunk/matlab/seq/condense_regions.m
+END
+find_indel_in_refseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/find_indel_in_refseq.m
+END
+output_mutation_0_1_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/26968/trunk/matlab/seq/output_mutation_0_1_table.m
+END
+analyze_gmzc65_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/9936/trunk/matlab/seq/analyze_gmzc65_data.m
+END
+dRanger_compare.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/8901/trunk/matlab/seq/dRanger_compare.m
+END
+compute_mutation_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/compute_mutation_rates.m
+END
+identify_hypermutated_samples.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/identify_hypermutated_samples.m
+END
+build_gbrowse_dataset.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/60658/trunk/matlab/seq/build_gbrowse_dataset.m
+END
+dRanger_stringent_realign_process_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/dRanger_stringent_realign_process_results.m
+END
+manual_review_station.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/3197/trunk/matlab/seq/manual_review_station.m
+END
+find_near_introns.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/17070/trunk/matlab/seq/find_near_introns.m
+END
+do_cov2a_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/do_cov2a_wig.m
+END
+dRanger2_old.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/dRanger2_old.m
+END
+MutSigCV_standalone_code.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/52181/trunk/matlab/seq/MutSigCV_standalone_code.m
+END
+sample_to_short_sample.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/5417/trunk/matlab/seq/sample_to_short_sample.m
+END
+category_discovery.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/category_discovery.m
+END
+flagstat.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1653/trunk/matlab/seq/flagstat.m
+END
+annotate_regions_according_to_zone.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/27638/trunk/matlab/seq/annotate_regions_according_to_zone.m
+END
+transform_covariate.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/54762/trunk/matlab/seq/transform_covariate.m
+END
+get_lanecounts.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/get_lanecounts.m
+END
+run_somcall_onejob.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/run_somcall_onejob.m
+END
+dRanger_blast_filter_process_results_OLD2.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_blast_filter_process_results_OLD2.m
+END
+choose_GC_bias_matched_lanes_for_segseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/11909/trunk/matlab/seq/choose_GC_bias_matched_lanes_for_segseq.m
+END
+analyze_mutsig_spectra.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/15612/trunk/matlab/seq/analyze_mutsig_spectra.m
+END
+analyze_mutation_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/48723/trunk/matlab/seq/analyze_mutation_data.m
+END
+convert_ttM_to_G.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/31338/trunk/matlab/seq/convert_ttM_to_G.m
+END
+load_and_process_isz_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/load_and_process_isz_data.m
+END
+process_all_mutation_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/process_all_mutation_data.m
+END
+fh_CopyNumberQCReport.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/28401/trunk/matlab/seq/fh_CopyNumberQCReport.m
+END
+initiatives_to_ignore.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/7050/trunk/matlab/seq/initiatives_to_ignore.txt
+END
+flank_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/flank_regions.m
+END
+simple_calc_rates_v3.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/40747/trunk/matlab/seq/simple_calc_rates_v3.m
+END
+germcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/18036/trunk/matlab/seq/germcall.m
+END
+load_and_sum_covlines.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/load_and_sum_covlines.m
+END
+alleleFreqPurity.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/56914/trunk/matlab/seq/alleleFreqPurity.m
+END
+analyze_gcmzc65_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/10134/trunk/matlab/seq/analyze_gcmzc65_data.m
+END
+unique_by_patient_and_site.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/6990/trunk/matlab/seq/unique_by_patient_and_site.m
+END
+get_filedate.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/38585/trunk/matlab/seq/get_filedate.pl
+END
+process_batch_seqseek.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/15612/trunk/matlab/seq/process_batch_seqseek.m
+END
+gather_capture_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1454/trunk/matlab/seq/gather_capture_mutations.m
+END
+fh_dRangerPreprocessGatherTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/40869/trunk/matlab/seq/fh_dRangerPreprocessGatherTest.m
+END
+plot_insertion_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/8001/trunk/matlab/seq/plot_insertion_data.m
+END
+get_chrct.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/get_chrct.m
+END
+quick_mutsig_test.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/30189/trunk/matlab/seq/quick_mutsig_test.m
+END
+convert_CNQC_report_to_html.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/34996/trunk/matlab/seq/convert_CNQC_report_to_html.m
+END
+dRanger_core_algorithmXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/dRanger_core_algorithmXXX.m
+END
+dRanger_blast_filter_process_results.pl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dRanger_blast_filter_process_results.pl
+END
+classify_rearrangements.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/15469/trunk/matlab/seq/classify_rearrangements.m
+END
+load_TCGA.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_TCGA.m
+END
+load_all_mutation_data_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/load_all_mutation_data_OLD.m
+END
+convert_mutation_file_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/6224/trunk/matlab/seq/convert_mutation_file_1.m
+END
+coverage_by_base.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/9287/trunk/matlab/seq/coverage_by_base.m
+END
+dRanger_stringent_realign.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/dRanger_stringent_realign.m
+END
+check_cnqc.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/3611/trunk/matlab/seq/check_cnqc.m
+END
+check_if_RGYW_hotspot.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/check_if_RGYW_hotspot.m
+END
+cn_qc.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/2874/trunk/matlab/seq/cn_qc.m
+END
+generate_gene_coverage_plots.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/27008/trunk/matlab/seq/generate_gene_coverage_plots.m
+END
+categs_CpG_CG_AT_Indel_Null.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/12840/trunk/matlab/seq/categs_CpG_CG_AT_Indel_Null.txt
+END
+get_aa_change.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/get_aa_change.m
+END
+load_coverage129.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3611/trunk/matlab/seq/load_coverage129.m
+END
+dRanger_draw_split_pair_evidence.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/17389/trunk/matlab/seq/dRanger_draw_split_pair_evidence.m
+END
+MutSigCV_v1_4_01.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/60694/trunk/matlab/seq/MutSigCV_v1_4_01.m
+END
+InsertSizeByLane.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3351/trunk/matlab/seq/InsertSizeByLane.m
+END
+generate_categ_context129.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_context129.m
+END
+collapse_1040_according_to_categ_set.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/collapse_1040_according_to_categ_set.m
+END
+mutcategs_test1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/4229/trunk/matlab/seq/mutcategs_test1.txt
+END
+query_spliceminer.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/query_spliceminer.m
+END
+analyze_genomic_mutations_on_conserved_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/CancerGenomeAnalysis/!svn/ver/10334/trunk/matlab/seq/analyze_genomic_mutations_on_conserved_regions.m
+END
+SurveyMutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/3744/trunk/matlab/seq/SurveyMutations.m
+END
+closepair2.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/closepair2.m
+END
+load_genbank.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_genbank.m
+END
+blast.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/6404/trunk/matlab/seq/blast.m
+END
+link_bam_maf_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/7752/trunk/matlab/seq/link_bam_maf_wig.m
+END
+dRanger_find_chains.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/32958/trunk/matlab/seq/dRanger_find_chains.m
+END
+categs_CpG_CG_AT_Indel.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/6897/trunk/matlab/seq/categs_CpG_CG_AT_Indel.m
+END
+plot_Ffit_vs_Fobs.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/30148/trunk/matlab/seq/plot_Ffit_vs_Fobs.m
+END
+get_long_tumor_type_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/get_long_tumor_type_names.m
+END
+count_val_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/10277/trunk/matlab/seq/count_val_results.m
+END
+pull_from_boom.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/55588/trunk/matlab/seq/pull_from_boom.m
+END
+fh_GenotypeConcordanceFinalReport.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/10247/trunk/matlab/seq/fh_GenotypeConcordanceFinalReport.m
+END
+dRanger_xreftoval.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/10175/trunk/matlab/seq/dRanger_xreftoval.m
+END
+liftover_maf.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/47292/trunk/matlab/seq/liftover_maf.m
+END
+mutsig_preprocess.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/59215/trunk/matlab/seq/mutsig_preprocess.m
+END
+generate_coverage_plot_and_bargraphs.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/51483/trunk/matlab/seq/generate_coverage_plot_and_bargraphs.m
+END
+dRangerPrepare2_OBSOLETE.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/dRangerPrepare2_OBSOLETE.m
+END
+fh_dRangerRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/40699/trunk/matlab/seq/fh_dRangerRun.m
+END
+load_target_interval_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/13056/trunk/matlab/seq/load_target_interval_list.m
+END
+lookup_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6460/trunk/matlab/seq/lookup_coverage.m
+END
+prep_SegSeq_for_circos.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/56916/trunk/matlab/seq/prep_SegSeq_for_circos.m
+END
+editstring_to_n_errors.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/editstring_to_n_errors.m
+END
+analyze_454_rearrangement_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/10175/trunk/matlab/seq/analyze_454_rearrangement_reads.m
+END
+get_coverage_stats.pl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/9677/trunk/matlab/seq/get_coverage_stats.pl
+END
+prepare_mutsig_target_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/14238/trunk/matlab/seq/prepare_mutsig_target_list.m
+END
+add_simple_fieldnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/add_simple_fieldnames.m
+END
+load_seekseq_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/15612/trunk/matlab/seq/load_seekseq_data.m
+END
+fh_MutLego.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/44166/trunk/matlab/seq/fh_MutLego.m
+END
+fastqwrite.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/7881/trunk/matlab/seq/fastqwrite.m
+END
+display_mutation_bargraph_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/display_mutation_bargraph_OLD.m
+END
+get_context_from_maf.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/9857/trunk/matlab/seq/get_context_from_maf.m
+END
+load_cgc.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/54762/trunk/matlab/seq/load_cgc.m
+END
+annotate_maflite_with_extras.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/11026/trunk/matlab/seq/annotate_maflite_with_extras.m
+END
+MutSig2_standalone_code.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/60950/trunk/matlab/seq/MutSig2_standalone_code.m
+END
+find_indel_in_GAF.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/14952/trunk/matlab/seq/find_indel_in_GAF.m
+END
+which_pathways_include_these_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/which_pathways_include_these_genes.m
+END
+count_evidence_in_bam.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/count_evidence_in_bam.m
+END
+prepare_for_calcsig_v1.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/32208/trunk/matlab/seq/prepare_for_calcsig_v1.m
+END
+generate_categ_wrcy.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_wrcy.m
+END
+perform_COSMIC_overlap_analysis.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/47853/trunk/matlab/seq/perform_COSMIC_overlap_analysis.m
+END
+analyze_gene_gene_correlations_3.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/26736/trunk/matlab/seq/analyze_gene_gene_correlations_3.m
+END
+load_TSP.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_TSP.m
+END
+gen_test_pairs.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/gen_test_pairs.m
+END
+load_sequenom_assay_designs.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/18688/trunk/matlab/seq/load_sequenom_assay_designs.m
+END
+generate_dupids_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/generate_dupids_fname.m
+END
+temp_mutsig2_metascript.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/60657/trunk/matlab/seq/temp_mutsig2_metascript.m
+END
+projects.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/7050/trunk/matlab/seq/projects.txt
+END
+load_capture_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/load_capture_coverage.m
+END
+template_with_cn.conf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/template_with_cn.conf
+END
+load_mutdata2.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_mutdata2.m
+END
+flagstat_all_samples.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/flagstat_all_samples.m
+END
+collapse_coverage_categories.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/12840/trunk/matlab/seq/collapse_coverage_categories.m
+END
+m2
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CancerGenomeAnalysis/!svn/ver/50755/trunk/matlab/seq/m2
+END
+generate_categ_mmexpr.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_mmexpr.m
+END
+fh_dRangerFinalizeXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/41322/trunk/matlab/seq/fh_dRangerFinalizeXXX.m
+END
+collapse_multiM.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/22728/trunk/matlab/seq/collapse_multiM.m
+END
+find_mut_categs.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/29191/trunk/matlab/seq/find_mut_categs.m
+END
+draw_circos_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/12184/trunk/matlab/seq/draw_circos_plot.m
+END
+maf2mut2.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/maf2mut2.m
+END
+classify_dRanger_input.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/classify_dRanger_input.m
+END
+collapse_adjacent_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/59215/trunk/matlab/seq/collapse_adjacent_mutations.m
+END
+estimate_nonsilent_passengers_from_silent.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/34715/trunk/matlab/seq/estimate_nonsilent_passengers_from_silent.m
+END
+dRanger_summary.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/2717/trunk/matlab/seq/dRanger_summary.m
+END
+dRangerPrepare_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/2717/trunk/matlab/seq/dRangerPrepare_OLD.m
+END
+fh_global_coverage_stats_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/5417/trunk/matlab/seq/fh_global_coverage_stats_report.m
+END
+printStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/60054/trunk/matlab/seq/printStruct.m
+END
+extract_split_reads2.pl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/10866/trunk/matlab/seq/extract_split_reads2.pl
+END
+context2.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/context2.m
+END
+get_long_ttype_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/56396/trunk/matlab/seq/get_long_ttype_names.m
+END
+MutSigCV_standalone_code_4_1D.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/MutSigCV_standalone_code_4_1D.m
+END
+run_germcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/run_germcall.m
+END
+generate_192_categ_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/59769/trunk/matlab/seq/generate_192_categ_names.m
+END
+draw_rate_vs_expr_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/draw_rate_vs_expr_plot.m
+END
+load_alignment_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_alignment_file.m
+END
+load_genesets.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/load_genesets.m
+END
+terr_collapse.pl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/terr_collapse.pl
+END
+pan2.pl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/46226/trunk/matlab/seq/pan2.pl
+END
+bsub_pipeline.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2524/trunk/matlab/seq/bsub_pipeline.m
+END
+count_stops.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/count_stops.m
+END
+fishall.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/fishall.m
+END
+show_dict.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/show_dict.m
+END
+load_chrcount.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/load_chrcount.m
+END
+pli.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CancerGenomeAnalysis/!svn/ver/7357/trunk/matlab/seq/pli.m
+END
+run_MutSig_CV.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/51479/trunk/matlab/seq/run_MutSig_CV.m
+END
+run_seqseek.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/17225/trunk/matlab/seq/run_seqseek.m
+END
+analyze_territory.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/analyze_territory.m
+END
+convert_wig_to_fwb.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/13056/trunk/matlab/seq/convert_wig_to_fwb.m
+END
+find_mut_categs_ver2.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/4229/trunk/matlab/seq/find_mut_categs_ver2.m
+END
+load_indel_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/3497/trunk/matlab/seq/load_indel_file.m
+END
+check_multiM_agreement.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/18397/trunk/matlab/seq/check_multiM_agreement.m
+END
+draw_CNQC_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/26858/trunk/matlab/seq/draw_CNQC_plot.m
+END
+plot_sa.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/plot_sa.m
+END
+semiexactP.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/26843/trunk/matlab/seq/semiexactP.m
+END
+run_panel_of_normals_filtering_on_top_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/CancerGenomeAnalysis/!svn/ver/46309/trunk/matlab/seq/run_panel_of_normals_filtering_on_top_genes.m
+END
+perform_mutsig_analysis.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/11753/trunk/matlab/seq/perform_mutsig_analysis.m
+END
+analyze_gene_gene_correlations_4.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/56326/trunk/matlab/seq/analyze_gene_gene_correlations_4.m
+END
+analyze_globcov_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/analyze_globcov_data.m
+END
+collapse_Nn_1040_to_32.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/4062/trunk/matlab/seq/collapse_Nn_1040_to_32.m
+END
+collapse_RegionCovPerLane_to_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/collapse_RegionCovPerLane_to_genes.m
+END
+new_load_mutdata.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/60675/trunk/matlab/seq/new_load_mutdata.m
+END
+load_multifind_results_and_sequences.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_multifind_results_and_sequences.m
+END
+legos.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/53831/trunk/matlab/seq/legos.m
+END
+multifind.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/multifind.pl
+END
+new_test_germline.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/2887/trunk/matlab/seq/new_test_germline.m
+END
+dRanger_annotate.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/8209/trunk/matlab/seq/dRanger_annotate.m
+END
+scatter_somcall_chr.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/2887/trunk/matlab/seq/scatter_somcall_chr.m
+END
+convert_chr.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/44294/trunk/matlab/seq/convert_chr.m
+END
+categs_CpGtransit_otherCGtransit_CGtransver_ATmut.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/categs_CpGtransit_otherCGtransit_CGtransver_ATmut.txt
+END
+load_mutdata3.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2524/trunk/matlab/seq/load_mutdata3.m
+END
+fonts.conf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/fonts.conf
+END
+dRanger_make_validation_targets.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/17698/trunk/matlab/seq/dRanger_make_validation_targets.m
+END
+calculate_dispersion_statistic.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/calculate_dispersion_statistic.m
+END
+genome_region_fun.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/43902/trunk/matlab/seq/genome_region_fun.m
+END
+dRanger_make_gene_sample_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/18714/trunk/matlab/seq/dRanger_make_gene_sample_table.m
+END
+generate_CNQC_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/26858/trunk/matlab/seq/generate_CNQC_report.m
+END
+generate_target_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/14238/trunk/matlab/seq/generate_target_list.m
+END
+agglom_iszfile.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/8031/trunk/matlab/seq/agglom_iszfile.m
+END
+draw_gene_2D_histogram.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_gene_2D_histogram.m
+END
+score_methyl.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/score_methyl.m
+END
+indel_to_maflite.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/9471/trunk/matlab/seq/indel_to_maflite.m
+END
+exonic_liftover.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/exonic_liftover.m
+END
+find_mut_in_refseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/24591/trunk/matlab/seq/find_mut_in_refseq.m
+END
+tmp.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/tmp.m
+END
+fhd.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CancerGenomeAnalysis/!svn/ver/7917/trunk/matlab/seq/fhd.m
+END
+pic2law.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/2654/trunk/matlab/seq/pic2law.m
+END
+dRanger3_old.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/dRanger3_old.m
+END
+draw_relative_mutation_rate_graph.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_relative_mutation_rate_graph.m
+END
+calcsig.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/calcsig.m
+END
+template_without_cn.conf
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/template_without_cn.conf
+END
+get_long_tumortype_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/60657/trunk/matlab/seq/get_long_tumortype_names.m
+END
+simple_calc_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/simple_calc_rates.m
+END
+collapse_Nn_64_by_strand.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/29208/trunk/matlab/seq/collapse_Nn_64_by_strand.m
+END
+find_double_nulls_in_fullM.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/find_double_nulls_in_fullM.m
+END
+find_change_from_ref_tum1_tum2.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/13527/trunk/matlab/seq/find_change_from_ref_tum1_tum2.m
+END
+display_mutation_breakdown.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/47718/trunk/matlab/seq/display_mutation_breakdown.m
+END
+gc_content.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/8298/trunk/matlab/seq/gc_content.m
+END
+bsub_log_hist.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/2829/trunk/matlab/seq/bsub_log_hist.m
+END
+temp_mutrate_vs_cov.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/50755/trunk/matlab/seq/temp_mutrate_vs_cov.m
+END
+MutSigCV_v1_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/56910/trunk/matlab/seq/MutSigCV_v1_1.m
+END
+print_mutation_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/print_mutation_stats.m
+END
+match_targets_to_refseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/match_targets_to_refseq.m
+END
+generate_isz_QC_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/generate_isz_QC_report.m
+END
+analyze_conservation.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/26209/trunk/matlab/seq/analyze_conservation.m
+END
+get_vicinity.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/get_vicinity.m
+END
+load_cnseg_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/11909/trunk/matlab/seq/load_cnseg_file.m
+END
+extract_from_cbb.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/7752/trunk/matlab/seq/extract_from_cbb.m
+END
+find_stretches.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/17390/trunk/matlab/seq/find_stretches.m
+END
+rc.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/rc.m
+END
+run_MutSig1x.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/47893/trunk/matlab/seq/run_MutSig1x.m
+END
+get_LEGO_colors.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/53774/trunk/matlab/seq/get_LEGO_colors.m
+END
+draw_mutation_spectrum_3d_barplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/35782/trunk/matlab/seq/draw_mutation_spectrum_3d_barplot.m
+END
+new_manual_review_station.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/3639/trunk/matlab/seq/new_manual_review_station.m
+END
+chrpos2gpos.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/35489/trunk/matlab/seq/chrpos2gpos.m
+END
+regcovcap.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/3556/trunk/matlab/seq/regcovcap.m
+END
+add_and_convert_simple_fieldnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/52957/trunk/matlab/seq/add_and_convert_simple_fieldnames.m
+END
+calculate_bagels.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/calculate_bagels.m
+END
+java.opts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/6271/trunk/matlab/seq/java.opts
+END
+fuseseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/6588/trunk/matlab/seq/fuseseq.m
+END
+segseq_run.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/28027/trunk/matlab/seq/segseq_run.m
+END
+extract_from_fastb.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/extract_from_fastb.m
+END
+convert_gaf_to_refseq_format.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/48611/trunk/matlab/seq/convert_gaf_to_refseq_format.m
+END
+fh_test1.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/13769/trunk/matlab/seq/fh_test1.m
+END
+collapse_Nn_65_to_32.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/collapse_Nn_65_to_32.m
+END
+convert_sff.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/10175/trunk/matlab/seq/convert_sff.m
+END
+loadCoverageFromFWB.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/14506/trunk/matlab/seq/loadCoverageFromFWB.m
+END
+pull_from_bam.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/55588/trunk/matlab/seq/pull_from_bam.m
+END
+GCContentByLane.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/GCContentByLane.m
+END
+analyze_mutation_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/analyze_mutation_rates.m
+END
+join_matching_rows.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/26604/trunk/matlab/seq/join_matching_rows.m
+END
+projection_convolutions_fast.mexa64
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/54762/trunk/matlab/seq/projection_convolutions_fast.mexa64
+END
+dRanger_annotate_sitesXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/dRanger_annotate_sitesXXX.m
+END
+load_and_process_CNQC_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/26859/trunk/matlab/seq/load_and_process_CNQC_data.m
+END
+draw_dRanger_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/draw_dRanger_plot.m
+END
+asteroids.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/asteroids.m
+END
+dRanger_manual_review.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/7614/trunk/matlab/seq/dRanger_manual_review.m
+END
+run-crc-20100610.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/run-crc-20100610.m
+END
+geosoftread.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/17250/trunk/matlab/seq/geosoftread.m
+END
+load_15column.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/load_15column.m
+END
+analyze_KaKs_data_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/14415/trunk/matlab/seq/analyze_KaKs_data_OLD.m
+END
+load_mutation_data_for_bargraph.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/load_mutation_data_for_bargraph.m
+END
+dRanger_annotate_centel.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_annotate_centel.m
+END
+dump2fasta.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6427/trunk/matlab/seq/dump2fasta.m
+END
+convert_to_exon_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/convert_to_exon_list.m
+END
+process_targets_interval_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/process_targets_interval_list.m
+END
+run_mutrate_calculations.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/17545/trunk/matlab/seq/run_mutrate_calculations.m
+END
+dRanger_calculate_quality.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/34295/trunk/matlab/seq/dRanger_calculate_quality.m
+END
+sort_and_join.csh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/sort_and_join.csh
+END
+get_targcovpct.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/2009/trunk/matlab/seq/get_targcovpct.m
+END
+analyze_strand_bias.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/analyze_strand_bias.m
+END
+convert_wins.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/convert_wins.m
+END
+draw_genefig.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/draw_genefig.m
+END
+summarize_isz_distrib.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/summarize_isz_distrib.m
+END
+determine_fusion_composition.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/16214/trunk/matlab/seq/determine_fusion_composition.m
+END
+collapse_categories_to_65.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/18833/trunk/matlab/seq/collapse_categories_to_65.m
+END
+examine_silent_nonsilent_ratios_as_evidence_against_prior.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/CancerGenomeAnalysis/!svn/ver/28635/trunk/matlab/seq/examine_silent_nonsilent_ratios_as_evidence_against_prior.m
+END
+dump2fastq.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6571/trunk/matlab/seq/dump2fastq.m
+END
+match_mutations_to_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/9134/trunk/matlab/seq/match_mutations_to_regions.m
+END
+oncotator_scatter_gather.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/54770/trunk/matlab/seq/oncotator_scatter_gather.m
+END
+MutSigCV_v1_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/56910/trunk/matlab/seq/MutSigCV_v1_2.m
+END
+calc_collapsed_models.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/2123/trunk/matlab/seq/calc_collapsed_models.m
+END
+getBAMFileReadLength.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/getBAMFileReadLength.m
+END
+find_clustered_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/34953/trunk/matlab/seq/find_clustered_mutations.m
+END
+categ2wig.csh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/categ2wig.csh
+END
+process_mutdata.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/process_mutdata.m
+END
+load_vog_muts.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_vog_muts.m
+END
+single_screen_prob.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/11909/trunk/matlab/seq/single_screen_prob.m
+END
+calc_models.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/18036/trunk/matlab/seq/calc_models.m
+END
+dRanger_find_local_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_find_local_coverage.m
+END
+dRangerRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/7895/trunk/matlab/seq/dRangerRun.m
+END
+projection_1d_convolutions_fast.mexa64
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/54762/trunk/matlab/seq/projection_1d_convolutions_fast.mexa64
+END
+check_exist.pl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/38585/trunk/matlab/seq/check_exist.pl
+END
+survey_all_mutations_ORIG.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/survey_all_mutations_ORIG.m
+END
+joinweird.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/joinweird.pl
+END
+hamburger_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/60845/trunk/matlab/seq/hamburger_plot.m
+END
+MutSigCV_standalone_code_5_1D.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/54615/trunk/matlab/seq/MutSigCV_standalone_code_5_1D.m
+END
+collapse_192_to_categ_set.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/collapse_192_to_categ_set.m
+END
+panbam.pl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/46218/trunk/matlab/seq/panbam.pl
+END
+run_somcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/2524/trunk/matlab/seq/run_somcall.m
+END
+get_TCGA_barcodes.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/9438/trunk/matlab/seq/get_TCGA_barcodes.m
+END
+get_coverage_by_gene.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/get_coverage_by_gene.m
+END
+collapse_capture_coverage_to_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/2524/trunk/matlab/seq/collapse_capture_coverage_to_genes.m
+END
+make_lanetable.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/3351/trunk/matlab/seq/make_lanetable.m
+END
+get_TN_scale_factor.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/get_TN_scale_factor.m
+END
+fix_splice.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/fix_splice.m
+END
+pscatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/55584/trunk/matlab/seq/pscatter.m
+END
+estimate_mutrates_CV.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/52126/trunk/matlab/seq/estimate_mutrates_CV.m
+END
+draw_ttype_bars_figure.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/60657/trunk/matlab/seq/draw_ttype_bars_figure.m
+END
+dRanger_add_filtering_from_boom.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/5924/trunk/matlab/seq/dRanger_add_filtering_from_boom.m
+END
+load_refseqXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/load_refseqXXX.m
+END
+read_maf_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/read_maf_file.m
+END
+survey_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3744/trunk/matlab/seq/survey_mutations.m
+END
+load_HUGO.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_HUGO.m
+END
+RegionCovPerLane.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/3352/trunk/matlab/seq/RegionCovPerLane.m
+END
+compact_load_mutdata.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/compact_load_mutdata.m
+END
+midchunks.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/1851/trunk/matlab/seq/midchunks.pl
+END
+extract_from_qltout.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/extract_from_qltout.m
+END
+create_summed_FWB_coverage_file_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/49225/trunk/matlab/seq/create_summed_FWB_coverage_file_2.m
+END
+generate_qltout_fname.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/generate_qltout_fname.m
+END
+fastqread.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/6604/trunk/matlab/seq/fastqread.m
+END
+get_chrlen.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/34279/trunk/matlab/seq/get_chrlen.m
+END
+draw_legend.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/draw_legend.m
+END
+load_multifind_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/load_multifind_results.m
+END
+dRanger_get_counts.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dRanger_get_counts.m
+END
+tabulate_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/52126/trunk/matlab/seq/tabulate_coverage.m
+END
+find_mutdens.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/50755/trunk/matlab/seq/find_mutdens.m
+END
+analyze_snp_concordance.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/9908/trunk/matlab/seq/analyze_snp_concordance.m
+END
+build_OV_sample_lists.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/build_OV_sample_lists.m
+END
+load_indel_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/load_indel_data.m
+END
+make_all_lanelists.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/make_all_lanelists.m
+END
+survey_contexts.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/survey_contexts.m
+END
+NT1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/NT1.txt
+END
+load_tumortype_colors.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/59769/trunk/matlab/seq/load_tumortype_colors.m
+END
+MutSigCV_v1_3.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/56911/trunk/matlab/seq/MutSigCV_v1_3.m
+END
+HN_62699_CopyNumberQC_report.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/13655/trunk/matlab/seq/HN_62699_CopyNumberQC_report.txt
+END
+process_TN_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/process_TN_coverage.m
+END
+plot_allelic_fracs_with_CN.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/plot_allelic_fracs_with_CN.m
+END
+bam2boom.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/bam2boom.m
+END
+generate_categ_context65_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/29174/trunk/matlab/seq/generate_categ_context65_names.m
+END
+assign_192_to_categ_set.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/assign_192_to_categ_set.m
+END
+power_analysis.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/14235/trunk/matlab/seq/power_analysis.m
+END
+draw_bkpt_diagram.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1375/trunk/matlab/seq/draw_bkpt_diagram.m
+END
+do_cov2_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/do_cov2_wig.m
+END
+dRanger_output.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1198/trunk/matlab/seq/dRanger_output.m
+END
+get_splicedist.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/get_splicedist.m
+END
+analyze_zgr_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/9677/trunk/matlab/seq/analyze_zgr_stats.m
+END
+sns.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CancerGenomeAnalysis/!svn/ver/27005/trunk/matlab/seq/sns.m
+END
+demand_multiP_files.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/23444/trunk/matlab/seq/demand_multiP_files.m
+END
+cheapperm.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/cheapperm.m
+END
+plot_intron_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/plot_intron_rates.m
+END
+create_blast_db_from_regions.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/create_blast_db_from_regions.m
+END
+replace_with_simulated_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/47424/trunk/matlab/seq/replace_with_simulated_data.m
+END
+find_mut_in_GAF.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/48550/trunk/matlab/seq/find_mut_in_GAF.m
+END
+match_mutation_sets.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/4039/trunk/matlab/seq/match_mutation_sets.m
+END
+nobrackets.pl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/nobrackets.pl
+END
+draw_total_mutation_rate_graph.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_total_mutation_rate_graph.m
+END
+dRanger_find_local_MQZ_counts.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/dRanger_find_local_MQZ_counts.m
+END
+compare_to_dbSNP.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/28876/trunk/matlab/seq/compare_to_dbSNP.m
+END
+segregate_seqs.pl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1612/trunk/matlab/seq/segregate_seqs.pl
+END
+trimStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/31497/trunk/matlab/seq/trimStruct.m
+END
+draw_cons_vs_noncons_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/10582/trunk/matlab/seq/draw_cons_vs_noncons_plot.m
+END
+fh2law.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/7752/trunk/matlab/seq/fh2law.m
+END
+neighborhood_mutsig_fromFHrun.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/31338/trunk/matlab/seq/neighborhood_mutsig_fromFHrun.m
+END
+generate_categ_pentamer.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_pentamer.m
+END
+create_OV_dirs.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/create_OV_dirs.m
+END
+analyze_mutrate_covariates_and_quick_mutsig_test.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/30189/trunk/matlab/seq/analyze_mutrate_covariates_and_quick_mutsig_test.m
+END
+do_cov1.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/do_cov1.m
+END
+dR2VCF4_1.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/50867/trunk/matlab/seq/dR2VCF4_1.m
+END
+liftover.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/liftover.m
+END
+apply_six_methods.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/apply_six_methods.m
+END
+graphics_helloworld.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1653/trunk/matlab/seq/graphics_helloworld.m
+END
+dRanger_local.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/4550/trunk/matlab/seq/dRanger_local.m
+END
+bpzoom.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/bpzoom.m
+END
+impute_callschemes.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/impute_callschemes.m
+END
+create_summed_FWB_coverage_file_3.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/50767/trunk/matlab/seq/create_summed_FWB_coverage_file_3.m
+END
+print_mutation_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/2153/trunk/matlab/seq/print_mutation_list.m
+END
+dRanger_count_bal.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/4229/trunk/matlab/seq/dRanger_count_bal.m
+END
+process_TN_wigs.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6897/trunk/matlab/seq/process_TN_wigs.m
+END
+extract_wins.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/9242/trunk/matlab/seq/extract_wins.m
+END
+load_concordance_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/6404/trunk/matlab/seq/load_concordance_file.m
+END
+process_craigs_GO_database.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/process_craigs_GO_database.m
+END
+extract_from_wig.pl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/extract_from_wig.pl
+END
+simple_calc_rates.20112712.10pm.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/simple_calc_rates.20112712.10pm.m
+END
+find_newbase.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/find_newbase.m
+END
+genome_regionXXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/44172/trunk/matlab/seq/genome_regionXXX.m
+END
+compute_nonsilent_mle_bounded_by_silent_ci.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/compute_nonsilent_mle_bounded_by_silent_ci.m
+END
+expand_firehose_names.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/8324/trunk/matlab/seq/expand_firehose_names.m
+END
+set_mutation_rate.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/set_mutation_rate.m
+END
+estimate_mutation_rates.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/28208/trunk/matlab/seq/estimate_mutation_rates.m
+END
+MutSigCV_v1_4.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/59471/trunk/matlab/seq/MutSigCV_v1_4.m
+END
+fh_MutSigCoverageGather.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/41668/trunk/matlab/seq/fh_MutSigCoverageGather.m
+END
+convert_chr_back.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/44294/trunk/matlab/seq/convert_chr_back.m
+END
+show_rgrps.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/show_rgrps.m
+END
+fhname.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/3611/trunk/matlab/seq/fhname.m
+END
+dRanger_bridge.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/2874/trunk/matlab/seq/dRanger_bridge.m
+END
+get_refseq_introns_and_exons.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/get_refseq_introns_and_exons.m
+END
+make_nonoverlapping.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/make_nonoverlapping.m
+END
+load_cosmic_database.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/load_cosmic_database.m
+END
+maf2M.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/maf2M.m
+END
+collapse_12x16.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/collapse_12x16.m
+END
+jcrawl.csh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/6990/trunk/matlab/seq/jcrawl.csh
+END
+draw_mutation_rate_histogram.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/draw_mutation_rate_histogram.m
+END
+dRanger_calculate_expected_stdev_distrib.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/17056/trunk/matlab/seq/dRanger_calculate_expected_stdev_distrib.m
+END
+compute_rate_ci_stdev.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/12166/trunk/matlab/seq/compute_rate_ci_stdev.m
+END
+fh_MutSigRun.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/fh_MutSigRun.m
+END
+cll-20100518-run.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/10645/trunk/matlab/seq/cll-20100518-run.m
+END
+load_freezelist.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_freezelist.m
+END
+riker.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/27167/trunk/matlab/seq/riker.m
+END
+draw_legendb.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/draw_legendb.m
+END
+parse_blast_output_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/parse_blast_output_file.m
+END
+get_context129.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/6287/trunk/matlab/seq/get_context129.m
+END
+draw_twochr_plot.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/11929/trunk/matlab/seq/draw_twochr_plot.m
+END
+openBAMFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/openBAMFile.m
+END
+maftoM.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/maftoM.m
+END
+MutSigCV_standalone_code_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/59769/trunk/matlab/seq/MutSigCV_standalone_code_2.m
+END
+load_all_OV_mutation_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/load_all_OV_mutation_data.m
+END
+load_cytobands.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/30790/trunk/matlab/seq/load_cytobands.m
+END
+plot_gc_bias.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1851/trunk/matlab/seq/plot_gc_bias.m
+END
+remove_impossible_mutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/8968/trunk/matlab/seq/remove_impossible_mutations.m
+END
+count_evidence_in_normal.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/3639/trunk/matlab/seq/count_evidence_in_normal.m
+END
+get_global_coverage_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/10199/trunk/matlab/seq/get_global_coverage_stats.m
+END
+handle_legacy_maflite_format.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/52607/trunk/matlab/seq/handle_legacy_maflite_format.m
+END
+load_targlist.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/load_targlist.m
+END
+index2name.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/22718/trunk/matlab/seq/index2name.m
+END
+name2index.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/22718/trunk/matlab/seq/name2index.m
+END
+find_bai.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/10645/trunk/matlab/seq/find_bai.m
+END
+do_cov2.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/3225/trunk/matlab/seq/do_cov2.m
+END
+pan.pl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/27480/trunk/matlab/seq/pan.pl
+END
+dRanger_core_algorithm.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/17056/trunk/matlab/seq/dRanger_core_algorithm.m
+END
+link_maf_and_wiggle.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/7752/trunk/matlab/seq/link_maf_and_wiggle.m
+END
+karyotype_custom.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/karyotype_custom.txt
+END
+calculate_insertion_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/8001/trunk/matlab/seq/calculate_insertion_stats.m
+END
+draw_mutfig.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/50755/trunk/matlab/seq/draw_mutfig.m
+END
+get_filtered_dbSNP_stats_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/50631/trunk/matlab/seq/get_filtered_dbSNP_stats_v2.m
+END
+dRangerPreprocess_20091015.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/dRangerPreprocess_20091015.m
+END
+convert_isz_QC_report_to_html.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/convert_isz_QC_report_to_html.m
+END
+get_allele_fracs.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/25963/trunk/matlab/seq/get_allele_fracs.m
+END
+generate_categ_context65.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/29174/trunk/matlab/seq/generate_categ_context65.m
+END
+MutSigCV_standalone_code_6_1D.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/60950/trunk/matlab/seq/MutSigCV_standalone_code_6_1D.m
+END
+survey_FDgrid.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/survey_FDgrid.m
+END
+fwb_test.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/13056/trunk/matlab/seq/fwb_test.m
+END
+toggle_Nn_5col_2col.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/29208/trunk/matlab/seq/toggle_Nn_5col_2col.m
+END
+generate_categ_gcsz29p.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/9936/trunk/matlab/seq/generate_categ_gcsz29p.m
+END
+colored_hist.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/31458/trunk/matlab/seq/colored_hist.m
+END
+compare_dRanger_and_SegSeq.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/2717/trunk/matlab/seq/compare_dRanger_and_SegSeq.m
+END
+dRangerLoad.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1483/trunk/matlab/seq/dRangerLoad.m
+END
+survey_categs.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/14833/trunk/matlab/seq/survey_categs.m
+END
+get_TN_coverage_from_cbb.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/get_TN_coverage_from_cbb.m
+END
+draw_sigfig.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/56910/trunk/matlab/seq/draw_sigfig.m
+END
+get_ttype_colors.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/56396/trunk/matlab/seq/get_ttype_colors.m
+END
+single_screen_power_smooth.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/11909/trunk/matlab/seq/single_screen_power_smooth.m
+END
+generate_categ_gcsz3p.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/9936/trunk/matlab/seq/generate_categ_gcsz3p.m
+END
+dRangerPreprocess_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/2717/trunk/matlab/seq/dRangerPreprocess_OLD.m
+END
+NT2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/1480/trunk/matlab/seq/NT2.txt
+END
+quick_bagel_calc.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/32487/trunk/matlab/seq/quick_bagel_calc.m
+END
+find_non_top_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/find_non_top_genes.m
+END
+expand_to_n_and_N.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/60687/trunk/matlab/seq/expand_to_n_and_N.m
+END
+load_mutdata.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/load_mutdata.m
+END
+analyze_territory_simple.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/analyze_territory_simple.m
+END
+liftover_fwi.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/liftover_fwi.m
+END
+impute_frames.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/impute_frames.m
+END
+xmodules.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/5939/trunk/matlab/seq/xmodules.m
+END
+map_categories_to_effect13.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/18833/trunk/matlab/seq/map_categories_to_effect13.m
+END
+get_effect29_categories_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/25270/trunk/matlab/seq/get_effect29_categories_list.m
+END
+generate_categ_mmexpr2.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_mmexpr2.m
+END
+collapse_128_to_64.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/3744/trunk/matlab/seq/collapse_128_to_64.m
+END
+load_SegSeq_results.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/15973/trunk/matlab/seq/load_SegSeq_results.m
+END
+write_TN_cov_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1416/trunk/matlab/seq/write_TN_cov_table.m
+END
+dRanger_add_filtering_from_boom_part2XXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/41195/trunk/matlab/seq/dRanger_add_filtering_from_boom_part2XXX.m
+END
+map_to_genesets.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/47718/trunk/matlab/seq/map_to_genesets.m
+END
+load_cnqc_job.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/16344/trunk/matlab/seq/load_cnqc_job.m
+END
+load_TN_perlane_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/3224/trunk/matlab/seq/load_TN_perlane_data.m
+END
+annotate_sites.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/2887/trunk/matlab/seq/annotate_sites.m
+END
+output_gene_sample_mutation_counts_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/28334/trunk/matlab/seq/output_gene_sample_mutation_counts_table.m
+END
+fh_CreateCircosPlot.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/30778/trunk/matlab/seq/fh_CreateCircosPlot.m
+END
+pick_highest_priority_mutation.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/pick_highest_priority_mutation.m
+END
+collapse_covfile_to_single_line.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/6288/trunk/matlab/seq/collapse_covfile_to_single_line.m
+END
+dRanger_pooled_normals_filter.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/7661/trunk/matlab/seq/dRanger_pooled_normals_filter.m
+END
+analyze_mutrate_covariates.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/31154/trunk/matlab/seq/analyze_mutrate_covariates.m
+END
+dRanger_screen_against_panel_of_normals.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/8209/trunk/matlab/seq/dRanger_screen_against_panel_of_normals.m
+END
+MutSigCV_standalone_code_3.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/54452/trunk/matlab/seq/MutSigCV_standalone_code_3.m
+END
+find_cDNA_pos.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/25785/trunk/matlab/seq/find_cDNA_pos.m
+END
+combine_GC_TN.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1484/trunk/matlab/seq/combine_GC_TN.m
+END
+load_coverage.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/load_coverage.m
+END
+load_coverage_compactly_and_convert_to_mat.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/load_coverage_compactly_and_convert_to_mat.m
+END
+load_vog.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/11489/trunk/matlab/seq/load_vog.m
+END
+do_cov3.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/3673/trunk/matlab/seq/do_cov3.m
+END
+dRanger_write_links.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_write_links.m
+END
+integer_test.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/2309/trunk/matlab/seq/integer_test.m
+END
+process_isz_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/process_isz_data.m
+END
+totcols
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/3942/trunk/matlab/seq/totcols
+END
+define_indel_bases_at_risk.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/define_indel_bases_at_risk.m
+END
+BamGrasp_load_region.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/36995/trunk/matlab/seq/BamGrasp_load_region.m
+END
+get_context_from_mafstruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/15764/trunk/matlab/seq/get_context_from_mafstruct.m
+END
+assign_mut_categs.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/54771/trunk/matlab/seq/assign_mut_categs.m
+END
+get_effect13_categories_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/19242/trunk/matlab/seq/get_effect13_categories_list.m
+END
+tryBP.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CancerGenomeAnalysis/!svn/ver/7357/trunk/matlab/seq/tryBP.m
+END
+process_insertion_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/8031/trunk/matlab/seq/process_insertion_data.m
+END
+find_pairmate.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1189/trunk/matlab/seq/find_pairmate.m
+END
+startup.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CancerGenomeAnalysis/!svn/ver/3135/trunk/matlab/seq/startup.m
+END
+mutsig_report.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/49964/trunk/matlab/seq/mutsig_report.m
+END
+dRanger_add_filtering_from_boom_part2.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/7357/trunk/matlab/seq/dRanger_add_filtering_from_boom_part2.m
+END
+link_from_ng.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/1851/trunk/matlab/seq/link_from_ng.m
+END
+regcovwgs.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/3556/trunk/matlab/seq/regcovwgs.m
+END
+ticks.conf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/ticks.conf
+END
+temp_stick_script_2.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/60690/trunk/matlab/seq/temp_stick_script_2.m
+END
+analyze_454_rearrangement_reads2.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/18407/trunk/matlab/seq/analyze_454_rearrangement_reads2.m
+END
+generate_categ_regulatory.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/10392/trunk/matlab/seq/generate_categ_regulatory.m
+END
+prepare_breakpointer_temp_files.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/7034/trunk/matlab/seq/prepare_breakpointer_temp_files.m
+END
+calcsig_v1.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/calcsig_v1.m
+END
+compute_protein_length.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/5662/trunk/matlab/seq/compute_protein_length.m
+END
+process_c2k.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/process_c2k.m
+END
+understand_nested_target_sets.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1368/trunk/matlab/seq/understand_nested_target_sets.m
+END
+run_MutSigS2N.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/60671/trunk/matlab/seq/run_MutSigS2N.m
+END
+load_all_mutation_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/22728/trunk/matlab/seq/load_all_mutation_data.m
+END
+genename_to_filename.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1270/trunk/matlab/seq/genename_to_filename.m
+END
+analyze_gene_gene_correlations_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/26654/trunk/matlab/seq/analyze_gene_gene_correlations_OLD.m
+END
+get_context.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/54898/trunk/matlab/seq/get_context.m
+END
+generate_categ_mmexpr2_prepare.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/13082/trunk/matlab/seq/generate_categ_mmexpr2_prepare.m
+END
+projection_1d_convolutions_fast.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/54762/trunk/matlab/seq/projection_1d_convolutions_fast.c
+END
+run_batch_seqseek.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/17225/trunk/matlab/seq/run_batch_seqseek.m
+END
+load_lanetable.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1995/trunk/matlab/seq/load_lanetable.m
+END
+fh_InsertSizeStatsReport.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/9332/trunk/matlab/seq/fh_InsertSizeStatsReport.m
+END
+count_sites_and_patients.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/46444/trunk/matlab/seq/count_sites_and_patients.m
+END
+dRanger_blast_filter_process_results_OLD.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/1254/trunk/matlab/seq/dRanger_blast_filter_process_results_OLD.m
+END
+assign_65x4_to_categ_set.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/32138/trunk/matlab/seq/assign_65x4_to_categ_set.m
+END
+SegSeqRun_OLD.csh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/10866/trunk/matlab/seq/SegSeqRun_OLD.csh
+END
+prepare_breakpointer_temp_files2.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/10866/trunk/matlab/seq/prepare_breakpointer_temp_files2.m
+END
+load_dR_and_BP_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/34377/trunk/matlab/seq/load_dR_and_BP_data.m
+END
+load_genes.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/55584/trunk/matlab/seq/load_genes.m
+END
+sam.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/25589/trunk/matlab/seq/sam.jar
+END
+add_target_gc_content.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/31444/trunk/matlab/seq/add_target_gc_content.m
+END
+load_isz_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/17056/trunk/matlab/seq/load_isz_file.m
+END
+dendrogram_get_perm.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/28202/trunk/matlab/seq/dendrogram_get_perm.m
+END
+factor2lego.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/53774/trunk/matlab/seq/factor2lego.m
+END
+scatter_germcall_chr.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/scatter_germcall_chr.m
+END
+circos_copynumber.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/16453/trunk/matlab/seq/circos_copynumber.txt
+END
+scatter_germcall.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/2461/trunk/matlab/seq/scatter_germcall.m
+END
+get_bam_stats.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/get_bam_stats.m
+END
+draw_genefigb.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1304/trunk/matlab/seq/draw_genefigb.m
+END
+load_OV.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/12457/trunk/matlab/seq/load_OV.m
+END

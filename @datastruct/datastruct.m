@@ -1,0 +1,479 @@
+classdef datastruct
+
+    properties (SetAccess = private, GetAccess = public)
+        %Note that since there exists a public method 'fieldnames' the
+        %property 'fieldnames' must have GetAccess == private.
+        fieldnames = {};
+        fielddata = {};
+        storagetype = {};
+        colmapping = {};
+        rowmapping = {};
+        metanames = {};
+        metadata = {};
+    end
+    
+    
+    methods (Access = public)
+        
+        %Should have save_D2, load_D2, and load_WP as public methods of
+        %@datastruct.  Then move set_datafile,sethdf5info, (and others?) to private
+        %methods of datastruct.
+        
+        function d = datastruct(varargin)
+        %DATASTRUCT datastruct class constructor.
+            %
+            %       datastruct is a class object with a user-interface similar to
+            %       STRUCT object.  However, the data for each of the datastruct fields
+            %       may be stored in memory or on disk in an HDF5 file.
+            %
+            %       D = datastruct()
+            %
+            %           Initialize empty datastruct
+            %
+            %
+            %       D = datastruct(S)
+            %
+            %           Create output datastruct object D from input structure S.  All
+            %           fields are stored in memory
+            %
+            %
+            %       D = datastruct(S,'diskfields',FIELDNAMECELL,FIELDINFOCELL)
+            %
+            %           Create datastruct D from structure S and hdf5 datasets.  HDF5
+            %           datasets are appended to datastruct using fieldnames stored in
+            %           FIELDNAMESCELL (i.e. {'fieldname1','fieldname2'}).  FIELDINFOCELL is
+            %           a cell array of dataset info structures
+            %           (i.e. {dsetstruct1,dsetstruct2}) and are retrieved using the matlab
+            %           command HDF5INFO.  (See example.)
+            %
+            %
+            %                     %  ex: fileinfo = hdf5info('myhdf5file.h5')
+            %                     %       fileinfo.GroupHierarchy.Datasets(1)
+            %                     %
+            %                     % % %       Filename: 'myhdf5file.h5'
+            %                     % % %           Name: '/dataset'
+            %                     % % %           Rank: 2
+            %                     % % %       Datatype: [1x1 struct]
+            %                     % % %           Dims: [100 249989]
+            %                     % % %        MaxDims: [100 249989]
+            %                     % % %         Layout: 'contiguous'
+            %                     % % %     Attributes: []
+            %                     % % %          Links: []
+            %                     % % %      Chunksize: []
+            %                     % % %      FillValue: 0
+            %                     %
+            %                     %
+            %                     %       S.affy_calls = int8(ceil(rand(249989,100)));
+            %                     %       D = datastruct(S,{'dat'},{fileinfo.GroupHierarchy.Datasets(1)});
+            %
+            %
+            %
+            %       D = datastruct(S,'diskfields',FIELDNAMESCELL,FILENAMESCELL,DSETNAMESCELL)
+            %
+            %           Create datastruct D from structure D and hdf5 datasets.  HDF5
+            %           datasets are appended to datastruct using fieldnames stored in
+            %           FIELDNAMESCELL.  Fielddata is stored in files contained in
+            %           FILENAMESCELL with dataset names stored in DSETNAMESCELL.
+            %
+            %
+            %
+            %       D =
+            %       datastruct('diskfields',DISKFIELDNAMESCELL,DSETINFOCELL,'memfields,MEMFIELDNAMESCELL,MEMDATA)
+            %
+            %           Create data struct D with diskfields and memoryfields.
+            %           Fieldnames of diskfields are stored in DISKFIELDNAMESCELL and
+            %           fileinfo for diskfields is stored in DSETINFOCELL.  Fieldnames
+            %           of memfields is stored in MEMFIELDNAMESCELL and fielddata of
+            %           memfields is stored in MEMDATA.
+            %
+            %
+            %               Revisions:
+            %
+            %                   26 Nov 07: Created by Jen Dobson  (jdobson@broad.mit.edu)
+            %                   10 June 08: Updated Constructor method.
+            %---
+            % $Id$
+            % $Date: 2011-05-11 18:40:47 -0400 (Wed, 11 May 2011) $
+            % $LastChangedBy: schum $
+            % $Rev$
+
+            
+            switch nargin
+
+
+                case 0
+                    %Make empty datastruct
+                    d.fieldnames = {};
+                    d.fielddata = {};
+                    d.storagetype = {};
+                    d.colmapping = {};
+                    d.rowmapping = {};
+                   
+
+
+                case 1
+                    %Pass a MATLAB STRUCT
+                    %Make empty datastruct if passed []
+                    %All fields are memfields
+                    if isa(varargin{1},'datastruct')
+                        d = varargin{1};
+
+                    elseif isa(varargin{1},'struct')
+                        fldnms = fieldnames(varargin{1}); %#ok<CPROP>
+                        if ~isempty(strmatch('fielddata',fldnms)) && ...
+                                ~isempty(strmatch('fieldnames',fldnms)) && ...
+                                ~isempty(strmatch('storagetype',fldnms)) && ...
+                                ~isempty(strmatch('colmapping',fldnms)) && ...
+                                ~isempty(strmatch('rowmapping',fldnms))
+                            S = varargin{1};
+                            d.fieldnames = S.fieldnames; %#ok<CPROP>
+                            d.fielddata = S.fielddata;
+                            d.storagetype = S.storagetype;
+                            d.colmapping = S.colmapping;
+                            d.rowmapping = S.rowmapping;
+                        else
+                            S = varargin{1};
+                            d.fieldnames = fieldnames(S); %#ok<CPROP>
+                            d.fielddata = struct2cell(S);
+                            d.storagetype = repmat({'memory'},1,length(d.fieldnames));
+                            d.colmapping = repmat({[]},1,length(d.fieldnames));
+                            d.rowmapping = repmat({[]},1,length(d.fieldnames));
+                        end
+
+                        if size(d.fieldnames,1) ~= 1
+                            d.fieldnames = d.fieldnames';
+                        end
+
+                        if size(d.fielddata,1) ~= 1
+                            d.fielddata = d.fielddata';
+                        end
+
+
+                    elseif isempty(varargin{1})
+                        d.fieldnames = {};
+                        d.fielddata = {};
+                        d.storagetype = {};
+                        d.colmapping = {};
+                        d.rowmapping = {};
+                    end
+
+
+                case {4,5,6}
+                    %Pass a MATLAB STRUCT S, 'diskfields' flag, fieldnames, and data for diskfields in
+                    %files.  Reference diskfield data by info structure or by filename and
+                    %dataset.
+                    %Fields in S are memfields, fields in diskfield names cell are
+                    %diskfields
+                    
+                    
+                    if nargin == 4
+                    
+                    if (~isstruct(varargin{1}) && ~isa(varargin{1},'datastruct')) || ~(strcmpi('diskfields',varargin{2}))
+                        error('Invalid input argument')
+                    end
+
+                    S = varargin{1};
+
+                    if isa(S,'datastruct')
+                        d = struct(S);
+                    else
+                        %Memory fields
+                        cellS = struct2cell(S);
+                        memfields = fieldnames(S)'; %#ok<CPROP>
+                        d.fieldnames = memfields;
+                        d.fielddata = cellS';
+                        d.storagetype = repmat({'memory'},1,length(memfields));
+                        d.colmapping = repmat({[]},1,length(memfields));
+                        d.rowmapping = repmat({[]},1,length(memfields));
+                    end
+
+                    %Disk Fields
+                    dfields = varargin{3};
+                    if ~isempty(intersect(dfields,d.fieldnames))
+                        error('Multiple fields with same fieldname');
+                    end
+                    if ischar(dfields)
+                        dfields = {dfields};
+                    end
+
+
+
+                        dinfo = varargin{4};
+                        if length(unique([dfields fieldnames(S)'])) < length([dfields fieldnames(S)']) %#ok<CPROP>
+                            error('Fieldnames must be unique')
+                        end
+                        if ~iscell(dfields)
+                            error('Input 3 must be a cell array of strings')
+                        end
+                        if ~iscell(dinfo)
+                            if length(dinfo) == 1
+                                dinfo = {dinfo};
+                            else
+                                dinfo = mat2cell(dinfo);
+                            end
+                        end
+                        if ~iscell(dinfo)
+                            error('Input 4 must be an array of structures')
+                        end
+                        if length(dfields) ~= length(dinfo)
+                            error('Inputs 3 and 4 must be of the same length')
+                        end
+
+                    elseif nargin == 5
+                        if (~isstruct(varargin{1}) && ~isa(varargin{1},'datastruct')) || ~(strcmpi('diskfields',varargin{2}))
+                            error('Invalid input argument')
+                        end
+
+                        S = varargin{1};
+
+                        if isa(S,'datastruct')
+                            d = struct(S);
+                        else
+                            %Memory fields
+                            cellS = struct2cell(S);
+                            memfields = fieldnames(S)'; %#ok<CPROP>
+                            d.fieldnames = memfields;
+                            d.fielddata = cellS';
+                            d.storagetype = repmat({'memory'},1,length(memfields));
+                            d.colmapping = repmat({[]},1,length(memfields));
+                            d.rowmapping = repmat({[]},1,length(memfields));
+                        end
+
+                        %Disk Fields
+                        dfields = varargin{3};
+                        if ~isempty(intersect(dfields,d.fieldnames))
+                            error('Multiple fields with same fieldname');
+                        end
+                        if ischar(dfields)
+                            dfields = {dfields};
+                        end
+                        
+                        dfiles = varargin{4};
+                        if ischar(dfiles)
+                            dfiles = {dfiles};
+                        end
+                        dnames = varargin{5};
+                        if ischar(dnames)
+                            dnames = {dnames};
+                        end
+                        if ~iscell(dfields) || ~iscell(dfiles) || ~iscell(dnames)
+                            error('Inputs 3, 4, and 5 must be cell arrays of strings')
+                        end
+                        if ~isequal(length(dfields),length(dfiles),length(dnames))
+                            error('Inconsistent lengths of input cell arrays')
+                        end
+
+                        dinfo = cellfun(@get_dataset_info,dfiles,dnames,'UniformOutput',0);
+                        
+                    elseif nargin == 6
+                        
+                        chidx = strmatch('char',cellfun(@class,varargin,'UniformOutput',0));
+
+                        df0 = strmatch('diskfields',varargin(chidx));
+                        df0 = chidx(df0);
+                        mf0 = strmatch('memfields',varargin(chidx));
+                        mf0 = chidx(mf0);
+
+                        if isempty(df0) || isempty(mf0)
+                            error('Unrecognized input')
+                        end
+
+
+                        dfields = varargin{df0 + 1};
+                        if ischar(dfields)
+                            dfields = {dfields};
+                        end
+
+                        dinfo = varargin{df0 + 2};
+
+                        mfields = varargin{mf0 + 1};
+
+                        if ischar(mfields)
+                            mfields = {mfields};
+                        end
+
+                        mdat = varargin{mf0 + 2};
+
+                        if length(dfields)~= length(dinfo)
+                            error('Lengths of disk fields and disk field info do not match')
+                        end
+                        if length(mfields)~=length(mdat)
+                            error('Lengths of memory fields and memory field data do not match')
+                        end
+
+                        if ~iscell(dfields) || ~iscell(mfields)|| ~iscell(mdat)
+                            error('Field names and memory field data must be cell arrays')
+                        end
+
+                        if ~isstruct(dinfo)
+                            if iscell(dinfo)
+                                if ~isstruct(dinfo{1})
+                                    error('Disk field info must be structure array.')
+                                end
+                            end
+                        end
+
+                        if size(mfields,1) > size(mfields,2)
+                            mfields = mfields';
+                        end
+                        if size(mdat,1) > size(mdat,2)
+                            mdat = mdat';
+                        end
+
+                        %Memory fields
+                        d.fieldnames = mfields;
+                        d.fielddata = mdat;
+                        d.storagetype = repmat({'memory'},1,length(mfields));
+                        d.colmapping = repmat({[]},1,length(mfields));
+                        d.rowmapping = repmat({[]},1,length(mfields));
+                    end
+
+
+                    %now add the disk fields
+                    d.fieldnames = cat(2,d.fieldnames,dfields);
+                    d.fielddata = cat(2,d.fielddata, dinfo);
+                    d.storagetype = cat(2,d.storagetype, repmat({'disk'},1,length(dfields)));
+
+                    dfdims = cellfun(@getfield,dinfo,repmat({'Dims'},1,length(dinfo)),'UniformOutput',0);
+                    fun = @(x) x(1);
+                    lun = @(x) x(2);
+                    nrows = cellfun(fun,dfdims);
+                    ncols = cellfun(lun,dfdims);
+%                     colmaps = arrayfun(  @linspace ,repmat(1,1,length(dinfo)),ncols,ncols,'UniformOutput',0);
+%                     rowmaps = arrayfun(@linspace,repmat(1,1,length(dinfo)),nrows,nrows,'UniformOutput',0);
+%                     d.colmapping = cat(2,d.colmapping,colmaps);
+%                     d.rowmapping = cat(2,d.rowmapping,rowmaps);
+                    d.colmapping = [d.colmapping repmat({[]},1,length(dinfo))];
+                    d.rowmapping = [d.rowmapping repmat({[]},1,length(dinfo))];
+
+            end %switch
+
+            diskidx = strmatch('disk',d.storagetype)';
+
+            if ~isempty(diskidx)
+
+                % Check to make sure diskfields' fielddata are all 1X1 arrays
+                for k = diskidx
+                    if find(~isstruct(d.fielddata{k}) | size(d.fielddata{k}) ~= [1 1])
+                        error('Illegal file info structure for at least one diskfield')
+                    end
+                end
+
+                %Check to make sure full file path is referenced for disk fields
+                diskfielddata = [d.fielddata{diskidx}];
+                [nffnj,nffnk] = find(cellfun(@(x) isempty(fileparts(x)),{diskfielddata.Filename}));
+                if ~isempty(nffnj)
+                    %Replace filenames by full filenames
+                    dfdcell = struct2cell(diskfielddata);
+                    nffni = cellfun(@(x) strmatch('Filename',x),arrayfun(@fieldnames,diskfielddata,'UniformOutput',0));
+                    dfdcell(sub2ind(size(dfdcell),nffni(nffnk),nffnj,nffnk)) = strcat(pwd,filesep,{diskfielddata(sub2ind(size(diskfielddata),nffnj,nffnk)).Filename});
+
+                    d.fielddata(diskidx) = mat2cell(cell2struct(dfdcell,fieldnames(diskfielddata),1),ones(1,size(diskfielddata,1)),ones(1,size(diskfielddata,2))); %#ok<CPROP>
+                end
+
+            end
+
+            %            % Check to make sure all fields are row cells
+            %             for fld = builtin('fieldnames',d)'
+            %                 if size(d.(char(fld)),1) > 1 && size(d.(char(fld)),2) == 1
+            %                     d.(char(fld)) = d.(char(fld))';
+            %                 elseif size(d.(char(fld)),2) >= 1 && size(d.(char(fld)),1) > 1
+            %                     error('Improperly sized field in datastruct')
+            %                 end
+            %             end
+            d.colmapping = cellfun(@uint16,d.colmapping,'UniformOutput',0);
+            d.rowmapping = cellfun(@uint16,d.rowmapping,'UniformOutput',0);
+
+        end
+
+        d = add_diskfield(d,filenames,fieldnames,dims,type)
+
+        d = add_memfield(d,fieldname,data)
+        
+        d = change_data_pointer(d,cf,fields,newfiles,fname)
+        
+        d = changefieldname(d,oldfield,newfield)
+        
+        d = convert_to_diskfield(d,fieldname,filename,dsetname)
+        
+        d = convert_to_memfield(d,fieldname)
+        
+        s = convert_to_struct(d)
+        
+        d2 = copyD(d)
+        
+        delete(d)
+        
+        suc = deleteDfiles(d,field)
+        
+        nms = diskfieldnames(d)
+        
+        display(d)
+        
+        fn = getfieldnames(d)
+        
+        filename = get_datafile(d,field)
+        
+        idxout = getcolmapping(d,field,idxin)
+        
+        [fn,ds,fieldnames] = gethdf5info_lite(d)
+      
+          data = getmetadata(d,metaname)
+          
+        idxout = getrowmapping(d,field,idxin)
+        
+        chunkdims = getmemchunkdims(d,field,fulldim)
+        
+        s = getsize(d,field,dim)
+
+        tf = isdiskfield(d,fields)
+        
+        tf = isfield(d,fieldnames)
+        
+        tf = ismemfield(d,fields)
+        
+        d = reorder_D_cols(d,varargin)
+        
+        d = reorder_D_rows(d,varargin)
+        
+        d = rewriteD(d)
+        
+        d = rmfield(d,field)
+        
+        d = set_datafile(d,field,fname)
+        
+        d = sethdf5info(d,fields,hdf5field,setto)
+        
+        d = setmetadata(d,metaname,data)
+        
+        d = setwriteprotect(d,state)
+        
+        b = subsref(d,s)
+
+        d = subsasgn(d,s,b)
+        
+        d = run_cbs(prefix,C,ch,should_log,should_smooth,window_size,...
+            rewrite_data_if_exists,write_header_for_output_file, localLSF)
+         
+    end
+    
+    methods (Access = private)
+        
+        
+        
+        tf = iswriteprotected(d)
+        
+        d = setdirtybit(d,state)
+        
+        
+    end
+    
+        
+        
+   
+    
+end
+
+    
+
+

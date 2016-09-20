@@ -1,0 +1,65 @@
+This document contains the installation and example run instructions
+for GISTIC compiled for 64-bit linux.  
+
+#####################################################
+To install GISTIC
+
+1) Copy the file "GISTIC_2_0_1.tar.gz" to the directory where you want to
+   install GISTIC.
+
+	 cp GISTIC_2_0_1.tar.gz <gistic_install_dir>
+	   
+2) Unpack the installation file:
+
+	 tar zxf GISTIC_2_0_1.tar.gz -p
+
+3) In order to run this executable, MATLAB Component Runtime version 7.14 
+   Component Runtime (MCR) must be installed on your computer.  If the
+   MCR is already installed, locate it on your system.  We will call
+   the location of the MCR installation <mcr_root> in the rest of this
+   documentation.  
+
+   If the MCR is not installed, you must install it by running
+   MCRInstaller.bin, which is located in the gistic_install_dir.
+
+          cd <gistic_install_dir>
+	  ./MCRInstaller.bin
+	  
+   The installation asks you to name the directory where you would
+   like the matlab runtime components to install.  The quickstart
+   example at the end of this documentation assumes that the MCR is
+   installed in: <gistic_install_dir>/MATLAB_Component_Runtime
+
+   If you choose a different directory for the MCR components and
+   still wish to run the "run_gistic_example" script, you must modify
+   the section of the "run_gistic_example" script that sets the LD_LIBRARY_PATH
+   and XAPPLRESDIR environment variables.
+
+
+4) In order to run gistic, you must set the environment variables.
+   The following can be added to your login script if you do not wish to set
+   your environment variables each time you open a new shell.
+
+###### FILL IN <mcr_root> HERE #####
+set mcr_root = <mcr_root> $thisdir/MATLAB_Component_Runtime
+setenv LD_LIBRARY_PATH $mcr_root/v714/runtime/glnxa64:$LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH $mcr_root/v714/sys/os/glnxa64:$LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH $mcr_root/v714/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:$LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH $mcr_root/v714/sys/java/jre/glnxa64/jre/lib/amd64/server:$LD_LIBRARY_PATH
+setenv LD_LIBRARY_PATH $mcr_root/v714/sys/java/jre/glnxa64/jre/lib/amd64:$LD_LIBRARY_PATH
+setenv XAPPLRESDIR $mcr_root/v714/X11/app-defaults
+#####################################
+
+A GISTIC Run from Example Files
+
+This zip file includes example files for a complete GISTIC run.  After
+you have installed GISTIC using the instructions above, you can run
+the example from the <gistic_install_directory>:
+
+    ./run_gistic_example
+
+Note that if your MCR has been installed in a location other than
+<gistic_install_directory>/MATLAB_Component_Runtime you will need to
+modify the mcr_root variable in the example script to point to the 
+correct location.
+

@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CancerGenomeAnalysis/!svn/ver/60949/trunk/matlab/@datastruct
+END
+convert_to_memfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/22412/trunk/matlab/@datastruct/convert_to_memfield.m
+END
+rewriteD.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/25867/trunk/matlab/@datastruct/rewriteD.m
+END
+reorder_D_cols.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/11690/trunk/matlab/@datastruct/reorder_D_cols.m
+END
+convert_to_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/CancerGenomeAnalysis/!svn/ver/1064/trunk/matlab/@datastruct/convert_to_struct.m
+END
+changefieldname.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/773/trunk/matlab/@datastruct/changefieldname.m
+END
+run_cbs.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/20486/trunk/matlab/@datastruct/run_cbs.m
+END
+addfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/706/trunk/matlab/@datastruct/addfield.m
+END
+delete.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/1119/trunk/matlab/@datastruct/delete.m
+END
+display.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/1087/trunk/matlab/@datastruct/display.m
+END
+add_diskfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/417/trunk/matlab/@datastruct/add_diskfield.m
+END
+fieldnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/222/trunk/matlab/@datastruct/fieldnames.m
+END
+get_datafile.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/669/trunk/matlab/@datastruct/get_datafile.m
+END
+getsize.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/769/trunk/matlab/@datastruct/getsize.m
+END
+change_data_pointer.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1132/trunk/matlab/@datastruct/change_data_pointer.m
+END
+copyD.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/1119/trunk/matlab/@datastruct/copyD.m
+END
+datastruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/20486/trunk/matlab/@datastruct/datastruct.m
+END
+reorder_D_rows.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1117/trunk/matlab/@datastruct/reorder_D_rows.m
+END
+gethdf5info_lite.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1132/trunk/matlab/@datastruct/gethdf5info_lite.m
+END
+getmetadata.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/548/trunk/matlab/@datastruct/getmetadata.m
+END
+diskfieldnames.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/201/trunk/matlab/@datastruct/diskfieldnames.m
+END
+set_datafile.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/710/trunk/matlab/@datastruct/set_datafile.m
+END
+getmemchunkdims.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/712/trunk/matlab/@datastruct/getmemchunkdims.m
+END
+subsasgn.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/20122/trunk/matlab/@datastruct/subsasgn.m
+END
+getcolmapping.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/713/trunk/matlab/@datastruct/getcolmapping.m
+END
+deleteDfiles.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/673/trunk/matlab/@datastruct/deleteDfiles.m
+END
+isdiskfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/196/trunk/matlab/@datastruct/isdiskfield.m
+END
+add_memfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/714/trunk/matlab/@datastruct/add_memfield.m
+END
+setmetadata.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/540/trunk/matlab/@datastruct/setmetadata.m
+END
+iswriteprotected.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1087/trunk/matlab/@datastruct/iswriteprotected.m
+END
+convert_to_diskfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1136/trunk/matlab/@datastruct/convert_to_diskfield.m
+END
+setdirtybit.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1118/trunk/matlab/@datastruct/setdirtybit.m
+END
+setwriteprotect.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/678/trunk/matlab/@datastruct/setwriteprotect.m
+END
+subsref.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/18831/trunk/matlab/@datastruct/subsref.m
+END
+ismemfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1119/trunk/matlab/@datastruct/ismemfield.m
+END
+sethdf5info.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/725/trunk/matlab/@datastruct/sethdf5info.m
+END
+isfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/189/trunk/matlab/@datastruct/isfield.m
+END
+rmfield.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/18831/trunk/matlab/@datastruct/rmfield.m
+END
+getrowmapping.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/1119/trunk/matlab/@datastruct/getrowmapping.m
+END

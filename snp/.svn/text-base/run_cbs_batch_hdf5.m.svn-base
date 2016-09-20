@@ -1,0 +1,164 @@
+function run_cbs_batch_hdf5(CN,samples_idx,seg_dir,params,lsf_queue,islog,prefix)
+%RUN_CBS_BATCH_HDF5 run the CBS algorithm on LSF from a datastruct object
+%
+%   run_cbs_batch_hdf5(CN,SAMPLES_IDX,SEG_DIR,PARAMS,LSF_QUEUE,ISLOG,PREFIX)
+%
+%CN is the data structure to segment
+%
+%SAMPLES_IDX is the index listing of the samples
+%
+%SEG_DIR is the directory to write segmentation files
+%
+%PARAMS is a struct with fields:
+%       SHOULD_SMOOTH (def = 0)
+%       WINDOW_SIZE (def = 500)
+%       SHOULD_WINDOW (def = 0)
+%       CHRM_SUBSET (def = 0)   [ == ALL CHROMOSOMES ] 
+%       SHOULD_UNDO (def = 0)   [ == DON'T REMOVE "UNNECESSARY" CHANGE POINTS]
+%       UNDOSD (def = 3)     [ == CHANGE POINTS CONSIDERED UNNCESSARY UNLESS >=3
+%                            STANDARD DEVIATIONS APART]
+%ISLOG is a flag indicating, if set, that the data are already in log ratio space
+%
+%PREFIX is the first part of the segmentation file name (the default is
+% 'Sample', which will output files like Sample001.seg.dat)
+
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+% flush any reordered data to disk
+CN = rewriteD(CN);
+
+if ~exist('samples_idx','var') || isempty(samples_idx)
+    samples_idx = 1:getsize(CN,'dat',2);
+end
+  
+if ~exist('lsf_queue','var') || isempty(lsf_queue)
+    lsf_queue = 'hour';
+end
+
+if ~exist('islog','file') || isempty(islog)
+    islog = 1;
+end
+
+if ~exist('prefix','file') || isempty(prefix)
+    prefix = 'Sample';
+end
+
+if ~exist('seg_dir','var') || isempty(seg_dir)
+  seg_dir = './';
+else
+    seg_dir = add_slash_if_needed(seg_dir);
+end
+
+if iscell(CN.sdesc)
+  CN.sdesc=cell(CN.sdesc);
+end
+
+if ~exist('params','var') || isempty(params)
+    params = struct([]);
+end
+
+if isfield(params,'window_size') && ~isfield(params,'should_window')
+    warning('Window size specified but ''should_window'' field off.  Will not window')  %#ok
+end
+
+if isfield(params,'undoso') && ~isfield(params,'should_undo')
+    warning('UNDOSO specified but ''should_undo'' field off.  Will not undo') %#ok
+end
+%       SHOULD_UNDO (def = 0)   [ == DON'T REMOVE "UNNECESSARY" CHANGE POINTS]
+%       UNDOSO (def = 3)  
+
+
+%% MAKE PARAMS STRING TO PASS TO R ROUTINE
+paramsstr = [];
+
+%Chromosome Subset
+if isfield(params,'chrm_subset')
+    if size(params.chrm_subset,1) > size(params.chrm_subset,2)
+        params.chrm_subset = params.chrm_subset';
+    end
+    str = mat2str(params.chrm_subset);
+    str = regexprep(str,' ',',');
+    str = regexprep(str,'[','(');
+    str = regexprep(str,']',')');
+    paramsstr = [paramsstr 'chrm_subset = c' str ','];
+end
+
+%Should smooth?
+if isfield(params,'should_smooth') && params.should_smooth == 1
+    paramsstr = [paramsstr 'should_smooth=1,'];
+end
+
+%Should window?
+if isfield(params,'should_window') && params.should_window == 1
+    paramsstr = [paramsstr 'should_window=1,'];
+    if isfield(params,'window_size')
+        paramsstr = [paramsstr 'window_size=' num2str(params.window_size) ','];
+    end
+end
+
+%Should undo?
+if isfield(params,'should_undo') && params.should_undo == 1
+    paramsstr = [paramsstr 'should_undo=1,'];
+    if isfield(params,'undosd')
+        paramsstr = [paramsstr 'undosd=',num2str(params.undosd),','];
+    end
+end
+
+paramsstr = [paramsstr 'units=1,']; % set units to base (vs Mbase)
+
+disp(['Parameters String: ' paramsstr])
+
+
+%Make sure data are log transformed
+if ~exist('islog','var')
+    verbose('Checking data for log2 trans',30)
+    s = itrfcn1(CN,'dat',1,@nanmean,1);
+    s = mean(s);
+    if abs(s) >= .5
+          disp('Log transforming data');
+        CN = itrfcn2(CN,'dat','dat',1,@(x) log2(x)-1);
+    end
+elseif ~islog
+    disp('Log transforming data');
+    CN = itrfcn2(CN,'dat','dat',1,@(x) log2(x)-1);
+end
+
+%Write file with chrn and pos
+chrposfile = [seg_dir 'GenCoords.dat'];
+write_chr_pos(chrposfile,CN);
+hdf5file = get_datafile(CN,'dat');
+
+for i=1:length(samples_idx)
+    str = [seg_dir 'Sample' sprintf('%03d',samples_idx(i))];
+    if ~exist([str '.R'],'file')
+        run_cbs_hdf5(str,hdf5file,chrposfile,samples_idx(i),paramsstr,CN.sdesc{i});
+    end
+end
+
+% format string for numbering samples
+fmt = ['%0' num2str(floor(log10(size(CN.dat,2)))+1) 'd'];
+for i=1:length(samples_idx)
+    str = [seg_dir prefix sprintf(fmt,samples_idx(i))];
+    if ~exist([str '.seg.dat'],'file')
+        bsub_command = ['bsub ',...
+                '-E ~/CancerGenomeAnalysis/trunk/shell/chk_lsf_cga ',...
+                '-R "rusage[mem=4]" ',... 
+                '-mig 5 ',...
+                '-R "select[cpuf>100]" ',... 
+                '-Q "EXCLUDE(127)" ',...
+                '-q ',lsf_queue,' ',...
+                '-P cbs_cancerfolk ',...
+                '-o ' str '.out.txt ',...
+                '-e ' str '.err.txt ',...
+                '-r R CMD BATCH --no-save --no-restore ' str '.R'];
+        unix(bsub_command);
+    else
+      fprintf(1,['echo skipping ' str '\n' ]);
+    end
+   
+end
+
+

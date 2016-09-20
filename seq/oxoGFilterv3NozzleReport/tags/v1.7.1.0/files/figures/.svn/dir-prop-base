@@ -1,0 +1,21 @@
+K 10
+svn:ignore
+V 1051
+HNSC-BA-4074-Tumor v. HNSC-BA-4074-Normal_ArtifactMode_hist2d_FDR.png
+HNSC-BA-4074-Tumor v. HNSC-BA-4074-Normal_lego_after.png
+HNSC-BA-4074-Tumor v. HNSC-BA-4074-Normal_lego_before.png
+HNSC-BA-4074-Tumor v. HNSC-BA-4074-Normal_NonArtifactMode_hist2d.png
+HNSC-BA-4075-Tumor v. HNSC-BA-4075-Normal_ArtifactMode_hist2d_FDR.png
+HNSC-BA-4075-Tumor v. HNSC-BA-4075-Normal_lego_after.png
+HNSC-BA-4075-Tumor v. HNSC-BA-4075-Normal_lego_before.png
+HNSC-BA-4075-Tumor v. HNSC-BA-4075-Normal_NonArtifactMode_hist2d.png
+HNSC-BA-4076-Tumor v. HNSC-BA-4076-Normal_ArtifactMode_hist2d_FDR.png
+HNSC-BA-4076-Tumor v. HNSC-BA-4076-Normal_lego_after.png
+HNSC-BA-4076-Tumor v. HNSC-BA-4076-Normal_lego_before.png
+HNSC-BA-4076-Tumor v. HNSC-BA-4076-Normal_NonArtifactMode_hist2d.png
+PR_TCGA_HNSC_Capture_trim.pass.maf.annotated.PA.png
+PR_TCGA_HNSC_Capture_trim.pass.maf.annotated.RR.png
+PR_TCGA_HNSC_Capture_trim.pass.maf.annotated All Artifact Mode_ArtifactMode_hist2d_FDR.png
+PR_TCGA_HNSC_Capture_trim.pass.maf.annotated All Non-Artifact Mode_NonArtifactMode_hist2d.png
+
+END

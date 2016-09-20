@@ -1,0 +1,227 @@
+function D=reorder_D_cols(D,varargin)
+%REORDER_D_COLS - Reorder the column indices (samples) of D.
+%
+%   DNEW = REORDER_D_COLS(DOLD,IDX) reorders the columns in data structure
+%   D according to vector IDX such that DNEW.SDESC = DOLD.SDESC(IDX).
+%
+%   DNEW = REORDER_D_COLS(DOLD,SUPACC,VAL) reorders the columns in data
+%   structure D by finding the columns that match SUPPACC = VAL in the
+%   SUPDAT field.
+%
+%   DNEW = REORDER_D_COLS(DOLD,IDX,'allmem') reorders the columns in data structure
+%   D according to vector IDX such that DNEW.SDESC = DOLD.SDESC(IDX).  The
+%   new datastructure has all fields stored in memory.  (Useful when only a
+%   few columns are extracted from previous D.)
+%
+%   DNEW = REORDER_D_COLS(DOLD,SUPACC,VAL,'allmem') reorders the columns in data
+%   structure D by finding the columns that match SUPPACC = VAL in the
+%   SUPDAT field.  Uses the 'allmem' option described above.
+%
+
+%      History
+%           - 09 Oct 07 -- Added catch for if field is defined on struct
+%           but empty (line ~55).  Jen Dobson (jdobson@broad.mit.edu)
+%
+%           - 15 Oct 07 -- Updated to allow for a 3 dimensional supdat (if
+%           platforms are merged).
+%
+%           - 2 Nov 07 -- Updated to allow for mergsupdat field.  (supdat
+%           will be 2 dimensional and will merge fields from different
+%           platforms.  mergsupdat will be 3 dimensional and contain
+%           original supdats from all platforms.
+%
+%           - 20 Dec 07: Added datastruct object implementation.  
+%
+%           - 28 Jan 08:  Added 'allmem' option to allow for all fields to
+%           be memory fields in the returned datastruct.  (Useful when
+%           reordering to return just a few samples.)
+%       
+%
+%---
+% $Id$
+% $Date%
+% $LastChangedBy$
+% $Rev$
+
+%% Parse varargin
+if length(varargin)==1
+    idx=varargin{1};
+elseif length(varargin)==2 && ischar(varargin{1})
+    idx=find_D_cols(D,varargin{1},varargin{2});
+elseif length(varargin) ==2 && strcmpi(varargin{2},'allmem')
+    idx = varargin{1};
+    allmem = 1;
+elseif length(varargin) == 3 && ischar(varargin{1}) && strcmpi(varargin{3},'allmem')
+    idx = find_D_cols(D,varargin{1},varargin{2});
+    allmem = 1;
+end
+
+%% Get origsize2
+
+
+
+if isfield(D,'dat')
+    D=add_history(D,mfilename,varargin{:});  %also add history
+    origsize2 = getsize(D,'dat',2);
+elseif isfield(D,'chrn')
+    origsize2 = getsize(D,'chrn',2);
+elseif isfield(D,'pos')
+    origsize2 = getsize(D,'pos',2);
+elseif isfield(D,'marker')
+    origsize2 = getsize(D,'marker',2);
+elseif isfield(D,'affy_calls')
+    origsize2 = getsize(D,'affy_calls',2);
+end
+
+%% Reorder Fields
+
+vector_fields={'sup','scans','scale2vec','residx','origidx','gcm_name','cbs_rl','sis','medians',...
+               'peaks','joins','final_dist','sscaling','adat','sscale','sdesc'};
+if isfield(D,'sample_fields')
+  vector_fields=[ D.sample_fields];
+end
+
+[dum,dom,vfieldsidx] = intersect(vector_fields,D.fieldnames);
+for fldidx = vfieldsidx
+    
+    x = D.fielddata{fldidx};
+        if ~isempty(x)
+           
+            if isvector(x)
+                x=x(idx);
+            else
+                dim = length(size(x));
+                if dim == 2
+                    x=x(:,idx);
+                else
+                    % reorder second dimension of fields of dimension > 2
+                    x = subsref(x,substruct('()',{':',idx,repmat(':',1,dim-2)}));
+                end
+            end
+          D.fielddata{fldidx} = x;
+        end
+  
+end
+
+k = strmatch('used_normals',D.fieldnames);
+if ~isempty(k)
+
+    if isstruct(D.fielddata{k}) && ~isempty(D.fielddata{k})
+
+     
+            D.fielddata{k} = D.fielddata{k}(idx);
+    
+ 
+    elseif iscell(D.fielddata{k}) && ~isempty(D.fielddata{k})
+        D.fielddata{k}  = D.fielddata{k}(idx);
+    else
+        warning('Removing field: used_normals') %#ok<WNTAG>
+        D = rmfield(D,'used_normals');
+    end
+        
+end
+
+
+%% Now update matrix fields
+
+if ~exist('allmem','var') || ~allmem
+    dskidx = strmatch('disk',D.storagetype,'exact')';
+else
+    dskidx = [];
+end
+
+% Reorder disk fields
+for k = dskidx
+    if ~isempty(D.colmapping{k})
+    D.colmapping{k} = D.colmapping{k}(idx); 
+    else
+        D.colmapping{k} = idx;
+    end
+end
+
+
+
+% Now the memory fields
+% Find the matrix fields by using all remaining fields with size(1) = origsize1
+if exist('origsize2','var')
+    matrix_fields = setdiff(D.fieldnames,[vector_fields {'supdat','supacc','supdesc','used_normals'} D.fieldnames(dskidx)]);
+    mfsize = cell2mat(cellfun(@(x) getsize(D,x,1),matrix_fields,'UniformOutput',0));
+    matrix_fields = matrix_fields(mfsize==origsize2);
+    [dum,dum,mfidx] = intersect(matrix_fields,D.fieldnames);
+else
+    matrix_fields={'dat','affy_calls','affy_call','sdat',...
+        'lsdat','fdat','prectrls','smooth','cbs','cbs_fixed',...
+        'sm1','sm2','sm2j','sm3','raw','si','flag','hmm',...
+        'pre_control_sum','sitab','ref','level','scores','orig'};
+
+    matrix_fields = setdiff(matrix_fields,D.fieldnames(dskidx));
+    [dum,dum,mfidx] = intersect(matrix_fields,D.fieldnames);
+end
+
+
+
+for j=mfidx
+   
+    if strcmp('memory',D.storagetype{j})
+        x=D.fielddata{j};
+        if ~isempty(x)
+            x=x(:,idx);
+        end
+        D.fielddata{j} = x;
+    else
+        s(1) = struct('type','.','subs',D.fieldnames{j});
+        s(2).type = '()';
+        s(2).subs = {':',idx};
+        x = subsref(D,s);
+        D.fielddata{j} = x;
+        D.storagetype{j} = 'memory';
+        D.colmapping{j} = {[]};
+        D.rowmapping{j} = {[]};
+    end
+ 
+end
+
+
+%supdat
+k = strmatch('supdat',D.fieldnames);
+if ~isempty(k)
+
+    
+    x = D.fielddata{k};
+    if ~isempty(x)
+        if ndims(x) == 2
+            x = x(:,idx);
+        end
+        if ndims(x) == 3
+            x = x(:,idx,:);
+        end
+        D.fielddata{k} = x;
+    end
+end
+
+k = strmatch('mergsupdat',D.fieldnames);
+if ~isempty(k)
+    x = D.fielddata{k};
+    if ~isempty(x)
+        if ndims(x) == 2
+            x = x(:,idx);
+        end
+        if ndims(x) == 3
+            x = x(:,idx,:);
+        end
+        D.fielddata{k} = x;
+    end
+end
+
+
+% highdim_matrix_fields={'adat'};
+% if isfield(D,'highdim_matrix_fields')
+%   highdim_matrix_fields=[ highdim_matrix_fields D.highdim_matrix_fields];
+% end
+% for j=1:length(highdim_matrix_fields)
+%   if isfield(D,highdim_matrix_fields{j})
+%     x=getfield(D,highdim_matrix_fields{j});
+%     x=x(:,idx);
+%     D=setfield(D,highdim_matrix_fields{j},x);
+%   end
+% end

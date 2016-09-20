@@ -1,0 +1,24 @@
+function set_verbose_file(filename)
+% SET_VERBOSE_FILE(FILENAME) sets the global VERBOSE_FILE  to FILE.
+%
+%    If set, all verbose output will be written to FILENAME
+%
+%    See also VERBOSE, SET_VERBOSE_LEVEL
+
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$ 
+
+
+
+if ~is_full_filename(filename)
+    filename = [pwd filesep filename];
+    warning(['Changing filename to full file path: ' filename]);
+end
+
+
+global VERBOSE_FILE
+
+VERBOSE_FILE=filename;

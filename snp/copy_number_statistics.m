@@ -1,0 +1,113 @@
+function copy_number_statistics(CL21,ext, base_dir)
+% ---
+% $Id$
+% $Date: 2008-04-30 14:07:06 -0400 (Wed, 30 Apr 2008) $
+% $LastChangedBy: gadgetz $
+% $Rev$
+  
+filename = [base_dir 'CopyNumberStats' ext '.txt'];
+%dir = ['/xchip/cancergenome04/William/'];
+%cd (dir);
+
+if exist('CL21','var')
+stat{1} = CL21.sdesc;
+stat{2} = max(CL21.dat)';
+stat{3} = min(CL21.dat)';
+stat{4} = median(CL21.dat)';
+stat{5} = mean(CL21.dat)';
+stat{6} = std(CL21.dat)';
+stat{7} = sum(CL21.dat>0)';
+stat{8} = sum(CL21.dat<=0)'; 
+stat{9} = sum(CL21.dat>.1)';
+stat{10} = sum(CL21.dat<-.1)'; 
+stat{11} = sum(CL21.dat>1)';
+stat{12} = sum(CL21.dat<-1)'; 
+stat{13} = sum(CL21.dat>2)';
+stat{14} = sum(CL21.dat<-2)'; 
+if isfield(CL21,'sis')
+stat{15} = {CL21.sis.type}';
+stat{16} = {CL21.sis.name}';
+end
+header{17} = num2str(size(CL21.dat,1));
+
+header{1} = 'Array';
+header{2} = 'Maximum';
+header{3} = 'Minimum'; 
+header{4} = 'Median';
+header{5} = 'Mean';
+header{6} = 'Standard Deviation'; 
+header{7} = '>0';
+header{8} = '<=0';
+header{9} = '>.1';
+header{10} = '<-.1';
+header{11} = '>1';
+header{12} = '<-1';
+header{13} = '>2';
+header{14} = '<-2';
+header{15} = 'Type';
+header{16} = 'Sample Name';
+
+else
+stat{1} = C2.sdesc;
+stat{2} = max(C2.dat)';
+stat{3} = min(C2.dat)';
+stat{4} = median(C2.dat)';
+stat{5} = mean(C2.dat)';
+stat{6} = std(C2.dat)';
+stat{7} = sum(C2.dat>2)';
+stat{8} = sum(C2.dat<=2)'; 
+stat{9} = sum(C2.dat>2.1435)';
+stat{10} = sum(C2.dat<1.8661)'; 
+stat{11} = sum(C2.dat>3)';
+stat{12} = sum(C2.dat<1)'; 
+stat{13} = sum(C2.dat>3.5)';
+stat{14} = sum(C2.dat<.5)'; 
+if isfield(C2,'sis')
+stat{15} = {C2.sis.type}';
+stat{16} = {C2.sis.name}';
+end
+header{1} = 'Array';
+header{2} = 'Maximum';
+header{3} = 'Minimum'; 
+header{4} = 'Median';
+header{5} = 'Mean';
+header{6} = 'Standard Deviation'; 
+header{7} = '>2';
+header{8} = '<=2';
+header{9} = '>2.1435';
+header{10} = '<1.8661';
+header{11} = '>3';
+header{12} = '<1';
+header{13} = '>3.5';
+header{14} = '<.5';
+header{15} = 'Type';
+header{16} = 'Sample Name';
+header{17} = num2str(size(C2.dat,1));
+
+end
+
+if exist('stat','var') && exist('header','var')
+file = fopen(filename, 'wt');
+
+for y = 1:size(header,2)
+    fprintf(file, '%s', header{y});
+    fprintf(file, '\t');
+end
+fprintf(file, '\n');
+
+for y =1:size(stat{1},2)
+    for z =1:size(stat,2)
+       
+        if z==1 || z ==15 || z== 16
+            fprintf(file, '%s', stat{z}{y});
+            fprintf(file, '\t');
+        else
+            fprintf(file, '%s', num2str(stat{z}(y)));
+            fprintf(file, '\t');
+        end
+    end
+    fprintf(file, '\n');
+end
+fclose(file);
+end
+

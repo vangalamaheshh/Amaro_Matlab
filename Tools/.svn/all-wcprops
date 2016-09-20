@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CancerGenomeAnalysis/!svn/ver/28930/trunk/matlab/Tools
+END
+generate_sample_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1082/trunk/matlab/Tools/generate_sample_list.m
+END
+itrfcn1.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/800/trunk/matlab/Tools/itrfcn1.m
+END
+itrfcn2.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/680/trunk/matlab/Tools/itrfcn2.m
+END
+vertcatfill.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CancerGenomeAnalysis/!svn/ver/28930/trunk/matlab/Tools/vertcatfill.m
+END
+combine_segmented_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1151/trunk/matlab/Tools/combine_segmented_data.m
+END
+horzcatfill.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/718/trunk/matlab/Tools/horzcatfill.m
+END
+iterate_function.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CancerGenomeAnalysis/!svn/ver/662/trunk/matlab/Tools/iterate_function.m
+END

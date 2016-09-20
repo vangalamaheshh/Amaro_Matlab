@@ -1,0 +1,142 @@
+function job=run_glad_batch_hdf5(CN,run_on_fly,lsf_queue,wait_for_jobs,gladidx,params,temp_dir)
+%  job =
+%  run_glad_batch_hdf5(CN,run_on_fly,lsf_queue,wait_for_jobs,gladidx,params,temp_dir)
+%
+%           glad_idx = indices of CN to glad
+% 
+
+%       Revisions:
+%           12 Dec 07 -- changed location of R call to
+%           ~/CancerGenomeAnalysis/trunk/bin
+%
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+job=[];
+if ~exist('wait_for_jobs','var')
+  wait_for_jobs=0;
+end
+
+if ~exist('lsf_queue','var') || isempty(lsf_queue)
+  lsf_queue='broad';
+end
+
+
+if ~exist('run_on_fly','var') || isempty(run_on_fly) 
+  run_on_fly=1;
+end
+
+if ~exist('params','var')
+  params=[];
+end
+
+if ~exist('temp_dir','var')
+  temp_dir = './';
+end
+
+temp_dir = add_slash_if_needed(temp_dir);
+
+if ~fileattrib(temp_dir)
+    error('Directory specified by TEMP_DIR does not exist');
+end
+
+
+if fileattrib(temp_dir)
+
+if ~exist('gladidx','var') || isempty(gladidx)
+  gladidx=[1:size(CN.dat,2)];  %gladidx defaults to all columns
+end
+
+if iscell(CN.sdesc)
+  CN.sdesc=strvcat(CN.sdesc);
+end
+
+%Make sure data is log transformed
+verbose('Checking data for log2 trans',30)
+s = itrfcn1(CN,'dat',1,@nanmean,1);
+s = mean(s);
+if abs(s) >= .5
+    CN = itrfcn2(CN,'dat','dat',1,@(x) log2(x)-1);
+end
+
+%Write file with chrn and pos
+chrposfile = [temp_dir 'GenCoords.dat'];
+write_chr_pos(chrposfile,CN);
+hdf5file = get_datafile(CN,'dat');
+if ~isempty(gladidx)
+    for i=gladidx
+        run_glad_hdf5(chrposfile,[temp_dir 'Sample' sprintf('%03d',i)],hdf5file,getcolmapping(CN,'dat',i),params);
+        if run_on_fly
+            st=[temp_dir 'Sample' sprintf('%03d',i) ];
+            if ~exist([st '.seg.dat'],'file')
+                
+                unixstr=['bsub -J GLAD1 -q ' lsf_queue ' -o ' st '.log.txt -e ' st '.err.txt  -i ' st ...
+                    '.R -r ~/CancerGenomeAnalysis/trunk/bin/leadR240'];
+%               unixstr=['bsub -J GLAD1 -q ' lsf_queue ' -o ' st '.log.txt -e ' st '.err.txt  -i ' st ...
+%                     '.R -r ~/CancerGenomeAnalysis/trunk/bin/leadR211'];
+                disp(unixstr);
+                [r1,r2]=unix(unixstr);
+                tok=regexp(r2,'\<([0-9]+)\>','tokens');
+                if ~isempty(tok)
+                    job(i)=str2num(tok{1}{1});
+                else
+                    job(i)=-1;
+                end
+            else
+                disp(['skipping ' st]);
+            end
+        end
+    end
+end
+
+
+if ~run_on_fly
+  f=fopen('run_all','w');
+  for i=1:getsize(CN.dat,2)
+    st=[temp_dir 'Sample' sprintf('%03d',i) ];
+    if ~exist([st '.seg.dat'],'file')
+      fprintf(f,['bsub -J GLAD1 -q normal -o ' st '.log.txt -e ' st '.err.txt  -i ' st ...
+                 '.R -r ~/CancerGenomeAnalysis/trunk/bin/leadR211\n']);
+    else
+      fprintf(f,['echo skipping ' st '\n' ]);
+    end
+  end
+  fclose(f);
+end
+
+% unixstr='bsub -J A sleep 100';
+% job=[];
+% for i=1:10
+%       [r1,r2]=unix(unixstr); 
+%       tok=regexp(r2,'\<([0-9]+)\>','tokens');
+%       if ~isempty(tok)
+%         job(i)=str2num(tok{1}{1});
+%       else
+%         job(i)=-1;
+%       end
+% end
+
+if wait_for_jobs
+  while(~isempty(job))
+    [r1,r2]=unix('bjobs');
+    tok=regexp(r2,'\n([0-9]+)','tokens');
+    running_jobs=str2num(strvcat(cat(1,tok{:})));
+    fin=setdiff(job,running_jobs);
+    if ~isempty(fin)
+      disp('finished jobs:');
+      disp(fin);
+    end
+    job=intersect(job,running_jobs);
+    pause(0.1);
+  end
+end
+
+%foreach fl( Sample*.seg.dat )
+%   awk '{ print substr(FILENAME,7,3),$2,$3/1E6,$4/1E6,$5,$6 }' $fl | tail +2 > $fl:r:r.s.dat
+%end
+%cat *.s.dat > output
+
+end

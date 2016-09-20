@@ -1,0 +1,155 @@
+function s = get_D_field_props(field,prop)
+% get_D_field_props returns properties of datastruct fields
+%
+%       S = get_D_field_props(FIELD,PROP) returns the property of the field
+%       in D.  Values for Prop are:
+%           'unite' -- how the field behaves under unite
+%               (matrix,row,column)
+%           'class' -- class of elements of  the field 
+%           'storage' -- typical storage type, either 'disk' or 'memory'
+%           'dims' -- the dimensions that the field spans
+%           'initialize' -- a scalar value used to initialize the elements
+%           of the field
+%
+%       If no PROP is specified, a structure containing all the props is
+%       returned.
+
+%           Revisions:
+%               * Function added Dec 07 (jdobson@broad.mit.edu)
+%               * 'orig' and 'ref' and fields added and help written 10 Jan 08
+%
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+switch field
+    
+    case 'dat'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = single(0);
+    case 'affy_calls'
+        S.unite = 'matrix';
+        S.class = 'uint8';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = uint8(0);
+    case 'orig'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = single(0);                
+    case 'ref'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = single(0);
+    case 'supdat'
+        S.unite = 'sup';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = [];
+        S.initialize = int8(0);
+    case 'raw'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = uint(0);
+    case 'smooth'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = single(0);
+    case 'cbs'
+        S.unite = 'matrix';
+        S.class = 'single';
+        S.storage = 'disk';
+        S.dims = [1 2];
+        S.initialize = single(0);
+    case 'pos'
+        S.unite = 'column';
+        S.class = 'single';
+        S.storage = 'memory';
+        S.dims = 1;
+        S.initialize = single(0);
+    case 'chrn'
+        S.unite = 'column';
+        S.class = 'uint8';
+        S.storage = 'memory';
+        S.dims = 1;
+        S.initialize = uint8(0);
+    case 'sdesc'
+        S.unite = 'row';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = 2;
+        S.initialize = {[]};
+    case 'origidx'
+        S.unite = 'row';
+        S.class = 'uint16';
+        S.storage = 'memory';
+        S.dims = 2;
+        S.initialize = uint16(0);
+    case 'used_normals'
+        S.unite = 'row';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = 2;
+        S.initialize = {[]};
+    case {'supacc','supdesc'}
+        S.unite = 'sup';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = [];
+        S.initialize = 'x';
+    case 'chr'
+        S.unite = 'column';
+        S.class = 'char';
+        S.storage = 'memory';
+        S.dims = 1;
+        S.initialize = 'x';
+    case 'marker'
+        S.unite = 'column';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = 1;
+        S.initialize = {[]};
+    case 'gorigidx'
+        S.unite = 'column';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = 1;   
+        S.initialize = uint32(0);
+    case 'gsupdat'
+        S.unite = 'gsup';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = [];
+        S.initialize = 0;
+    case {'gsupdesc','gsupacc'}
+        S.unite = 'gsup';
+        S.class = '';
+        S.storage = 'memory';
+        S.dims = [];
+        S.initialize = 'x';   
+end
+
+if ~exist('S','var')
+    s = [];
+ %   warning('Unknown field: %s',field);
+else
+    if ~exist('prop','var')
+        s = S;
+    else
+        s = S.(prop);
+    end
+end

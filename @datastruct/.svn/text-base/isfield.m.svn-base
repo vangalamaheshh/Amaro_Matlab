@@ -1,0 +1,55 @@
+function tf = isfield(S,fieldnames)
+%  ISFIELD True if field is in datastruct array.
+%     ISFIELD(S,FIELD) returns true if the string FIELD is the name of a
+%     field in the datastruct array S.
+%  
+%     TF = ISFIELD(S,FIELDNAMES) returns a logical array, TF, the same size
+%     as the size of the cell array FIELDNAMES.  TF contains true for the
+%     elements of FIELDNAMES that are the names of fields in the datstruct
+%     array S and false otherwise.
+%  
+%     NOTE: TF is false when FIELD or FIELDNAMES are empty.
+%  
+%     Example:
+%        s = datastruct('one',1,'two',2);
+%        fields = isfield(s,{'two','pi','One',3.14})
+
+%           Revisions:
+%               28 Nov 07 -- function added by Jen Dobson
+%               (jdobson@broad.mit.edu)  
+%
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+
+if ischar(fieldnames)
+    fieldnames = {fieldnames};
+elseif iscell(fieldnames)
+    if size(fieldnames,1) > 1 
+        if size(fieldnames,2) > 1
+            error('Input variable FIELNAMES must be a 1xN cell array of strings')
+        else
+            fieldnames = fieldnames';
+        end
+    end
+else
+    error('Input variable FIELDNAMES must be a string or a cell array of strings')
+end
+
+if ~strmatch(class(S),'datastruct','exact')
+    error('Input variable S must be a DATASTRUCT class object')
+end
+
+
+[C,IA,IB] = intersect(S.fieldnames,fieldnames);
+
+tf = zeros(1,length(fieldnames));
+
+arefields = ones(size(C));
+
+tf(IB) = arefields;
+

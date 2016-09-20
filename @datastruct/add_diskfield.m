@@ -1,0 +1,73 @@
+function D = add_diskfield(D,filenames,fieldnames,dims,type)
+% ADD_DISKFIELD adds diskfield to datastruct object
+%
+%       D = ADD_DISKFIELD(D,FILENAMES,FIELDNAMES,DIMS,TYPE) adds the array with
+%       size DIMS and data class TYPE in the fieldname FIELD of
+%       datastruct object D.  Used to initialize a dataspace linked to a
+%       datastruct object without having to start with all the data in
+%       memory and write it to disk.  Instead, the space is created, and
+%       data can be written in blocks.  FILENAMES,FIELDNAMES,DIMS, and
+%       TYPES can be cell arrays if more than one field is to be
+%       allocated.
+%
+%           Revisons: 
+%
+%               - 19 Dec 07: Function added (jdobson@broad.mit.edu)
+
+%---
+% $Id$
+% $Date: 2007-12-20 16:18:29 -0500 (Thu, 20 Dec 2007) $
+% $LastChangedBy: jdobson $
+% $Rev$
+
+
+%% Make everything cell array
+
+if ~iscell(filenames)
+    filenames = {filenames};
+end
+
+if ~iscell(fieldnames)
+    fieldnames = {fieldnames};
+end
+
+if ~iscell(dims)
+    dims = {dims};
+end
+
+if ~iscell(type)
+    type = {type};
+end
+
+if length(filenames)~=length(fieldnames) || length(fieldnames)~=length(dims) || length(dims) ~= length(type)
+    error('All cell array inputs must have same length')
+end
+
+
+
+%% Create the space
+
+for k = 1:length(fieldnames)
+    
+    idx = strmatch(fieldnames{k},D.fieldnames,'exact');
+    
+    if ~isempty(idx)
+        if ~isempty(D.fielddata{idx})
+        error('Fieldname %s already exists',fieldnames{k});
+        end
+    end
+    
+    create_hdf5_diskspace(filenames{k},fieldnames{k},dims{k},type{k})
+   
+    if isempty(idx)
+        idx = length(D.fieldnames)+1;
+        D.fieldnames{idx} = fieldnames{k};
+    end
+     D.fielddata{idx} = get_dataset_info(filenames{k},fieldnames{k});
+     D.storagetype{idx} = 'disk';
+     D.colmapping{idx} = [1:D.fielddata{idx}.Dims(2)];
+     D.rowmapping{idx} = [1:D.fielddata{idx}.Dims(1)];
+    
+end
+
+

@@ -1,0 +1,10 @@
+gistic_plots to do
+==================
+- leave gistic_plots.m and plot_snp_score as compatibility layers
+- factor out code for a single plot from plot_snp_score (eliminate 'k')
+    - optional parameters in struct w/defaults
+    - better significance line independent of scale ticks
+        - line extends over scale
+        - green digits
+    - unrotate main graph so that linkaxes can be used
+    - move tick generation 

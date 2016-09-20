@@ -1,0 +1,60 @@
+function D = add_array_includes(D,AL)
+%ADD_ARRAY_INCLUDES adds the include columns of the array list file to the
+%supdat of data structure.
+%
+%   D = ADD_ARRAY_INCLUDES(D,AL) has inputs array list structure AL and
+%   data structure D and returns ouput data structure D.  Include
+%   information from the columns of the array list file
+%   ('merge','batch','normalization','core') indicating whether
+%   each array should be dropped (-1), ghosted (0), processed as normal (1), or forced through
+%   processing (2) is added to the supdat.
+%
+
+%           History
+%               - 8 Nov 07 -- Function created by Jen Dobson.
+%               (jdobson@broad.mit.edu).
+%
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+if iscell(D)
+    for k = 1:length(D)
+
+        fields = fieldnames(AL);
+
+        includefields = strmatch('inc_',fields);
+
+        if ~isempty(includefields)
+
+            [m,i,j] = match_string_sets(D{k}.sdesc,{AL.array});
+            D{k} = reorder_D_cols(D{k},i);
+
+            for fl = fields(includefields)'
+                supacc = char(fl);
+                supdat = str2num(char(AL(j).(supacc)));
+
+                D{k} = add_D_sup(D{k},supacc,supacc,supdat');
+            end
+        end
+    end
+else
+
+    fields = fieldnames(AL);
+
+    includefields = strmatch('inc_',fields);
+
+    if ~isempty(includefields)
+
+        [m,i,j] = match_string_sets(D.sdesc,{AL.array});
+        D = reorder_D_cols(D,i);
+
+        for fl = fields(includefields)'
+            supacc = char(fl);
+            supdat = str2num(char(AL(j).(supacc)));
+            D = add_D_sup(D,supacc,supacc,supdat');
+        end
+    end
+end

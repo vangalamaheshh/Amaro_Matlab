@@ -1,0 +1,96 @@
+
+<colors>
+<<include {colors}>>
+</colors>
+
+<fonts>
+<<include {fonts}>>
+</fonts>
+
+<<include {ideogram}>>
+<<include {ticks}>>
+
+karyotype   = {karyotype}
+
+<image>
+dir = {dir}
+file  = {file}
+# radius of inscribed circle in image
+radius         = 1500p
+background     = white
+# by default angle=0 is at 3 o'clock position
+angle_offset   = -90
+</image>
+
+chromosomes_units = 1000000
+# chromosomes       = hs1;hs2;hs3
+chromosomes_display_default = yes
+
+# chromosomes_radius = hs2:0.9r;hs3:0.8r
+
+# Links (bezier curves or straight lines) are defined in <links> blocks.
+# Each link data set is defined within a <link>.
+# As with highlights, parameters defined
+# in the root of <links> affect all data sets and are considered
+# global settings. Individual parameters value can be refined by
+# values defined within <link> blocks, or additionally on each
+# data line within the input file.
+
+<links>
+
+radius = 0.95r
+
+<link ts_germline_intra>
+z            = 0
+show         = {show_germlines?}
+color        = {germline_intra_color}
+thickness    = 2
+bezier_radius = 0.6r
+file         = {germline_intra_links}
+record_limit = 10000
+</link>
+
+<link ts_germline_inter>
+z            = 0
+show         = {show_germlines?}
+color        = {germline_inter_color}
+thickness    = 2
+bezier_radius = 0.2r
+file         = {germline_inter_links}
+record_limit = 10000
+</link>
+
+<link ts_somatic_intra>
+z            = 1
+show         = yes
+color        = {somatic_intra_color}
+thickness    = 10
+bezier_radius = 0.6r
+file         = {somatic_intra_links}
+record_limit = 10000
+</link>
+
+<link ts_somatic_inter>
+z            = 2
+show         = yes
+color        = {somatic_inter_color}
+thickness    = 10
+bezier_radius = 0.2r
+file         = {somatic_inter_links}
+record_limit = 10000
+</link>
+
+
+</links>
+
+anglestep       = 0.5
+minslicestep    = 10
+beziersamples   = 40
+debug           = no
+warnings        = no
+imagemap        = no
+
+# don't touch!
+units_ok        = bupr
+units_nounit    = n
+

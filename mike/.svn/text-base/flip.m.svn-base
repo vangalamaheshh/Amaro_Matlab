@@ -1,0 +1,9 @@
+function A = flip(A)
+% flip(A)
+% flips a vector 180 degrees, whether it's column or row.
+% Mike Lawrence 2008-06-20
+if sum(size(A)>1)>1, error('flip only works for vectors'); end
+if size(A,1)==1, A=fliplr(A);
+else A=flipud(A); end
+end
+

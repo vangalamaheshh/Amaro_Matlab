@@ -1,0 +1,211 @@
+function gp_gistic_core(varargin)
+% gp_gistic_core -b base_dir -i struct_filename -o output_dir_ext -of
+% output_file_name -p parameter_file -ta ts_amp -td ts_del [-a
+% array_list_file -qv qv_threshold -pv pv_threshold -u use_new -ifs ignore_flagged_samples -ext extension]  
+% ---
+% $Id$
+% $Date: 2007-09-20 16:49:21 -0400 (Thu, 20 Sep 2007) $
+% $LastChangedBy: cmermel $
+% $Rev$
+  
+addpath ~/CancerGenomeAnalysis/trunk/matlab/
+addpath ~/CancerGenomeAnalysis/trunk/matlab/gp_modules
+addpath ~/CancerGenomeAnalysis/trunk/matlab/snp
+  
+a=handle_args({'b','i','o','of','p','ta','td','a','qv','pv','u','ifs','ext'},varargin);
+method_st = 'gistic_core';
+
+if ~isempty(a.b)
+    base_dir = a.b;
+    if ~isempty(a.p)
+      old_params = read_params_file(a.p);
+    else 
+      old_params = [];
+    end
+else
+    if ~isempty(a.p)
+        old_params=read_params_file(a.p);
+        pidx=grep('^output_dir$',{old_params.param},1);
+        if isempty(pidx)
+          error('No base_dir in params file');
+        else
+          base_dir=old_params(pidx(1)).value;
+        end
+    else
+        error('Need to provide either a base directory or parameter file!');
+    end
+end
+
+if base_dir(end)~= '/'
+  base_dir=[base_dir '/'];
+end
+
+if isempty(a.i)
+  error('Missing input file name');
+else 
+  input_struct = a.i;
+  infile = [base_dir input_struct];
+end
+
+disp(['Reading input file: ' infile]);
+tmp = load(infile);
+nms = fieldnames(tmp);
+if length(nms)>1
+  error('The input file has more than one variable');
+else
+  CL = getfield(tmp,nms{1});
+end
+clear tmp
+
+if isempty(CL)
+  error('No variable in input file');
+end
+
+if ~isempty(a.o)
+  output_dir_ext = a.o;
+else 
+  output_dir_ext = 'output';
+end
+
+output_dir = [method_st '_' output_dir_ext '/'];
+output_path = [base_dir output_dir];
+
+if ~exist(output_path)
+  mkdir(output_path);
+else
+  error('Output directory already exists.  Cannot overwrite.');
+end
+
+if ~isempty(a.of)
+  outfile = a.of;
+else
+  outfile = [method_st '.struct.mat'];
+end
+
+out = [output_path outfile];
+
+if ~isempty(a.a)
+  use_arrays = read_dlm_file(a.a);
+  for i = 1:length(use_arrays)
+    use_arrays{i} = char(use_arrays{i});
+  end
+  use_arrays = cellstr(unique(strvcat(use_arrays),'rows'));
+else
+  use_arrays = [];
+end
+
+if isempty(a.qv)
+  qv_thresh = 0.25;
+else
+  qv_thresh = str2num(a.qv)
+  if qv_thresh > 1
+    error('Q-value threshold must be less than 1!');
+  end
+end
+
+if isempty(a.pv)
+    pv_threshold = [];
+else 
+    pv_threshold = str2num(a.pv);
+end
+
+if isempty(a.ext)
+    ext = [];
+else
+    ext = a.ext;
+end
+
+if isempty(a.u)
+    use_new = 1;
+else 
+    use_new = str2num(a.u);
+end
+
+if isempty(a.ta) || isempty(a.td)
+    error('Must specify an upper and lower threshold!');
+else
+    t_amp = str2num(a.ta);
+    t_del = str2num(a.td);
+    ts = [t_amp t_del];
+end    
+
+if ~isempty(use_arrays)
+  [Mt,m1,m2] = match_string_sets_hash(use_arrays,{CL.sis.array});
+  if length(m1) < length(use_arrays) || isempty(m1)
+    error(['Did not find a match in the sample info file to all input ' ...
+           'arrays!']);
+  end
+  use_arrays_idx = m2;
+else
+  use_arrays_idx = [];
+end
+
+if ~isempty(use_arrays_idx)
+  CL = reorder_D_cols(CL,use_arrays_idx);
+else
+  use_arrays_idx = 1:size(CL.dat,2);
+end
+
+if isempty(a.ifs)
+  ignore_flagged = 0;
+else
+  ignore_flagged = str2num(a.ifs);
+end
+
+if ignore_flagged
+  flagged = find(CL.supdat(find_supid(CL,'hist_qc'),:)>0);
+  not_flagged = setdiff(1:size(CL.dat,2),flagged);
+  use_arrays_idx = use_arrays_idx(not_flagged);
+  CL = reorder_D_cols(CL,not_flagged);
+end
+
+
+disp(['Running gistic_core on ', num2str(length(use_arrays_idx)), ' samples.']); 
+if ~use_new
+  t1s=-0.3;
+  t2s=0.3;
+  %GG (06/03/22) was CL.smooth but CL.dat=CL.smooth 
+  [h_amp,h_del,naamp,nadel]=glioma_perm(CL.dat,0, ...
+                                        struct('method','log',...
+                                               't1s',t1s,...
+                                               't2s',t2s));
+  
+  
+  [thst_amp,thst_del]=exact_permutations(CL,t1s,t2s);
+
+  [regs,pvs]=generate_regs(CL,['peaks' ext],0.3,h_amp,h_del,naamp,nadel,thst_amp,thst_del,pv_thresh,501,0);
+else
+  score_type=struct('method','nxa','amp_thresh',ts(1),'del_thresh',-ts(2),'res',0.001);
+%  score_type=struct('method','nxa','amp_thresh',ts(1),'del_thresh',-ts(2),...
+%                    'res',0.0001,'max_segment_size',2000);
+  [q,p,d,ads]=snp_score_permutations(CL,score_type,-1);
+  for k=1:2
+    score_thresh(k)=min(ads{k}(find(q{k}<=qv_thresh)));
+  end
+  regs=generate_regs_by_peel_off(CL,ads,d,q,score_type,score_thresh,struct('method','conf'),.90);
+  pvs=q;
+end
+
+
+disp(['Saving output to file: ', out]);
+
+save(out,'ts','p','q','ads','d','regs','pvs','ext');
+
+save([output_path 'regs.mat'],'regs','pvs');
+save([output_path 'stats.mat'],'q','p','d','ads');
+eval([ nms{1} '=CL;']);
+save([output_path 'core_arrays.struct.mat',nms{1},'-v7.3']);
+
+param_file = [output_path 'parameter.txt'];
+
+disp(['Writing parameter file to:' param_file]);
+
+param_struct = struct('output_dir',output_path,'output_file_name',outfile,'base_dir',base_dir,...
+    'input_file_name',input_struct,'ts_amp',num2str(t_amp),'ts_del',num2str(t_del),'pv_threshold',...
+    num2str(pv_threshold),'use_new',num2str(use_new),'ignore_flagged_samples',num2str(ignore_flagged));
+
+gp_write_params(method_st,param_struct,old_params,param_file);
+
+% for compilation:
+% cd ~/matlab/gp_modules
+% mcc -m gp_D_to_snp

@@ -1,0 +1,39 @@
+function status = write_chr_pos(filename,D)
+% WRITE_CHR_POS writes marker, chromosome number and position to a tab delimited
+% file.  (bare bones file for segmentation)
+%
+%       STATUS = WRITE_CHR_POS(FILENAME,D)
+%
+
+%---
+% $Id$
+% $Date: 2008-05-12 10:49:46 -0400 (Mon, 12 May 2008) $
+% $LastChangedBy: jdobson $
+% $Rev$
+
+
+
+fid = fopen(filename,'w');
+format = '%s\t%f\t%f\t\n';
+
+marker = D.marker;
+chrn = D.chrn;
+pos = D.pos;
+
+if size(chrn,1) < size(chrn,2)
+    chrn = chrn';
+end
+
+if size(pos,1) < size(pos,2)
+    pos = pos';
+end
+
+
+towrite = repmat({[]},length(chrn),3);
+towrite(:,1) = marker;
+towrite(:,2) = mat2cell(chrn,ones(1,length(chrn)),1);
+towrite(:,3) = mat2cell(pos,ones(1,length(chrn)),1);
+
+towrite = reshape(towrite',1,numel(towrite));
+fprintf(fid,format,towrite{:});
+status = fclose(fid);

@@ -1,0 +1,91 @@
+function dat = get_hdf5_elements(filename,datasetname,colidx,rowidx,dtype)
+% GET_HDF5_ELEMENTS returns data indexed by general indices COLIDX and ROWIDX.
+%
+%       DAT = GET_HDF5_ROWS(FILENAME,DATASETNAME,COLIDX,ROWIDX,DTYPE)
+%
+%       Note: When referencing data using the hdf5 C library, use the C convention of
+%       specifying row dimension first, then column dimension.  
+%
+%       
+
+%       Revisions:
+%           20 Nov 07: Function created by Jen Dobson
+%           (jdobson@broad.mit.edu).
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+%% Check if indices are empty
+if isempty(colidx)
+    dat = zeros(0,length(rowidx));
+    return
+elseif isempty(rowidx)
+    dat = zeros(length(colidx),0);
+    return
+end
+
+%% Set the data type to write to file
+
+htype = mtype_to_htype(dtype);
+
+%% Open file and create data spaces
+
+file = H5F.open(filename,'H5F_ACC_RDONLY','H5P_DEFAULT'); %open with read only access
+
+
+dataset = H5D.open(file,datasetname);
+
+dataspace = H5D.get_space(dataset);
+
+
+
+
+%%%%%% Check indexing vectors %%%%%%
+if size(colidx,1) > size(colidx,2)
+    colidx = colidx';
+end
+if size(rowidx,1) > size(rowidx,2)
+    rowidx = rowidx';
+end
+if size(rowidx,1) ~= 1
+    error('ROWIDX must be a vector');
+end
+if size(colidx,1) ~= 1
+    error('COLIDX must be a vector');
+end
+
+
+%     %%%%%%%%make the coord array for data hyperslab%%%%%%%%%%%%%%%%%%%%%%%
+
+
+coord = [colidx-1; rowidx-1];  %make it into a 2XN array
+
+
+%%%%%%%% select the dataset elements
+H5S.select_elements(dataspace,'H5S_SELECT_SET',coord);
+
+
+%%%%%%%%%%make memory hyperslab %%%%%%%%%%%%
+
+count = [size(coord,2) 1];
+    
+%the mem dataspace
+memspace = H5S.create_simple(2,count,[]);
+% 
+% %the mem hyperslab
+% H5S.select_hyperslab(memspace,'H5S_SELECT_SET',[0 0],[],count,[]);
+
+%% Read data
+
+dat = H5D.read(dataset,htype,memspace,dataspace,'H5P_DEFAULT');
+dat = dat';
+%% Close resources
+
+
+H5S.close(dataspace);
+H5S.close(memspace);
+H5D.close(dataset);
+
+H5F.close(file)

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/44171/trunk/matlab/seq/breakpointer
+END
+prepare_breakpointer_temp_files3XXX.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/44171/trunk/matlab/seq/breakpointer/prepare_breakpointer_temp_files3XXX.m
+END
+fh_BreakPointerScatter.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/43831/trunk/matlab/seq/breakpointer/fh_BreakPointerScatter.m
+END
+fh_BreakPointerScatterTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/41322/trunk/matlab/seq/breakpointer/fh_BreakPointerScatterTest.m
+END
+align_with_breakpoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/15658/trunk/matlab/seq/breakpointer/align_with_breakpoint.c
+END
+index2name.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/12045/trunk/matlab/seq/breakpointer/index2name.m
+END
+align_reads3.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/30541/trunk/matlab/seq/breakpointer/align_reads3.m
+END
+align_with_breakpoint.mexa64
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/15658/trunk/matlab/seq/breakpointer/align_with_breakpoint.mexa64
+END
+estimate_breakpoint3.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/16133/trunk/matlab/seq/breakpointer/estimate_breakpoint3.m
+END
+prepare_breakpointer_temp_files3.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/41203/trunk/matlab/seq/breakpointer/prepare_breakpointer_temp_files3.m
+END
+align_each_bkpt5.pl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/12045/trunk/matlab/seq/breakpointer/align_each_bkpt5.pl
+END
+breakpointer_gather.pl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/25968/trunk/matlab/seq/breakpointer/breakpointer_gather.pl
+END
+fuseseq3.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/30541/trunk/matlab/seq/breakpointer/fuseseq3.m
+END

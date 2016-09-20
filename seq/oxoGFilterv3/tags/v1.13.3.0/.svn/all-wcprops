@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0
+END
+strfindk.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/strfindk.m
+END
+estimateFalseRatesForOxoGfdr.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/estimateFalseRatesForOxoGfdr.m
+END
+tr.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/tr.m
+END
+load_table.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/load_table.m
+END
+startFilterMAFFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/startFilterMAFFile.m
+END
+plotFalseRates.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/plotFalseRates.m
+END
+strjoin.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/strjoin.m
+END
+hist2d.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/hist2d.m
+END
+generateMutations.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/generateMutations.m
+END
+writeCaseMafTempFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/writeCaseMafTempFile.m
+END
+printStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/printStruct.m
+END
+plotArtifactMode.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/plotArtifactMode.m
+END
+myhistT.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/myhistT.m
+END
+addMutationEntries.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/addMutationEntries.m
+END
+oxogBinomialMixture.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/oxogBinomialMixture.m
+END
+logErrorAndDetermineValue.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/logErrorAndDetermineValue.m
+END
+loadMAFTable.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/loadMAFTable.m
+END
+isArtifactSignature.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/isArtifactSignature.m
+END
+retrieveUniqueCaseControlBarcodes.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/retrieveUniqueCaseControlBarcodes.m
+END
+saveLegoStructToFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/saveLegoStructToFile.m
+END
+plotMutationSpectrumCategLego1.m
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/plotMutationSpectrumCategLego1.m
+END
+retrieveMutationsForGivenCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/retrieveMutationsForGivenCase.m
+END
+PoxoGestimate.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/PoxoGestimate.m
+END
+calc_fdr_value.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/calc_fdr_value.m
+END
+createMutationMapKey.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/createMutationMapKey.m
+END
+impose_default_value.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/impose_default_value.m
+END
+cutLineFDR.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/cutLineFDR.m
+END
+estimateCutLineFromFdrOutput.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/estimateCutLineFromFdrOutput.m
+END
+writeFileWithSingleNumber.m
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/writeFileWithSingleNumber.m
+END
+bar3_with_colors.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/bar3_with_colors.m
+END
+mergeStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/mergeStruct.m
+END
+writeFilterMAFFiles.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/writeFilterMAFFiles.m
+END
+retrieveUniqueTumorSampleBarcodes.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/retrieveUniqueTumorSampleBarcodes.m
+END
+MutationSpectrumCategs.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/MutationSpectrumCategs.m
+END
+plotNonArtifactMode.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/plotNonArtifactMode.m
+END
+GetFullPath.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/GetFullPath.m
+END
+plotAllelicFractionSummaries.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/plotAllelicFractionSummaries.m
+END
+trimStruct.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CancerGenomeAnalysis/!svn/ver/52392/trunk/matlab/seq/oxoGFilterv3/tags/v1.13.3.0/trimStruct.m
+END

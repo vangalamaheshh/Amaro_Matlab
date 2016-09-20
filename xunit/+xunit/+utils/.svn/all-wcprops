@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils
+END
+parseFloatAssertInputs.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/parseFloatAssertInputs.m
+END
+isTearDownString.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/isTearDownString.m
+END
+isTestCaseSubclass.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/isTestCaseSubclass.m
+END
+arrayToString.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/arrayToString.m
+END
+stringToCellArray.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/stringToCellArray.m
+END
+containsRegexp.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/containsRegexp.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/Contents.m
+END
+compareFloats.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/compareFloats.m
+END
+comparisonMessage.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/comparisonMessage.m
+END
+generateDoc.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/generateDoc.m
+END
+isTestString.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/isTestString.m
+END
+isAlmostEqual.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/isAlmostEqual.m
+END
+isSetUpString.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/+xunit/+utils/isSetUpString.m
+END

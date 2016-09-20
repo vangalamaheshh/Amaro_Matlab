@@ -1,0 +1,1 @@
+./run_annotate_with_conservartion.sh /broad/software/nonfree/Linux/redhat_5_x86_64/pkgs/matlab_2010b/toolbox/compiler/deploy/glnxa64/  /xchip/cga1/reference/reference-maf/hg19/flow_runs/oncotator/step_1/chr1/chr1aaa.step1 scratch_compile.txt scratch_hg19_compile.txt

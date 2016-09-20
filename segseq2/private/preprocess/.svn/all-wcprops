@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/1325/trunk/matlab/segseq2/private/preprocess
+END
+convert_aligned_pairs_to_mat.ctf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat.ctf
+END
+convert_aligned_pairs_to_mat.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat.m
+END
+convert_aligned_pairs_to_mat_mcc_component_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat_mcc_component_data.c
+END
+convert_aligned_pairs_to_mat
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat
+END
+convert_aligned_pairs_to_mat_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat_main.c
+END
+segseq_preprocess_pipeline.pl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/CancerGenomeAnalysis/!svn/ver/1325/trunk/matlab/segseq2/private/preprocess/segseq_preprocess_pipeline.pl
+END
+convert_aligned_pairs_to_mat.prj
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/preprocess/convert_aligned_pairs_to_mat.prj
+END

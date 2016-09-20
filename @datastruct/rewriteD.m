@@ -1,0 +1,94 @@
+function d = rewriteD(d)
+%rewriteD rewrite the diskfields of D to disk in the correct order
+%specified by colmapping and rowmapping.
+%
+%       D = rewriteD(D) rewrites the data to disk in the specified
+%       order.  
+%
+%       Revisions:
+%           - Function added 4 Jan 08 (jdobson@broad.mit.edu)
+%
+%---
+% $Id$
+% $Date: 2011-08-05 12:27:45 -0400 (Fri, 05 Aug 2011) $
+% $LastChangedBy: schum $
+% $Rev$
+
+% get indices of disk fields
+didx = strmatch('disk',d.storagetype);
+
+maxbytes = getmetadata(d,'MemLimit');
+
+
+% for each disk field, write data in correct order to a temp file; reset
+% colmapping and rowmapping to 1:end; copy temp file to field's hdf5 file;
+% delete temp file
+
+for k = didx'
+    
+    if isempty(d.colmapping(k))
+        d.colmapping{k} = 1:d.fielddata{k}.Dims(2);
+    end
+    
+    if isempty(d.rowmapping(k))
+        d.rowmapping{k} = 1:d.fielddata{k}.Dims(1);
+    end
+    
+    if isequal(d.colmapping{k},1:d.fielddata{k}.Dims(2)) && isequal(d.rowmapping{k},1:d.fielddata{k}.Dims(1))
+        continue
+    end
+    
+    disp('Remapping datafile')
+    
+    tempfile = [char(regexp(d.fielddata{k}.Filename,...
+        [ regexp_filesep '.+' regexp_filesep ],'match')) 'temp.h5'];
+    
+    if exist(tempfile,'file')
+        delete(tempfile);
+    end
+    
+    create_hdf5_diskspace(tempfile,d.fielddata{k}.Name,...
+        [length(d.rowmapping{k}) length(d.colmapping{k})],...
+        d.fielddata{k}.Datatype.Class);
+    
+    [longdimlength,longdim] = max(d.fielddata{k}.Dims);
+    
+    if ~isempty(maxbytes)
+        unit = cast(1,htype_to_mtype(d.fielddata{k}.Datatype.Class));  %#ok
+        a = whos('unit');
+        longdimbytes = a.bytes * longdimlength;
+        atatime = floor(maxbytes/longdimbytes);
+    else
+        atatime = min(d.fielddata{k}.Dims);
+    end
+    
+    % reorder data, looping over memory-limited chunks
+    l = 0;
+    while l < min(length(d.rowmapping{k}),length(d.colmapping{k}))
+        if longdim == 1
+            % block column copy
+            thisendidx = min(l+atatime,length(d.colmapping{k}));
+            dat = get_hdf5_block(d.fielddata{k}.Filename,d.fielddata{k}.Name,...
+                d.colmapping{k}(l+1:thisendidx),1:d.fielddata{k}.Dims(1),d.fielddata{k}.Datatype.Class);
+            write_hdf5_block(tempfile,d.fielddata{k}.Name,dat(d.rowmapping{k},:),l+1:thisendidx,...
+                1:length(d.rowmapping{k}))
+        elseif longdim == 2
+            %! uncertain if we need this "block row" copy method
+            thisendidx = min(l+atatime,length(d.rowmapping{k}));
+            dat = get_hdf5_block(d.fielddata{k}.Filename,d.fielddata{k}.Name,...
+                1:d.fielddata{k}.Dims(2),d.rowmapping{k}(l+1:thisendidx),d.fielddata{k}.Datatype.Class);
+            write_hdf5_block(tempfile,d.fielddata{k}.Name,dat(:,d.colmapping{k}),1:length(d.colmapping{k}),...
+                l+1:thisendidx);
+        else
+            error('Does not support more than 2 dimensions');
+        end
+        l = l + atatime;
+    end
+    % reset to identity mappings
+    d.colmapping{k} = 1:length(d.colmapping{k});
+    d.rowmapping{k} = 1:length(d.rowmapping{k});
+    % move data from temp file to actual file
+    copyfile(tempfile,d.fielddata{k}.Filename,'f');
+    delete(tempfile);
+end
+

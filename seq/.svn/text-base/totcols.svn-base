@@ -1,0 +1,1 @@
+awk '{for (x=1;x<=NF;x++) { tot[x]=tot[x]+$x}} END {for (c=1;c<=NF;c++) { printf tot[c]"\t" } printf"\n" }'

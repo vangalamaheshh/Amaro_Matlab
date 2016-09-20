@@ -1,0 +1,85 @@
+function d = convert_to_diskfield(d,field,filename,dsetname)
+% CONVERT_TO_DISKFIELD converts memory-stored field of datastruct object D
+% to disk-stored field.
+%
+%       D = CONVERT_TO_DISKFIELD(D,FIELDNAME,FILENAME,DSETNAME)
+%
+%
+
+%       Revisions:
+%               22 Nov 07:  Function created by Jen Dobson.
+%               (jdobson@broad.mit.edu)
+%
+%               29 Nov 07:  Added the "IsLocked?" attribute.
+%
+%               6 Dec 07:  Added check for .h5 terminator
+%---
+% $Id$
+% $Date: 2008-08-14 09:49:38 -0400 (Thu, 14 Aug 2008) $
+% $LastChangedBy: jdobson $
+% $Rev$
+
+
+%Write data to disk
+if ~iscell(field)
+    field = {field};
+end
+
+if ~iscell(filename)
+    filename = {filename};
+end
+
+if ~exist('dsetname','var')
+    dsetname = field;
+end
+
+if ~iscell(dsetname)
+    dsetname = {dsetname};
+end
+
+for k = 1:length(field)
+    
+    idx = strmatch(field{k},d.fieldnames,'exact');
+
+    if isempty(find(filename{k}==filesep))
+       
+        filename{k} = [pwd filesep filename{k}];
+    end
+    
+    
+    d.storagetype{idx} = 'disk';
+    
+    if isempty(regexp(filename{k},'\.h5$'))
+        filename{k} = strcat(filename{k},'.h5');
+    end
+    
+    if exist(filename{k},'file')
+
+        if ismember(dsetname{k},get_dataset_names(filename{k}))
+            error('Filename data set name %s is not unique in file %s',dsetname{k},filename{k})
+        end
+
+        hdf5write(filename{k},dsetname{k},d.fielddata{idx},'WriteMode','append')
+
+    else
+
+        hdf5write(filename{k},dsetname{k},d.fielddata{idx})
+
+    end
+    
+    details = struct('AttachedTo',dsetname{k},'AttachType','dataset','Name','IsLocked');
+    
+    hdf5write(filename{k},details,0,'WriteMode','append')
+    
+    d.fielddata{idx} = get_dataset_info(filename{k},dsetname{k});
+   
+    if length(d.fielddata{idx}.Dims) == 1
+        d.colmapping{idx} = [];
+    else
+        d.colmapping{idx} = [1:d.fielddata{idx}.Dims(2)];
+    end
+    
+    d.rowmapping{idx} = [1:d.fielddata{idx}.Dims(1)];
+   
+end
+

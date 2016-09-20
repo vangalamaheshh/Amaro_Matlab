@@ -1,0 +1,3 @@
+function jcp = get_jcp()
+jcp = ['/cga/tcga-gsc/home/lawrence/cga/trunk/matlab/seq/sam.jar:'...
+       '/cga/tcga-gsc/home/lawrence/cga/trunk/analysis_pipeline/tools/classes'];

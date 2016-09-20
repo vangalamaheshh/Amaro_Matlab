@@ -1,0 +1,73 @@
+function [wide_st wide_en] = add_wide_peak_conf(reg,chr_zero,chr_max,ads,bg_dist,conf_level,score_thresh,score_type,bpps,plot)
+% Written by Craig Mermel
+%
+% ---
+% $Id$
+% $Date: 2007-12-20 16:16:50 -0500 (Thu, 20 Dec 2007) $
+% $LastChangedBy: cmermel $
+% $Rev$
+   
+  cdf = flipud(cumsum(flipud(bg_dist)));
+  peak_start = reg.peak_st;
+  peak_end = reg.peak_en;
+  peak_score = ads(peak_start);
+  
+  ads = ads((chr_zero+1):chr_max);
+   
+  if plot
+    plot(ads);
+    hold on
+    keyboard
+  end  
+  
+  num_peak_snps = 0;
+  temp_start = peak_start-chr_zero;
+  temp_end = peak_end-chr_zero;
+  num_temp_snps = temp_end-temp_start+1;
+  while num_temp_snps > num_peak_snps
+    
+     num_peak_snps = num_temp_snps; 
+     corrected_conf_level = conf_level^(1/ceil(num_temp_snps*bpps));
+     
+     gt_index = snp_inv_cdf(bg_dist,score_type,corrected_conf_level);
+     
+     if gt_index >= peak_score %% in this case, wide peak is whole chromosome
+       temp_start = 1;
+       temp_end = length(ads);
+       num_temp_snps = temp_end-temp_start+1;
+       num_peak_snps = num_temp_snps;
+     else %% otherwise, we find the confidence region:
+       
+       g_corrected = peak_score - gt_index; % this is > 0
+       if plot
+         plot(repmat(g_corrected,1,length(ads)));
+         hold on
+         keyboard
+       end
+       if temp_start == 1 || g_corrected > ads(temp_start-1)
+         temp_start = temp_start;
+       else 
+         left_side = find(ads(1:temp_start)<=g_corrected);
+         if ~isempty(left_side)
+           temp_start = max(left_side);
+         else
+           temp_start=1;
+         end
+       end
+       if temp_end == length(ads) || g_corrected > ads(temp_end+1)
+         temp_end=temp_end;
+       else
+         mod_ads = ads;
+         mod_ads(1:(temp_end-1)) = g_corrected+1;
+         right_side = find(mod_ads<=g_corrected);
+         if ~isempty(right_side)
+          temp_end = min(right_side);
+         else
+           temp_end=length(ads);
+         end
+       end
+     end
+     num_temp_snps = temp_end-temp_start+1;
+  end
+  wide_st = temp_start+chr_zero;
+  wide_en = temp_end+chr_zero;

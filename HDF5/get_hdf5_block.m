@@ -1,0 +1,91 @@
+function dat = get_hdf5_block(filename,datasetname,colidx,rowidx,dtype)
+% GET_HDF5_BLOCK returns data indexed by indices COLIDX and ROWIDX when
+% indices define a block of data in hdf5 file.
+%
+%       DAT = GET_HDF5_BLOCK(FILENAME,DATASETNAME,COLIDX,ROWIDX,DTYPE)
+%
+%       GET_HDF5_BLOCK returns the elements of the dataset in file FILENAME
+%       and dataset DATASETNAME defined by COLIDX and ROWIDX.  DTYPE is the
+%       data type of the dataset.  GET_HDF5_BLOCK should be used when
+%       accessing a contiguous block of data or accessing partial columns
+%       or rows of data.  If a contiguous block or partial rows/columns
+%       cannot be found, GET_HDF5_ELEMENTS is called instead.
+%
+%
+
+%       Revisions:
+%           28 Nov 07: Function created by Jen Dobson
+%           (jdobson@broad.mit.edu).
+%           11 Apr 11: substantial rewrite using memory buffers for indexing 
+%           instead of using HS5_SELECT_OR to create an HDF5 index (schum)
+
+%---
+% $Id$
+% $Date: 2011-04-11 15:18:29 -0400 (Mon, 11 Apr 2011) $
+% $LastChangedBy: schum $
+% $Rev$
+
+
+%% Check indexing vectors
+
+if isempty(colidx)
+    dat = zeros(0,length(rowidx));
+    return
+elseif isempty(rowidx)
+    dat = zeros(length(colidx),0);
+    return
+end
+
+if size(colidx,1) > size(colidx,2)
+    colidx = colidx';
+end
+if size(rowidx,1) > size(rowidx,2)
+    rowidx = rowidx';
+end
+if size(rowidx,1) ~= 1
+    error('ROWIDX must be a vector');
+end
+if size(colidx,1) ~= 1
+    error('COLIDX must be a vector');
+end
+
+%% set the data type to write to file
+
+htype = mtype_to_htype(dtype);
+
+%% open file and create data spaces
+
+file = H5F.open(filename,'H5F_ACC_RDONLY','H5P_DEFAULT'); %open with read only access
+dataset = H5D.open(file,datasetname);
+dataspace = H5D.get_space(dataset);
+
+%% read data
+% select a hyperlab that spans the range of the indices
+offset = [min(colidx)-1,min(rowidx)-1]; 
+block = [max(colidx) max(rowidx)] - offset;
+count = [1 1];
+stride = [];
+H5S.select_hyperslab(dataspace,'H5S_SELECT_SET',offset,stride,count,block);
+
+% create the memory space
+memspace = H5S.create_simple(2,block,[]);
+% transfer data from disk to memory
+dat = H5D.read(dataset,htype,memspace,dataspace,'H5P_DEFAULT');
+% reorder data
+contiguous_indices = isequal(rowidx,rowidx(1):rowidx(end)) & ...
+                     isequal(colidx,colidx(1):colidx(end));
+if ~contiguous_indices
+    dat = dat(rowidx-offset(2),colidx-offset(1));
+end
+
+%% close resources
+H5S.close(dataspace);
+H5S.close(memspace);
+H5D.close(dataset);
+H5F.close(file)
+
+% flip column vector
+%! subsref level thing?
+if size(dat,2) == 1 && length(rowidx)==1
+    dat = dat';
+end

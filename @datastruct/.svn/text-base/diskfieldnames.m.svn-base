@@ -1,0 +1,20 @@
+function nms = diskfieldnames(D)
+%   DISKFIELDNAMES list the diskfields of datastruct D and return in cell
+%   array NMS.
+%
+%       
+
+%           Revisions:
+%               29 Nov 07 - Added (jdobson@broad.mit.edu)
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+
+stor = D.storagetype;
+diskidx = strmatch('disk',stor,'exact');
+
+nms = D.fieldnames(diskidx);

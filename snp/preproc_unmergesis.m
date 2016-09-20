@@ -1,0 +1,57 @@
+function umSIS = preproc_unmergesis(M,tok)
+%PREPROC_UNMERGESIS unmerges the sis structure.  
+%
+%   UMSIS = PREPROC_UNMERGESIS(M) takes SIS structure M and returns UMSIS,
+%   a cell array of sis structures unmerged by platform.  The input
+%   structure, M, has values for the different platforms separated by token
+%   TOK (default is ###).
+%
+
+%           Revisions:
+%
+%                   -- 5 Nov 07: Created by Jen Dobson (jdobson@broad.mit.edu)
+%
+%---
+% $Id$
+% $Rev$
+% $LastChangedBy: jdobson $
+% $Date: 2007-11-19 17:28:20 -0500 (Mon, 19 Nov 2007) $
+
+if iscell(M)
+    if length(M)~=1
+        error('Data structure is cell of length greater than one.  Can''t unmerge')
+    else
+        M = M{1}
+    end
+end
+
+if ~exist('tok','var')
+    tok = '###';  %pat = (.+)###(.+)###
+end
+
+starts = regexp(M.sis(1).array,tok,'start');
+pat = repmat(['(.+)' tok],1,length(starts));  
+
+oldSIS = M.sis;
+
+sisfields = fieldnames(oldSIS);
+
+
+
+% build structure in a cell array, then convert to struct
+j = 1;
+for fld = sisfields'
+    fieldcontents = {M.sis.(char(fld))};
+    tmp = regexp(fieldcontents,pat,'tokens');
+    for k = 1:length(tmp{1}{1})
+        fun = @(x) x{k};
+        umSIScell(j,:,k) = cellfun(fun,[tmp{:}],'UniformOutput',0);  %deal this fld's sis values
+    end
+ 
+    j = j+1;
+
+end
+
+
+tmpsis = cell2struct(umSIScell,sisfields,1);
+umSIS = mat2cell(tmpsis,size(tmpsis,1),ones(1,size(tmpsis,2)));

@@ -1,0 +1,1 @@
+SegSeq -s GBM_freeze4_chr9 -p 1e-20 -W 1000 -g CNV.verified_080606.with.centromere.telomere.txt -t /xchip/tcga/gbm/analysis/WGS/GBM_06-0188/copy_num/freeze4/readmat/tcga_freeze4_tumor_normal_paired_single_block_A_chr9.mat

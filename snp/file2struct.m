@@ -1,0 +1,75 @@
+function s=file2struct(fname);
+%FILE2STRUCT reads data from file and returns structure with fieldnames of column headings.  
+%
+%  S = FILE2STRUCT(FNAME) returns a structure array
+%  S with fieldnames specified by the column headings in the array
+%  list file, FNAME.  FNAME is a tab-delimited file or an excel file (with
+%  .xls extension).  The first line of FNAME contains the tab-delimited
+%  field labels.  The subsequent lines of FNAME
+%  contain the tab-delimited field data.  
+%
+%  History:
+%
+%       07 OCT 23:  
+%               -Created by Jen Dobson (jdobson@broad.mit.edu).  
+%---
+% $Id$
+% $Date: 2007-11-19 17:28:20 -0500 (Mon, 19 Nov 2007) $
+% $LastChangedBy: jdobson $
+% $Rev$
+
+
+
+%% Read .xls (excel) file
+
+if strcmp(file_ext(fname),'xls') & ~force_text
+  [nmr,txt,raw]=xlsread(fname);
+  raw = cellfun(@num2str,raw,'UniformOutput',0);  %make sure everything's type char
+  nan_pos=zeros(size(raw));
+  
+  nancell = cellfun(@isnan,raw,'UniformOutput',0);
+  lencell = cellfun(@length,raw);
+  nancell(find(lencell~=1))={0};
+  
+  nan_pos = cellfun(@double,nancell);
+
+  raw(find(nan_pos))=cellstr(repmat('EMPTY',length(find(nan_pos)),1));
+  f{1}=raw(1,:);
+  is_xls=1;
+else
+  is_xls=0;
+end
+ 
+%% Read Tab-Delimited data
+
+if ~is_xls
+  [f,fid]=read_dlm_file(fname,char(9),1);
+end
+
+%% Map fields in file to standard field names
+
+filefields = regexprep(lower(f{1}),'\(.*\)','');
+
+
+%% Make Data Structure
+
+if ~is_xls
+  form=[repmat('%s',1,length(f{1}))];
+  
+  %read M columns of sample info file into cells of F_dat (cells are Nx1)
+  F_dat=textscan(fid,form,'bufSize',1000000,'delimiter','\t','emptyValue',NaN);
+
+  %horizontally concatinate M cells of F_dat (new F_dat is N x M cell)
+  F_dat=cat(2,F_dat{:});
+  
+  empty_pos=find(cellfun('isempty',F_dat));
+  
+  F_dat(empty_pos)=cellstr(repmat('EMPTY',length(empty_pos),1));
+
+
+else
+  F_dat=raw(2:end,:);
+end
+
+%s is structure whos fields are the column names of F_dat
+s=cell2struct(F_dat,filefields,2);

@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CancerGenomeAnalysis/!svn/ver/1325/trunk/matlab/segseq2/private
+END
+GenomeWideSNP_6.hg18.SNP_A_chr_bounds.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/GenomeWideSNP_6.hg18.SNP_A_chr_bounds.txt
+END
+SegSeq.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/SegSeq.m
+END
+calc_pval_lognormal_approx.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/calc_pval_lognormal_approx.m
+END
+shadedplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/shadedplot.m
+END
+map_alignable_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/map_alignable_reads.m
+END
+segment_solexa_logratios_normals.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/segment_solexa_logratios_normals.m
+END
+diff_log_normratiopdf_of_exp.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/diff_log_normratiopdf_of_exp.m
+END
+chromInfo_hg18.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/chromInfo_hg18.txt
+END
+map_alignable_reads_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/map_alignable_reads_v2.m
+END
+plotRatios.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plotRatios.m
+END
+segment_solexa_logratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/segment_solexa_logratios.m
+END
+calc_log_ratio.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/calc_log_ratio.m
+END
+remove_cnv.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/remove_cnv.m
+END
+merge_segments_logratio.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/merge_segments_logratio.m
+END
+read_align_pos_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/read_align_pos_file.m
+END
+verbose.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/verbose.m
+END
+CNV.verified_080606.combined_reformat.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/CNV.verified_080606.combined_reformat.txt
+END
+read_align_pos_file_basic.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/read_align_pos_file_basic.m
+END
+segseq_preprocess_single_ends.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/segseq_preprocess_single_ends.m
+END
+handle_args.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/handle_args.m
+END
+filter_reads_by_lane_num.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/filter_reads_by_lane_num.m
+END
+combine_seg_mat.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/combine_seg_mat.m
+END
+plot_chr_ratios3.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plot_chr_ratios3.m
+END
+load_aligned_single_reads_dir.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/load_aligned_single_reads_dir.m
+END
+initialize_seg_logratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/initialize_seg_logratios.m
+END
+plotRatios2.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plotRatios2.m
+END
+calc_ratios_from_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/calc_ratios_from_reads.m
+END
+read_qltout_basic.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/read_qltout_basic.m
+END
+write_ratio_diff_wig.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/write_ratio_diff_wig.m
+END
+batch_segseq.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/batch_segseq.m
+END
+plot_boundaries.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plot_boundaries.m
+END
+idx_cnv_reformat.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/idx_cnv_reformat.m
+END
+plot_chr_ratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plot_chr_ratios.m
+END
+estimate_seg_logratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/estimate_seg_logratios.m
+END
+map_pos_to_alignable.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/map_pos_to_alignable.m
+END
+plot_snp6_windows.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plot_snp6_windows.m
+END
+write_igv_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/write_igv_file.m
+END
+write_segments_logratio.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/write_segments_logratio.m
+END
+read_glad_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/read_glad_file.m
+END
+make_ratios_struct.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/make_ratios_struct.m
+END
+update_seg_logratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/update_seg_logratios.m
+END
+map_qltout_basic_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/map_qltout_basic_reads.m
+END
+plot_genome.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/plot_genome.m
+END
+filter_cnv_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/filter_cnv_reads.m
+END
+normalize_read_weight_gc.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/normalize_read_weight_gc.m
+END
+write_ratios.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/write_ratios.m
+END
+HG18_N36_D2_WINDOWS_100K.mat
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/HG18_N36_D2_WINDOWS_100K.mat
+END
+filter_pval_numFP.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/filter_pval_numFP.m
+END
+filter_pval_v2.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/filter_pval_v2.m
+END
+create_windows_from_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/create_windows_from_reads.m
+END
+gp_map_alignable_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/gp_map_alignable_reads.m
+END
+load_aligned_single_reads.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/load_aligned_single_reads.m
+END
+read_dchip_file.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/read_dchip_file.m
+END
+lognormal_approx_for_normratio.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CancerGenomeAnalysis/!svn/ver/1315/trunk/matlab/segseq2/private/lognormal_approx_for_normratio.m
+END

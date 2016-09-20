@@ -1,0 +1,250 @@
+function Cout = preproc_fasttangent(Cin,use_all_cores_for_ref,ceil_val)
+%PREPROC_FASTTANGENT.
+%
+%  Use n_closest_n = 'all' for norm_select_method = 'all'; use a double for
+%  norm_select_method = 'closest_n'
+%
+%  Default behavior is to *ignore flagged normals.*  (If histqc flag is on,
+%  don't allow it into reference samples.  Use 2 to force the normal
+%  through normalization.)
+%
+%COUT = PREPROC_DIVIDEBYNORMALS(CIN, N_CLOSEST_N, NORM_COLLAPSE_METHOD,
+%USE_PAIRED, USE_ALL_CORES_FOR_REFERNCE)
+%
+%
+
+%           Revisions:
+%               9 Nov 07:  If inc_normalize supacc exists, don't include
+%               "0" in reference samples.  Force include "2" in reference
+%               samples.
+%
+%               18 Dec 07:  Added optional input "maxfornorms": can assign
+%               maximum number of  arrays that can be passed to distance
+%               function.
+%
+%               11 Jan 08:  Changed "maxfornorms" to be assigned
+%               internally, based on memory limit (MemLimit meta value) of
+%               D.
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+varlist1 = {'Cin','use_all_cores_for_ref','ceil_val'};
+required = [1 0 0];
+defaults = {'err','1','[]'};
+
+for idx = 1:length(varlist1)
+    if required(idx) && (~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')']))
+        error('Required input %s undefined.',varlist1{idx})
+    elseif ~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')'])
+        eval([varlist1{idx} '=' defaults{idx}])
+    end
+end
+
+
+
+
+%% If Cin is cell array
+if ~iscell(Cin)
+
+    Cin = {Cin};
+    wascell = 0;
+else
+    wascell = 1;
+end
+
+
+
+for k = 1:length(Cin)   %Start loop on CIN
+
+
+    % add Core label
+    v=ones(1,size(Cin{k}.dat,2));
+    if isfield(Cin{k}.sis,'core')
+        [cores,ci,cj]=unique(get_sis(Cin{k},'core'));
+        cores = strvcat(cores); %#ok
+    else
+        cores='GENERAL';
+        cj=v;
+    end
+    Cin{k}=add_D_sup(Cin{k},make_sup_list('CORE',cores),make_sup_list('CORE',cores),cj,'cols');
+    %<<<<<<<<<<<
+
+
+
+    % N: 2 in ploidy column of sample info file (these samples may be used for normalization)
+    % CTRL: control in type are normal samples used as internal control
+
+    % split samples to ones used for normalization and the ones that should be normalized --> REF, CL
+
+    %% --------------Select Reference Samples  (cell array)
+
+    normsupacc = find_supid(Cin{k},'inc_normalization');
+
+    %% If given array list include information, intersect inc_normalize
+    %% 1s and 2s with good references
+    if ~isempty(normsupacc)
+        Cin{k} = check_array_includes(Cin{k},'normalization');
+
+        if isfield(Cin{k}.sis,'cellxeno')
+
+
+            cellxeno = get_sis(Cin{k},'cellxeno');
+
+            ref = intersect(find(Cin{k}.supdat(find_supid(Cin{k},'N'),:) | Cin{k}.supdat(find_supid(Cin{k},'CTRL'),:)),find(~cellfun(@isempty,strfind(cellxeno,'no'))));
+            ref = intersect(ref,find(Cin{k}.supdat(normsupacc,:)>=1));
+        else
+            ref = find(Cin{k}.supdat(find_supid(Cin{k},'N'),:) | Cin{k}.supdat(find_supid(Cin{k},'CTRL'),:));
+            ref = intersect(ref,find(Cin{k}.supdat(normsupacc,:)>=1));
+        end
+
+
+
+        %% Find flagged samples (those with hist_qc supdat > 0) and remove
+        %% those from the list of references unless have a 2 in
+        %% inc_normalize
+        hist_qc_supid=find_supid(Cin{k},'hist_qc');
+        if ~isempty(hist_qc_supid)
+            bad_ref = setdiff(find(Cin{k}.supdat(find_supid(Cin{k},'hist_qc'),ref)>0),find(Cin{k}.supdat(normsupacc,ref)==2));
+            bad_ref = ref(bad_ref);
+            good_ref = setdiff(ref,bad_ref);
+
+        else
+            verbose('No hist_qc label... using all reference samples',20);
+            good_ref = ref;
+
+        end
+
+
+    else
+      if isfield(Cin{k}.sis,'cellxeno')
+        cellxeno = get_sis(Cin{k},'cellxeno');
+        ref = intersect(find(Cin{k}.supdat(find_supid(Cin{k},'N'),:) | Cin{k}.supdat(find_supid(Cin{k},'CTRL'),:)),find(~cellfun(@isempty,strfind(cellxeno,'no'))));
+      else
+        ref = find(Cin{k}.supdat(find_supid(Cin{k},'N'),:) | Cin{k}.supdat(find_supid(Cin{k},'CTRL'),:));
+      end
+
+      
+
+      % Find flagged samples (those with hist_qc supdat > 0) and remove those
+      % from the list of references
+      hist_qc_supid=find_supid(Cin{k},'hist_qc');
+      if ~isempty(hist_qc_supid)
+        bad_ref = find(Cin{k}.supdat(find_supid(Cin{k},'hist_qc'),ref)>0);
+        bad_ref = ref(bad_ref);%#ok
+        good_ref = setdiff(ref,bad_ref);
+        
+      else
+        verbose('No hist_qc label... using all reference samples',20);
+        good_ref = ref;
+        
+      end
+
+    end   %% ---------------End finding references
+
+
+    if isa(Cin{k},'datastruct')
+        Ccopy = copyD(Cin{k});
+    else
+        Ccopy = Cin{k};
+    end
+
+    REF=reorder_D_cols(Ccopy,good_ref);
+
+    clear Ccopy
+    %% Normalize  (cell array)
+
+
+    clear ref good_ref bad_ref not_ref
+
+    % find unique CORE values
+    uc=unique(Cin{k}.supdat(find_supid(Cin{k},'CORE'),:));
+    if use_all_cores_for_ref
+        uc=1;
+    end
+
+    all_center=mean(REF.dat,2);
+
+
+    Cin{k}.ref=zeros(size(Cin{k}.dat));
+
+
+    for i=1:length(uc)  %looping through different cores
+
+        %%% FIXME: add inner loop on tissue type
+        if use_all_cores_for_ref
+            c_incore=1:size(Cin{k}.dat,2);
+            ref_incore=1:size(REF.dat,2);
+        else
+            c_incore=find(Cin{k}.supdat(find_supid(Cin{k},'CORE'),:)==uc(i));
+            ref_incore=find(REF.supdat(find_supid(REF,'CORE'),:)==uc(i));
+        end
+
+
+        verbose('Normalizing using all normals')
+        tangent_q = [];
+        use_normals = ref_incore;
+       
+        refdat = REF.dat(:,use_normals);
+        meannorm = mean(refdat,2);
+        refdat = refdat - repmat(meannorm,1,size(refdat,2));
+        for j=1:length(c_incore)
+
+            if isempty(use_normals)
+                Cin{k}.dat(:,c_incore(j))=Cin{k}.dat(:,c_incore(j))-repmat(all_center,1,length(c_incore));
+                Cin{k}.used_normals{j}='center of all normals';
+            end
+
+
+            verbose('Using tangent normalization with all normals (in core)',20);
+
+            if length(use_normals)==1
+                warning('Using tangent with 1 sample');%#ok
+                cdat = Cin{k}.dat(:,c_incore(j));
+               
+                cdat = cdat - repmat(meannorm,1,size(cdat,2));
+              
+                xx=tangent_normalization(cdat,refdat,[],ceil_val);
+                Cin{k}.dat(:,c_incore(j))=xx;
+            else
+             
+                cdat = Cin{k}.dat(:,c_incore(j));
+                
+                cdat = cdat - repmat(meannorm,1,size(cdat,2));
+                
+                [xx,tangent_q]=tangent_normalization(double(cdat),double(refdat),tangent_q,ceil_val); %#ok
+
+                Cin{k}.dat(:,c_incore(j))=single(xx);
+            end  %tangent normalization if
+        end %sample loop
+
+    end %core loop
+
+
+    if isa(REF,'datastruct')
+        deleteDfiles(REF)
+    end
+
+  
+    Cin{k} = add_history(Cin{k},mfilename);
+
+
+
+
+    % Remove Core label
+    coreidx = strmatch('CORE',Cin{k}.supacc);
+    Cin{k}.supacc = Cin{k}.supacc(setdiff(1:size(Cin{k}.supacc,1),coreidx),:);
+    Cin{k}.supdesc = Cin{k}.supdesc(setdiff(1:size(Cin{k}.supdesc,1),coreidx),:);
+    Cin{k}.supdat = Cin{k}.supdat(setdiff(1:size(Cin{k}.supdat,1),coreidx),:);
+    %<<<<<<<<<<<
+
+end   %Cin{k} loop
+
+
+if ~wascell
+    Cout = Cin{1};
+else
+    Cout = Cin;
+end

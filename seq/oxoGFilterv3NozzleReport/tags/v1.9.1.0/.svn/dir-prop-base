@@ -1,0 +1,22 @@
+K 10
+svn:ignore
+V 738
+2012-10-01 22-15-49.Rtr
+2012-10-01 22-16-22.Rtr
+report.html
+report.RData
+allCases.txt
+caseTableData.tsv
+HNSC-D6-6517.pass.maf.annotated.PA.png
+HNSC-D6-6517.pass.maf.annotated.RR.png
+HNSC-D6-6517.pass.maf.annotated All Artifact Mode_ArtifactMode_hist2d_FDR.png
+HNSC-D6-6517.pass.maf.annotated All Non-Artifact Mode_NonArtifactMode_hist2d.png
+HNSC-TCGA-D6-6517-Tumor-SM-241MZ v. HNSC-TCGA-D6-6517-Normal-SM-241ND_ArtifactMode_hist2d_FDR.png
+HNSC-TCGA-D6-6517-Tumor-SM-241MZ v. HNSC-TCGA-D6-6517-Normal-SM-241ND_lego_after.png
+HNSC-TCGA-D6-6517-Tumor-SM-241MZ v. HNSC-TCGA-D6-6517-Normal-SM-241ND_lego_before.png
+HNSC-TCGA-D6-6517-Tumor-SM-241MZ v. HNSC-TCGA-D6-6517-Normal-SM-241ND_NonArtifactMode_hist2d.png
+nozzle.html
+nozzle.RData
+*.png
+
+END

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit
+END
+runtests.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/runtests.m
+END
+TestComponentInDir.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestComponentInDir.m
+END
+assertEqual.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertEqual.m
+END
+TestSuite.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestSuite.m
+END
+TestCaseWithAddPath.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestCaseWithAddPath.m
+END
+FunctionHandleTestCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/FunctionHandleTestCase.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/Contents.m
+END
+info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/info.xml
+END
+TestCaseInDir.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestCaseInDir.m
+END
+assertTrue.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertTrue.m
+END
+TestComponent.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestComponent.m
+END
+TestRunLogger.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestRunLogger.m
+END
+assertElementsAlmostEqual.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertElementsAlmostEqual.m
+END
+TestCase.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestCase.m
+END
+assertFalse.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertFalse.m
+END
+TestRunMonitor.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestRunMonitor.m
+END
+assertFilesEqual.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertFilesEqual.m
+END
+initTestSuite.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/initTestSuite.m
+END
+TestSuiteInDir.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/TestSuiteInDir.m
+END
+assertVectorsAlmostEqual.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertVectorsAlmostEqual.m
+END
+CommandWindowTestRunDisplay.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/CommandWindowTestRunDisplay.m
+END
+assertExceptionThrown.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CancerGenomeAnalysis/!svn/ver/6455/trunk/matlab/xunit/assertExceptionThrown.m
+END

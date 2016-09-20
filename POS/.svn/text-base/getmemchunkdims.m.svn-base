@@ -1,0 +1,19 @@
+function chunkdims = getmemchunkdims(D,field,fullfield)
+%GETMEMCHUNKDIMS - Dummy function parallel to @datastruct/GETMEMCHUNKDIMS.
+%
+%   CHUNKDIMS = GETCHUNKDIMS(D,FIELD) Returns the size of D.(field).
+
+%       Revisions:
+%           * Function added: 10 Jan 07
+%
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+
+
+chunkdims = getsize(D,field);
+
+    

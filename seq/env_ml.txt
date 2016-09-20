@@ -1,0 +1,179 @@
+Sender: LSF System <lsf@node1152>
+Subject: Job 7663867: <env> Done
+
+Job <env> was submitted from host <nobelium> by user <lawrence> in cluster <cromwell>.
+Job was executed on host(s) <node1152>, in queue <broad>, as user <lawrence> in cluster <cromwell>.
+</home/radon01/lawrence> was used as the home directory.
+</home/radon01/lawrence/CancerGenomeAnalysis/trunk/matlab/seq> was used as the working directory.
+Started at Fri Sep 11 14:33:37 2009
+Results reported at Fri Sep 11 14:33:37 2009
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+env
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      0.02 sec.
+    Max Memory :         2 MB
+    Max Swap   :        15 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+LESSKEY=/etc/lesskey.bin
+MANPATH=/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/man:/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/man:/broad/tools/Linux/x86_64/pkgs/automake_1.10/share/man:/broad/tools/Linux/x86_64/pkgs/autoconf_2.63/share/man:/broad/tools/Linux/x86_64/pkgs/m4_1.4.12/share/man:/broad/tools/Linux/x86_64/pkgs/pkg-config_gcc-4.3.2_0.23/share/man:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/share/man:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/man:/usr/intel/compiler81/man:/broad/lsf/7.0/man:/util/man:/usr/man:/usr/local/man:/usr/opt/networker/man:/opt/csm/man:/usr/share/man
+INFODIR=/usr/local/info:/usr/share/info:/usr/info
+NNTPSERVER=news
+LSB_EXEC_CLUSTER=cromwell
+LSF_EAUTH_AUX_PASS=yes
+HOSTNAME=node1152
+XKEYSYMDB=/broad/tools/apps/matlab2009a/X11/app-defaults/XKeysymDB
+GNOME2_PATH=/usr/local:/opt/gnome:/usr:/usr/local:/opt/gnome:/usr:/usr/local:/opt/gnome:/usr
+LSF_LIM_API_NTRIES=1
+LSF_LOGDIR=/broad/lsf/log
+ORGANIZATION=Broad Institute of MIT and Harvard
+INTEL_LICENSE_FILE=/usr/intel/compiler81/licenses:/usr/intel/compiler81/licenses:/usr/intel/compiler81/licenses
+LSB_BATCH_JID=7663867
+SHELL=/usr/bin/tcsh
+HOST=nobelium
+MATLABPATH=/home/radon01/lawrence/matlab:/broad/tools/apps/matlab2009a/toolbox/local
+SSH_CLIENT=69.173.114.67 4925 22
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+LIBRARY_PATH=/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib64:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/lib:/broad/tools/Linux/x86_64/pkgs/boost_1.38.0/lib:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib64:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/lib:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib64:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/lib:/broad/tools/Linux/x86_64/pkgs/boost_1.38.0/lib
+LS_JOBPID=24729
+GNOME_PATH=/opt/gnome:/usr
+LSB_JOBRES_CALLBACK=44239@node1152
+LC_NUMERIC=C
+MORE=-sl
+LSB_JOB_EXECUSER=lawrence
+LSB_JOBID=7663867
+LSF_SERVERDIR=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/etc
+LSB_JOBRES_PID=24729
+LSB_JOBNAME=env
+SSH_TTY=/dev/pts/55
+LSF_LIBDIR=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/lib
+XAPPLRESDIR=/broad/tools/apps/matlab2009a/X11/app-defaults
+USER=lawrence
+GROUP=xchip
+GROFF_NO_SGR=yes
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:
+LD_LIBRARY_PATH=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/lib:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib64:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/lib:/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/lib:/broad/tools/Linux/x86_64/pkgs/pkg-config_gcc-4.3.2_0.23/lib:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/lib:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/lib:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/lib64:/usr/intel/compiler81/lib:.:/util/gcc-4.3.0/lib64:/util/gcc-4.3.0/lib/gcc/x86_64-unknown-linux-gnu/4.3.0:/util/gcc-4.3.0/lib/:/util/lib:
+CSHRCREAD=true
+_dk_shell=tcsh
+MAILCHECK=30
+AUTOMOUNT_MAP=
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+XNLSPATH=/usr/X11R6/lib/X11/nls
+XCATROOT=/opt/xcat
+_dk_sev_SOLEXA_PIPELINE_DIR=/slxa/pipelineOutput/farm
+ENV=/etc/bash.bashrc
+HOSTTYPE=LINUX
+CPATH=/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/include:/broad/tools/Linux/x86_64/pkgs/boost_1.38.0/include/boost-1_38:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/include:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/include:/broad/tools/Linux/x86_64/pkgs/boost_1.38.0/include/boost-1_38
+LSF_INVOKE_CMD=bsub
+LS_EXEC_T=START
+FROM_HEADER=
+XCATPREFIX=/opt/xcat
+LSF_EAUTH_SERVER=mbatchd@cromwell
+PAGER=less
+LS_SUBCWD=/home/radon01/lawrence/CancerGenomeAnalysis/trunk/matlab/seq
+CSHEDIT=emacs
+OSG_LD_LIBRARY_PATH=/broad/tools/apps/matlab2009a/sys/openscenegraph/lib/glnxa64
+LSF_VERSION=22
+LSB_DJOB_RU_INTERVAL=15
+LSB_HOSTS=node1152
+LSB_UNIXGROUP_INT=xchip
+XDG_CONFIG_DIRS=/usr/local/etc/xdg/:/etc/xdg/:/etc/opt/gnome/xdg/
+LSB_DJOB_HB_INTERVAL=15
+LSB_JOBFILENAME=/local/scratch/1252694012.7663867
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+MINICOM=-c on
+LSB_JOBINDEX=0
+PATH=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/bin:/broad/tools/Linux/x86_64/pkgs/gcc_4.3.3/bin:/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/bin:/broad/tools/Linux/x86_64/pkgs/automake_1.10/bin:/broad/tools/Linux/x86_64/pkgs/autoconf_2.63/bin:/broad/tools/Linux/x86_64/pkgs/m4_1.4.12/bin:/broad/tools/Linux/x86_64/pkgs/pkg-config_gcc-4.3.2_0.23/bin:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/bin:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/bin:/broad/tools/apps/matlab2009a/bin:/wga/scr2/ArachneReleases/ReleaseArachne-1-16/bin:/home/radon01/lawrence/bin:/usr/intel/compiler81/bin:/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/etc:/util/bin:/util/sbin:/usr/bin:/bin:/usr/X11R6/bin:/usr/bin/X11:/usr/sbin:/sbin:/util/oracle/bin:/home/radon01/lawrence/script:/xchip/tcga/gbm/analysis/lawrence/blast/bin
+MAIL=/usr/spool/mail/lawrence
+GNOMEDIR=/opt/gnome
+DOMAINNAME=broad.mit.edu
+TOOLBOX=/broad/tools/apps/matlab2009a/toolbox
+CPU=x86_64
+LSB_EXIT_PRE_ABORT=99
+MKL_NUM_THREADS=
+KMP_HANDLE_SIGNALS=0
+LSB_JOBEXIT_STAT=0
+XARCH=x86_64
+C_INCLUDE_PATH=/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/include:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/include:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/include:/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/include:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/include:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/include:/broad/tools/Linux/x86_64/pkgs/libtool_2.2.6/include:/broad/tools/Linux/x86_64/pkgs/gettext_0.17/include:/broad/tools/Linux/x86_64/pkgs/binutils-2.19/include
+PWD=/home/radon01/lawrence/CancerGenomeAnalysis/trunk/matlab/seq
+INPUTRC=/etc/inputrc
+EXINIT=set ai aw sm
+EDITOR=emacs
+MAILFILE=/usr/spool/mail/lawrence
+MKL_DOMAIN_NUM_THREADS=
+LANG=C
+LSB_CHKFILENAME=/local/scratch/1252694012.7663867
+LSF_EAUTH_CLIENT=user
+PYTHONSTARTUP=/etc/pythonstart
+LSB_DJOB_HOSTFILE=/local/scratch/1252694012.7663867.hostfile
+XFILESEARCHPATH=/broad/tools/apps/matlab2009a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S::/usr/dt/app-defaults/%L/Dt
+DK_SUBNODE=tcsh/suse_10_x86_64:tcsh:suse_10_x86_64:.
+BASEMATLABPATH=
+LM_LICENSE_FILE=/usr/lib/nag/license.dat
+LSF_BINDIR=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/bin
+_dk_inuse=GCC-4.3.0 .gcc-4.3.3.1 .gcc-libs-4.3.3.2 .libtool-2.2.6.2 .automake-1.10.2 .autoconf-2.63.2 .m4-1.4.12.2 .pkg-config-0.23.2 .gettext-0.17.2 .binutils-2.19.2
+TEXINPUTS=::/home/radon01/lawrence/.TeX:/usr/share/doc/.TeX:/usr/doc/.TeX:/home/radon01/lawrence/.TeX:/usr/share/doc/.TeX:/usr/doc/.TeX
+HOME=/home/radon01/lawrence
+SHLVL=3
+__KMP_REGISTERED_LIB_17558=0x2b4388f1cd48-cafecb69-libguide.so
+OSTYPE=linux
+LESS_ADVANCED_PREPROCESSOR=no
+ARCH_TYPE=intel
+FCINIT=emacs
+LSB_ACCT_FILE=/local/scratch/.1252694012.7663867.acct
+XCURSOR_THEME=crystalwhite
+LS_OPTIONS=-N --color=tty -T 0
+LSB_SUB_HOST=nobelium
+LSFUSER=lawrence
+__KMP_REGISTERED_LIB_17486=0x2b4388f1cd48-cafe9c3d-libguide.so
+VENDOR=suse
+GTK_PATH=/usr/local/lib/gtk-2.0:/opt/gnome/lib/gtk-2.0:/usr/lib/gtk-2.0:/usr/local/lib/gtk-2.0:/opt/gnome/lib/gtk-2.0:/usr/lib/gtk-2.0:/usr/local/lib/gtk-2.0:/opt/gnome/lib/gtk-2.0:/usr/lib/gtk-2.0
+LSB_QUEUE=broad
+LSB_MCPU_HOSTS=node1152 1 
+LSB_OUTPUTFILE=env_ml.txt
+LOGNAME=lawrence
+MACHTYPE=x86_64
+LESS=-ce
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-1,CP1252
+SOLEXA_PIPELINE_DIR=/slxa/pipelineOutput/farm
+MATLAB=/broad/tools/apps/matlab2009a
+CVS_RSH=ssh
+GTK_PATH64=/usr/local/lib64/gtk-2.0:/opt/gnome/lib64/gtk-2.0:/usr/lib64/gtk-2.0:/usr/local/lib64/gtk-2.0:/opt/gnome/lib64/gtk-2.0:/usr/lib64/gtk-2.0:/usr/local/lib64/gtk-2.0:/opt/gnome/lib64/gtk-2.0:/usr/lib64/gtk-2.0
+VISUAL=emacs
+PRINTER=lw
+SSH_CONNECTION=69.173.114.67 4925 69.173.65.102 22
+ACLOCAL_FLAGS=-I /opt/gnome/share/aclocal -I /opt/gnome/share/aclocal -I /opt/gnome/share/aclocal
+XDG_DATA_DIRS=/usr/local/share/:/usr/share/:/etc/opt/kde3/share/:/opt/kde3/share/:/opt/gnome/share/
+XLSF_UIDDIR=/broad/lsf/7.0/linux2.6-glibc2.3-x86_64/lib/uid
+KMP_STACKSIZE=524288
+SYS_TYPE=suse_10_x86_64
+OMP_NUM_THREADS=1
+LESSOPEN=lessopen.sh %s
+PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/opt/kde3/lib64/pkgconfig:/opt/gnome/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/opt/kde3/lib64/pkgconfig:/opt/gnome/lib64/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/share/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig:/opt/kde3/lib64/pkgconfig:/opt/gnome/lib64/pkgconfig:/opt/gnome/lib64/pkgconfig:/opt/gnome/share/pkgconfig:/opt/gnome/lib64/pkgconfig:/opt/gnome/share/pkgconfig:/opt/gnome/lib64/pkgconfig:/opt/gnome/share/pkgconfig
+ARCH=glnxa64
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/opt/gnome/share/info:/opt/gnome/share/info:/opt/gnome/share/info
+LSB_EEXEC_REAL_GID=
+DISPLAY=
+LSF_ENVDIR=/broad/lsf/conf
+ORACLE_HOME=/util/oracle
+LESSCLOSE=lessclose.sh %s %s
+LSF_EGO_ENVDIR=/broad/lsf/ego/kernel/conf
+G_BROKEN_FILENAMES=1
+DK_ROOT=/broad/tools/dotkit
+DK_NODE=/busby/site=snowblind:/busby/dotkits/site=oax+ocf
+COLORTERM=1
+_=/usr/bin/env

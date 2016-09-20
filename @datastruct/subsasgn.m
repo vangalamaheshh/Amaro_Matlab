@@ -1,0 +1,316 @@
+function a = subsasgn(a,s,b)
+%   SUBSASGN -- overloaded subscripted assignment for DATASTRUCT objects.
+%
+% A = subsasgn(A, S, B) is called for the syntax A(i)=B, A{i}=B, or A.i=B when A is an object. S is a structure array with the fields
+%
+
+
+%           Revisions:
+%               28 Nov 07:  Added referencing for logical index and indexed
+%               (not subsripted) array references.
+%
+%               29 Nov 07:  Added check of IsLocked? attribute.
+%
+%---
+% $Id$
+% $Date: 2011-05-03 11:43:46 -0400 (Tue, 03 May 2011) $
+% $LastChangedBy: schum $
+% $Rev$
+
+%If assigning to element of datastruct array
+if strcmp('()',s(1).type)
+
+    if length(s) == 1
+        a(s(1).subs{:}) = b;
+    else
+        a = subsasgn(a(s(1).subs{:}),s(2:end),b,dm);
+    end
+
+
+    %If assigning to a field of the datastruct
+elseif strcmp('.',s(1).type)
+
+    idx = strmatch(s(1).subs,a.fieldnames,'exact');
+
+
+    %if the field doesn't exist, make it
+
+    if isempty(idx)
+        if (iscell(b) && length(b) > 1 ) || (~iscell(b) && strcmp(s(end).type,'{}'))
+            b = {b};
+        end
+
+        
+        %if there's a dat field, and if b has size greater than or equal to size of .dat, make new field a diskfield
+        if isfield(a,'dat') && isdiskfield(a,'dat') && (length(size(b)) == 2) && (isequal(size(b),getsize(a,'dat')) || isequal([1 1],(size(b) > getsize(a,'dat'))))
+            dirname = char(regexp(get_datafile(a,'dat'),[regexp_filesep '.+' regexp_filesep],'match'));
+            filename = get_new_filenames([dirname s(1).subs '.h5']);
+            a = add_diskfield(a,filename,s(1).subs,size(b),class(b));
+
+        else
+            a.fieldnames = [a.fieldnames s(1).subs];
+            a.fielddata = [a.fielddata {b}];
+            a.storagetype = [a.storagetype 'memory'];
+            a.colmapping = [a.colmapping {[]} ];
+            a.rowmapping = [a.rowmapping {[]} ];
+        end
+
+
+        %if the field is a memory field, change values in memory
+    elseif strcmp('memory',a.storagetype{idx})
+        if length(s) > 1 && ~strcmp(s(2).type,'{}')
+            a.fielddata{idx} = subsasgn(a.fielddata{idx},s(2:end),b);
+        elseif length(s) > 1 && strcmp(s(2).type,'{}')
+                a.fielddata{idx}{s(2).subs{:}} = {b};
+            
+        elseif s.type == '.'
+            a.fielddata{idx} = b;
+        else
+            error('Illegal reference.')
+        end
+
+
+
+        %If the field is a disk field write to disk
+    elseif strcmp('disk',a.storagetype{idx})
+        
+        if iswriteprotected(a)
+            error('Input datastruct object is write protected')
+        end
+        
+        a = setdirtybit(a,'on');
+        
+        %get data type to write
+        htype = a.fielddata{idx}.Datatype.Class;
+        mtype = htype_to_mtype(htype);
+        b = cast(b,mtype);
+        
+
+        %If writing all data (no subscripted references)
+        if length(s)==1 && strmatch('.',s.type)
+            %
+            %             %Write to new dataset name here.  Otherwise, if the old and new
+            %             %version of data set had different dimensions, we'd run into
+            %             %trouble
+            %
+            %             a = replace_diskfielddata(a,a.fieldnames{idx},b);
+
+
+            %sort according to row and col mapping
+
+            %
+%             if ~isempty(a.rowmapping{idx})
+%                 [yr,ir] = sort(a.rowmapping{idx});
+%                 b = b(ir,:);
+%             end
+% 
+%             if ~isempty(a.colmapping{idx})
+%                 [yc,ic] = sort(a.colmapping{idx});
+%                 b = b(:,ic);
+%             end
+
+            % Reset row/col mapping
+            a.rowmapping{idx} = 1:size(b,1);
+            a.colmapping{idx} = 1:size(b,2);
+
+
+            %Overwrite existing data:
+            %
+ 
+
+            hdf5write(a.fielddata{idx}.Filename,a.fielddata{idx}.Name,b,'WriteMode','overwrite');
+            %             details = struct('AttachedTo',a.fielddata{idx}.Name,'AttachType','dataset','Name','IsLocked');
+            %             hdf5write(a.fielddata{idx}.Filename,details,0,'WriteMode','append');
+            % %
+            a.fielddata{idx} = get_dataset_info(a.fielddata{idx}.Filename,a.fielddata{idx}.Name);
+            %
+
+        %If subscripted references
+        elseif length(s)>1
+
+            if strcmp('()',s(2).type)  %Referencing array elements
+
+                %if data is two dimensional but only one array references
+                %it (logical matrix or indexed array is passed)
+                if length(s(2).subs)==1 && getsize(a,a.fieldnames{idx},1) > 1 && getsize(a,a.fieldnames{idx},2) > 1
+
+                    verbose('Writing to HDF5 file using write_hdf5_coordinates',30)
+
+                    %If logical matrix is passed
+                    if length(s(2).subs) == 1 && islogical(s(2).subs{1})
+
+                        if ~isscalar(b) && (size(s(2).subs{:},1) ~= getsize(a,a.fieldnames{idx},1) || size(s(2).subs{:},2) ~= getsize(a,a.fieldnames{idx},2))
+                            error('Input logical reference array has dimensions different from value array')
+                        else
+                            [rowcoords,colcoords] = ind2sub([getsize(a,a.fieldnames{idx},1) getsize(a,a.fieldnames{idx},2)],find(s(2).subs{:}));
+                        end
+
+                        %If indexed reference to 2 dimensional data are passed
+                    else
+
+                        [rowcoords,colcoords] = ind2sub([getsize(a,a.fieldnames{idx},1) getsize(a,a.fieldnames{idx},2)],s(2).subs{:});
+
+                    end
+
+                    if ~isequal(size(b),length(rowcoords))
+                        if isscalar(b)
+                            b = b.*ones(length(rowcoords),1);
+                        else
+                            error('Dimensions of matrices on either side of equals sign do not match')
+                        end
+                    end
+
+                    if size(b,1) ~= 1
+                        b = b';
+                    end
+
+                    if size(b,2) ~= length(rowcoords)
+                        if isscalar(b)
+                            b = b.*ones(length(rowcoords),1);
+                        else
+                            error('Dimensions of matrices on either side of equals sign do not match')
+                        end
+                    end
+
+                    if ~isempty(a.rowmapping{idx})
+                        rowcoords = a.rowmapping{idx}(rowcoords);
+                    end
+
+                    if ~isempty(a.colmapping{idx})
+                        colcoords = a.colmapping{idx}(colcoords);
+                    end
+
+                    write_hdf5_coordinates(a.fielddata{idx}.Filename,a.fielddata{idx}.Name,b,colcoords,rowcoords);
+
+
+                    %If subscripted references are passed
+                else
+                    %If data is two dimensional and subscripted references
+                    %are passed
+                    if length(s(2).subs)==2 && getsize(a,a.fieldnames{idx},1) > 1 && getsize(a,a.fieldnames{idx},2) > 1
+
+                        %If row indices are passed
+                        if isnumeric(s(2).subs{1})
+                            rows = s(2).subs{1};
+                        elseif strmatch(':',s(2).subs{1})
+                            rows = 1:getsize(a,a.fieldnames{idx},1);
+                        elseif islogical(s(2).subs{1})
+                            rows = find(s(2).subs{1});
+                        end
+
+                        %If col indices are passed
+                        if isnumeric(s(2).subs{2})
+                            cols = s(2).subs{2};
+                        elseif strmatch(':',s(2).subs{2})
+                            cols = 1:getsize(a,a.fieldnames{idx},2);
+                        elseif islogical(s(2).subs{2})
+                            rows = find(s(2).subs{2});
+                        end
+
+
+
+
+                        %If indices to row data are passed
+                    elseif length(s(2).subs) == 1  && getsize(a,a.fieldnames{idx},1) == 1
+
+                        if isnumeric(s(2).subs{1})
+                            cols = s(2).subs{1};
+                            rows = 1;
+                        elseif islogical(s(2).subs{1})
+                            cols = find(s(2).subs{1});
+                            rows = 1;
+                       elseif strmatch(':',s(2).subs{1})
+                            cols = 1:getsize(a,a.fieldnames{idx},2);
+                            rows = 1;
+                        end
+
+                        %If indices to column data are passed
+                    elseif length(s(2).subs) == 1 && getsize(a,a.fieldnames{idx},2) == 1
+
+                        if isnumeric(s(2).subs{1})
+                            rows = s(2).subs{1};
+                            cols = 1;
+                        elseif islogical(s(2).subs{1})
+                            rows = find(s(2).subs{1});
+                            cols = 1;
+                        elseif strmatch(':',s(2).subs{1})
+                            rows = 1:getsize(a,a.fieldnames{idx},1);
+                            cols = 1;
+                        end
+
+                    end
+
+
+                    %Check that rows and cols are ok before writing
+                    if ~exist('rows','var') || ~exist('cols','var')
+                        error('Illegal subscripted reference')
+                    end
+                    if isempty(rows) || isempty(cols)
+                        return
+                    end
+                    if ~isequal(size(b),[length(rows) length(cols)])
+                        if isscalar(b)
+                            b = b.*cast(ones(length(rows),length(cols)),class(b));
+                        else
+                            error('Dimensions of matrices on either side of equals sign do not match')
+                        end
+                    end
+                    if min(rows) < 1 || min(cols) < 1 || max(rows)>getsize(a,a.fieldnames{idx},1) || max(cols)>getsize(a,a.fieldnames{idx},2)
+                        error('Index exceeds dimensions')               
+                    end
+                    
+                    %  If we decide it is desirable to have extendible
+                    %  matrices, we could implement this.  However, it
+                    %  requires that when we initially define the
+                    %  diskfield, we increase the size of MAXDIMS.  Not
+                    %  sure what this implies for the size of our HDF5
+                    %  files.
+%                     if max(rows)>getsize(a,a.fieldnames{idx},1) || max(cols)>getsize(a,a.fieldnames{idx},2)  %NEED TO EXTEND DATASET
+%                         
+%                         if ~isempty(a.colmapping{idx})
+%                             a.colmapping{idx} = [a.colmapping (a.fielddata{idx}.Dims(2)+1):(a.fielddata{idx}.Dims(2)+max(cols) - getsize(a,a.fieldnames{idx},2))];
+%                             cols = a.colmapping{idx}(cols);
+%                         end
+%                         if ~isempty(a.rowmapping{idx})
+%                              a.rowmapping{idx} = [a.rowmapping (a.fielddata{idx}.Dims(1)+1):(a.fielddata{idx}.Dims(1)+max(rows) - getsize(a,a.fieldnames{idx},1))];
+%                             rows = a.rowmapping{idx}(rows);
+%                         end
+%                         
+%                         extend_hdf5_block(a.fielddata{idx}.Filename,a.fielddata{idx}.Name,b,cols,rows)
+% 
+%                         a.fielddata{idx} = get_dataset_info(a.fielddata{idx}.Filename,a.fielddata{idx}.Name);
+%                     end
+                    
+
+                    if ~isempty(a.colmapping{idx})
+                        cols = a.colmapping{idx}(cols);
+                    end
+
+                    if ~isempty(a.rowmapping{idx})
+                        rows = a.rowmapping{idx}(rows);
+                    end
+
+
+                    % Make the assignment
+
+                    write_hdf5_block(a.fielddata{idx}.Filename,a.fielddata{idx}.Name,b,cols,rows)
+
+                    a.fielddata{idx} = get_dataset_info(a.fielddata{idx}.Filename,a.fielddata{idx}.Name);
+
+                end  %writing data with indexed or subscripted references
+
+            else
+                error('Unrecognized reference: %s for .%s',s(2).type,a.fielddata{idx})
+            end  %Parsing () references
+
+        end  %Parsing reference types
+
+        a = setdirtybit(a,'off');
+    else
+        error('Unrecognized storage type')
+    end  %Managing different storage types
+
+else
+    error('Illegal reference type: %s',s(1).type)
+end
+

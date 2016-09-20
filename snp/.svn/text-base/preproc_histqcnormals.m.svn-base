@@ -1,0 +1,105 @@
+function [Cout,bad_normals_cell]=preproc_histqcnormals(Cin,base_dir,output_dir,qcstep,show_hist,hist_delta,hist_normal_sig)
+%PREPROC_HISTQCNORMALS Histogram quality control on normals.
+%
+%   [COUT,BAD_NORMALS_CELL] = PREPROC_HISTQCNORMALS
+%    (CIN, BASE_DIR, OUTPUT_DIR, SHOW_HIST, HIST_DELTA, HIST_NORMAL_SIG)
+%   
+%   Required inputs: CIN, BASE_DIR, OUTPUT_DIR
+%   Defaults: SHOW_HIST = 0;  HIST_DELTA = 0.01; HIST_NORMAL_SIG = 0.05;
+%
+%  About the hist_qc in supdat:  -1 means no qc done on normals, 0 means ok
+%  normal, n>0 means normal set as bad normal in qc step n;
+%---
+% $Id$
+% $Date$
+% $LastChangedBy$
+% $Rev$
+
+varlist1 = {'Cin','base_dir','output_dir','show_hist','hist_delta','hist_normal_sig'};
+required = [1,1,1,0,0,0];
+
+defaults = {'err','err','err','0','0.01','0.05'};
+
+for idx = 1:length(varlist1)
+    if required(idx) && (~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')']))
+        error('Required input %s undefined.',varlist1{idx})
+    elseif ~exist(varlist1{idx},'var') || eval(['isempty(' varlist1{idx} ')'])
+        eval([varlist1{idx} '=' defaults{idx}])
+    end
+end
+
+
+
+
+
+
+if ~iscell(Cin)
+    M{1} = Cin;
+    wascell = 0;
+else
+    M = Cin;
+    wascell = 1;
+end
+
+clear Cin
+
+bad_normals_cell = {};
+
+
+
+for k = 1:length(M)
+    C = M{k};
+    v = C.supdat(find_supid(C,'hist_qc'),:,:);  %extra : in case supdat is 3-dimensional (merged)
+    if isempty(v)     
+        v = zeros(size(C.supdat(1,:,:)));
+    end
+    
+    if ~isempty(strmatch('hist_qc',C.supacc))
+        qcstep = max(C.supdat(strmatch('hist_qc',C.supacc)));
+    else
+        qcstep = 1;
+    end
+
+
+    verbose(['Running quality control on normals.  Step: ' num2str(qcstep)],20)
+
+    [one_peak,C] =histogram_qc(C,[base_dir 'hist_qc_norm.out.step' num2str(qcstep) '.ps'],1,show_hist,1,0,hist_delta,hist_normal_sig);
+
+    if show_hist
+
+        title('Copy Number Histogram of Normals')
+    end
+    
+    normals = strmatch({'2'},get_sis(C,'ploidy'));
+    
+    bad_normals = setdiff(normals,one_peak);
+
+    v(:,bad_normals,:)=qcstep;
+
+    if qcstep == 1
+        C = add_D_sup(C,'hist_qc','histogram_quality_control',v,'cols');
+    else
+        C.supdat(find_supid(C,'hist_qc'),:,:) = v;
+    end
+    
+
+    throw_out_n_names = C.sdesc(bad_normals);
+%     
+%     save([output_dir 'flag_bad_normals.step' num2str(qcstep) '.mat'],'bad_normals','throw_out_n_names');
+
+
+    C = add_history(C,mfilename,bad_normals,throw_out_n_names);
+
+    M{k} = C;
+    
+    bad_normals_cell{k} = bad_normals;
+    
+
+
+end
+
+if wascell
+    Cout = M;
+else
+    Cout = M{1};
+end
